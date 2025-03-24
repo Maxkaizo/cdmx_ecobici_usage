@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="img/banner.jpg" width="100%" alt="Ecobici Data Pipeline" />
+  <img src="images/banner.jpg" width="100%" alt="Ecobici Data Pipeline" />
 </p>
 
 <p align="center">
@@ -16,7 +16,7 @@ This project showcases the development of a complete batch data pipeline using o
 
 ## 🌐 Architecture Overview
 
-![Pipeline Diagram](img/pipeline_diagram.png)
+![Pipeline Diagram](images/pipeline_diagram.png)
 
 ---
 

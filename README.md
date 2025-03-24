@@ -18,12 +18,11 @@ Ecobici is Mexico City's public bike-sharing system, designed to provide a susta
 
 To promote transparency and enable data-driven urban planning, Ecobici publishes monthly open datasets, which include detailed records of each trip: timestamps, origin and destination stations, user type, and duration.
 
-This dataset is particularly suited for data engineering projects due to:
-
-    - Its recurring and structured format, ideal for batch pipelines.
-    - Real-world complexity (e.g., missing data, varying formats).
-    - Public accessibility without the need for synthetic data.
-    - Its size, which is large enough to be meaningful, but manageable for cloud tools like BigQuery.
+> This dataset is particularly suited for data engineering projects due to:
+> - Its **recurring and structured format**, ideal for batch pipelines.
+> - Real-world complexity (e.g., missing data, varying formats).
+> - Public accessibility without the need for synthetic data.
+> - Its size, which is large enough to be meaningful, but manageable for cloud tools like BigQuery.
 
 ---
 
@@ -60,6 +59,27 @@ The pipeline leverages **Google Cloud Platform (GCP)** services:
 
 ---
 
+## Project Structure
+
+``` bash
+ecobici-data-pipeline/
+├── terraform/           # Infrastructure as Code for GCP resources
+├── kestra/              # Kestra workflow definitions
+├── dbt/                 # dbt models and project files
+├── dashboard/           # Dashboard screenshots or link
+├── img/                 # Diagrams, banners, visuals
+├── README.md
+└── ...
+```
+---
+
+
+## 📊 Dashboard
+
+🔗 View in Looker Studio
+
+---
+
 ## 🛠️ How to Run
 
 ```bash
@@ -74,23 +94,6 @@ kestra start
 
 # 3. Explore the data in BigQuery
 # 4. Open the dashboard in Looker Studio
-```
-
-## 📊 Dashboard
-
-🔗 View in Looker Studio
-
-## Project Structure
-
-``` bash
-ecobici-data-pipeline/
-├── terraform/           # Infrastructure as Code for GCP resources
-├── kestra/              # Kestra workflow definitions
-├── dbt/                 # dbt models and project files
-├── dashboard/           # Dashboard screenshots or link
-├── img/                 # Diagrams, banners, visuals
-├── README.md
-└── ...
 ```
 
 ## 🐳 Optional: Run in Docker
@@ -119,6 +122,7 @@ During development, a few non-trivial issues surfaced that required extra attent
 
 🧼 Cleaning inconsistencies in CSVs, including missing values and timestamp anomalies, especially in early datasets.
 
+---
 
 # 🛣️ Roadmap & Potential Improvements
 While the current version of the pipeline meets the project requirements and showcases key data engineering capabilities, several improvements could be explored in future iterations:
@@ -135,10 +139,14 @@ While the current version of the pipeline meets the project requirements and sho
 
 🧪 Add data quality checks using tools like Great Expectations or dbt tests.
 
+---
+
 ## 📚 References
 DataTalksClub – Data Engineering Zoomcamp
 
 Ecobici Open Data
+
+---
 
 ## 👤 Author
 Your Name

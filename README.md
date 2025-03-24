@@ -61,3 +61,42 @@ kestra start
 
 # 3. Explore the data in BigQuery
 # 4. Open the dashboard in Looker Studio
+```
+
+## 📊 Dashboard
+
+🔗 View in Looker Studio
+
+## Project Structure
+
+
+ecobici-data-pipeline/
+├── terraform/           # Infrastructure as Code for GCP resources
+├── kestra/              # Kestra workflow definitions
+├── dbt/                 # dbt models and project files
+├── dashboard/           # Dashboard screenshots or link
+├── img/                 # Diagrams, banners, visuals
+├── README.md
+└── ...
+
+## 🐳 Optional: Run in Docker
+
+To facilitate reproducibility, you can optionally run the pipeline inside a pre-configured container:
+
+``` bash
+Copiar
+Editar
+cd docker/
+docker build -t ecobici-pipeline .
+docker run --rm -v $(pwd):/app ecobici-pipeline
+```
+This image includes Terraform, dbt and Kestra CLI, allowing full pipeline execution from a single container.
+
+## 📚 References
+DataTalksClub – Data Engineering Zoomcamp
+
+Ecobici Open Data
+
+## 👤 Author
+Your Name
+GitHub • LinkedIn

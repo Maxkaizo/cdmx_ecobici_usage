@@ -13,6 +13,19 @@
 This project showcases the development of a complete batch data pipeline using open data from Ecobici CDMX. The main goal is to demonstrate end-to-end capabilities in orchestration, ingestion, modeling, and data visualization in the cloud, rather than performing deep analytical insights on the dataset itself.
 
 ---
+# 🧭 About Ecobici
+Ecobici is Mexico City's public bike-sharing system, designed to provide a sustainable and accessible mobility alternative for urban residents. Since its launch in 2010, Ecobici has become one of the largest bike-sharing systems in Latin America, with hundreds of stations, thousands of bicycles, and millions of trips logged.
+
+To promote transparency and enable data-driven urban planning, Ecobici publishes monthly open datasets, which include detailed records of each trip: timestamps, origin and destination stations, user type, and duration.
+
+This dataset is particularly suited for data engineering projects due to:
+
+    - Its recurring and structured format, ideal for batch pipelines.
+    - Real-world complexity (e.g., missing data, varying formats).
+    - Public accessibility without the need for synthetic data.
+    - Its size, which is large enough to be meaningful, but manageable for cloud tools like BigQuery.
+
+---
 
 ## 🌐 Architecture Overview
 
@@ -69,7 +82,7 @@ kestra start
 
 ## Project Structure
 
-
+``` bash
 ecobici-data-pipeline/
 ├── terraform/           # Infrastructure as Code for GCP resources
 ├── kestra/              # Kestra workflow definitions
@@ -78,6 +91,7 @@ ecobici-data-pipeline/
 ├── img/                 # Diagrams, banners, visuals
 ├── README.md
 └── ...
+```
 
 ## 🐳 Optional: Run in Docker
 
@@ -91,6 +105,35 @@ docker build -t ecobici-pipeline .
 docker run --rm -v $(pwd):/app ecobici-pipeline
 ```
 This image includes Terraform, dbt and Kestra CLI, allowing full pipeline execution from a single container.
+
+---
+
+# 🧱 Unexpected Challenges
+During development, a few non-trivial issues surfaced that required extra attention:
+
+⚙️ Terraform + GCP permissions: Setting up service accounts and giving the right permissions to interact with BigQuery and GCS took some trial and error.
+
+🧪 Testing Kestra workflows locally: Debugging Kestra without a cloud-based deployment required extra care in logging and validation.
+
+📁 Handling historical data variations: Older Ecobici files had slight structural differences that required normalization steps before ingestion.
+
+🧼 Cleaning inconsistencies in CSVs, including missing values and timestamp anomalies, especially in early datasets.
+
+
+# 🛣️ Roadmap & Potential Improvements
+While the current version of the pipeline meets the project requirements and showcases key data engineering capabilities, several improvements could be explored in future iterations:
+
+🔁 Add streaming ingestion using tools like Pub/Sub or Kafka.
+
+📦 Containerize the entire solution and deploy to Kubernetes or Cloud Run.
+
+🔐 Implement service account roles and fine-grained IAM policies via Terraform.
+
+📅 Automate scheduling (e.g., monthly trigger via Cloud Scheduler or Kestra's native scheduling).
+
+📈 Enhance dashboard with richer visualizations and user segmentation.
+
+🧪 Add data quality checks using tools like Great Expectations or dbt tests.
 
 ## 📚 References
 DataTalksClub – Data Engineering Zoomcamp

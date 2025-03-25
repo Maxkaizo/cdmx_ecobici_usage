@@ -1,9 +1,14 @@
+plan de trabajo
+
+Hecho:
+
+- Estructura de readme
+- Estructura de repositorio
+- Script para obtener catálogo de urls
+- Provisionamiento de kestra local
+- Flow de orquestración:
+    - Descarga de catálogo
+    - Descarga de archivo csv
 
 
-
-###
-
-comando para ver los archivos disponibles en el portal
-
-curl -s https://ecobici.cdmx.gob.mx/datos-abiertos/ | grep -oP 'href="[^"]+\.csv"' | cut -d'"' -f2 | awk '{print "https://ecobici.cdmx.gob.mx" $0}'
-
+Por hacer:

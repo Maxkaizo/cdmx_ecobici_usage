@@ -1,0 +1,35 @@
+id: ecobici_01
+namespace: dataeng.zoomcamp
+description: This is a workflow that extract data from ecobici's portal and loads it to a bigquery db
+
+inputs:
+  - id: year
+    type: SELECT
+    displayName: Select year
+    values: ["2023", "2024", "2025"]
+    defaults: "2025"
+    allowCustomValue: true # allows you to type 2021 from the UI for the homework 🤗
+
+  - id: month
+    type: SELECT
+    displayName: Select month
+    values: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"]
+    defaults: "01"
+
+variables:
+  script_path: "src/get_files_catalog.py"
+  catalog_file: "opt/catalog.csv"
+  filename: "ecobici_{{inputs.year_month}}.csv"
+
+tasks:
+- id: get_catalog
+  type: io.kestra.plugin.scripts.python.Commands
+  namespaceFiles:
+    enabled: true
+  containerImage: python:3.10-slim
+  beforeCommands:
+    - pip install requests beautifulsoup4 pandas lxml
+  commands:
+    - python get_files_catalog.py
+  outputFiles:
+    - catalog.csv

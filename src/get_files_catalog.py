@@ -43,7 +43,7 @@ def get_csv_links():
         if '.csv' in a['href']:
             link = a['href']
             if not link.startswith('http'):
-                link = 'https://datos.cdmx.gob.mx' + link
+                link = 'https://ecobici.cdmx.gob.mx' + link
             links.append(link)
     return links
 
@@ -53,6 +53,7 @@ def build_dataframe(links):
         filename = url.split('/')[-1]
         year, month = extract_date(filename)
         if year and month:
+            month = str(month).zfill(2)
             rows.append({'year': year, 'month': month, 'url': url})
     return pd.DataFrame(rows)
 
@@ -65,6 +66,6 @@ if __name__ == "__main__":
     df_sorted = df.sort_values(['year', 'month'], ascending=False)
 
     # Save to CSV
-    output_path = "../opt/catalog.csv"
+    output_path = "catalog.csv"
     df_sorted.to_csv(output_path, index=False)
     print(f"Catalog saved to {output_path} with {len(df_sorted)} entries.")

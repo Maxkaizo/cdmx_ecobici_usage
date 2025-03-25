@@ -1,0 +1,9 @@
+
+
+
+###
+
+comando para ver los archivos disponibles en el portal
+
+curl -s https://ecobici.cdmx.gob.mx/datos-abiertos/ | grep -oP 'href="[^"]+\.csv"' | cut -d'"' -f2 | awk '{print "https://ecobici.cdmx.gob.mx" $0}'
+

@@ -1,0 +1,679 @@
+station_id,name,short_name,lat,lon,capacity,is_charging,has_kiosk
+1,CE-710 Molino del Rey - Glorieta de la Lealtad,710,19.416795,-99.192508,39,False,True
+5,CE-407  Prolongación Xochicalco-General Emiliano Zapata,407,19.36726591257277,-99.15865559132271,19,False,True
+6,CE-428  Prolongación Uxmal-Av. Popocatépetl (Eje 8),428,19.363404,-99.160395,27,False,True
+7,CE-427 Avenida México-Coyoacán-Av. Popocatépetl (Eje 8),427,19.364905637923787,-99.1629866883295,19,False,True
+8,CE-443 Bruno Traven-Golondrinas,443,19.359583,-99.162085,31,False,True
+9,CE-423 Moras-José María Rico (Eje 8),423,19.367816,-99.175269,23,False,True
+10,CE-438 Adolfo Prieto-José María Olloqui,438,19.36473,-99.174447,23,False,True
+11,CE-415 San Francisco-Parroquia,415,19.37099,-99.176135,27,False,True
+12,CE-417 Goya-Augusto Rodin,417,19.373198,-99.184274,27,False,True
+14,CE-022 Reforma - Manchester,022,19.424784,-99.172119,35,False,True
+15,CE-094 Lic. Verdad-Moneda,094,19.433766,-99.130918,23,False,True
+16,CE-405 División Del Norte-Municipio Libre,405,19.370565558464016,-99.15662247688942,27,False,True
+17,CE-375 Tenayuca-División Del Norte,375,19.376997,-99.158779,23,False,True
+18,CE-394 Dr. Roberto Gayol-Félix Cuevas,394,19.372474,-99.171639,35,False,True
+19,CE-337 San Borja-Martín Mendalde,337,19.384849,-99.16704,19,False,True
+20,CE-412 Parroquia-Avenida Universidad,412,19.368107,-99.164376,34,False,True
+21,CE-381 San Lorenzo-Manzanas,381,19.375543381100602,-99.17801052342838,23,False,True
+22,CE-332 Calle 27-Avenida 3,332,19.385494,-99.183744,23,False,True
+23,CE-399 Heriberto Frías-San Lorenzo,399,19.372469,-99.164538,35,False,True
+24,CE-377 Heriberto Frías-Miguel Laurent,377,19.375397,-99.163778,35,False,True
+25,CE-360 Heriberto Frías-Matias Romero,360,19.379435,-99.162794,23,False,True
+26,CE-362 Augusto Rodin-Alberto Balderas,362,19.382123281154726,-99.18109126394484,19,False,True
+27,CE-365 Holbein-Avenida Revolución,365,19.381123,-99.18667,21,False,True
+28,CE-424 Amores-José María Rico (Eje 8),424,19.367103332434564,-99.17058136315518,11,False,True
+29,CE-421 María Luz Bringas-Oso,421,19.36952,-99.179421,31,False,True
+30,CE-287 13 de Septiembre-Puente de la Morena,287,19.398946,-99.183254,19,False,True
+31,CE-288 11 de Abril-Avenida 2,288,19.396339843986805,-99.1835709661791,15,False,True
+32,CE-372 Dr. Roberto Gayol-Tlacoquemécatl,372,19.377966,-99.170272,19,False,True
+33,CE-434 Jose María Olloqui-Amores,434,19.363698614576656,-99.17118497195588,27,False,True
+34,CE-439 Amores-Avenida Coyoacán,439,19.362037,-99.172683,19,False,True
+35,CE-378 Miguel Laurent-Amores,378,19.375865,-99.168219,31,False,True
+36,CE-437 Moras-Comunal,437,19.364916,-99.175985,19,False,True
+37,CE-374 Pitágoras-Pilares,374,19.376959,-99.161099,31,False,True
+38,CE-384 Empresa-Poussin,384,19.375865,-99.185573,23,False,True
+39,CE-348 Indiana-Avenida San Antonio,348,19.3854574,-99.1782718,19,False,True
+40,CE-397 San Lorenzo-Gabriel Mancera,397,19.37313576931919,-99.16706666355822,31,False,True
+41,CE-353 Carolina-Holbein,353,19.3823345657493,-99.17888358246273,23,False,True
+42,CE-387 Cadiz-Empresa,387,19.374267,-99.180546,19,False,True
+43,CE-367 Boston -Augusto Rodin,367,19.379593,-99.181351,19,False,True
+44,CE-390-391 Oso-Félix Cuevas,390-391,19.373161,-99.178243,47,False,True
+45,CE-303 Montecito-Av. Insurgentes,303,19.394861698080163,-99.17300574486944,26,False,True
+46,CE-370 Tlacoquemécatl-Av. Insurgentes,370,19.378827,-99.176944,31,False,True
+47,CE-354 Boston-Av. Insurgentes,354,19.381714,-99.176664,23,False,True
+48,CE-333 Georgia-Carolina,333,19.387624,-99.180978,23,False,True
+49,CE-445-446 Riff-Avenida Río Churubusco,445-446,19.35857050753971,-99.15610156956063,59,False,True
+50,CE-429 Pirineos-Av. Popocatépetl (Eje 8),429,19.363060918104924,-99.15833439679318,19,False,True
+51,CE-414 Parroquia-José Ignacio Bartolache,414,19.370213835587535,-99.17385498530166,27,False,True
+52,CE-432 Carrillo Puerto-Avenida México-Coyoacan,432,19.361245,-99.16239,35,False,True
+53,CE-358 Nicolás San Juan-Matias Romero,358,19.380087,-99.16427,23,False,True
+55,CE-409 Azores - División Del Norte,409,19.3650233,-99.1554899,23,False,True
+56,CE-413 Parroquia-Avenida Coyoacán,413,19.369823,-99.172164,35,False,True
+57,CE-345 Patricio Sanz - Miraflores,345,19.384447,-99.172039,23,False,True
+58,CE-419 Actipan-Cadiz,419,19.370615,-99.181606,30,False,True
+59,CE-307 Minnesota-Dakota,307,19.393711808925048,-99.17581468826029,27,False,True
+60,CE-361 Porfirio Díaz-Capulín,361,19.380691,-99.175036,27,False,True
+61,CE-393 Adolfo Prieto-Félix Cuevas,393,19.373307,-99.172471,35,False,True
+62,CE-306 Dakota-Minnesota,306,19.393699,-99.175664,35,False,True
+63,CE-349 Augusto Rodin-Avenida San Antonio,349,19.385632,-99.180848,19,False,True
+64,CE-284 Dakota-Vermont,284,19.397693,-99.172981,31,False,True
+65,CE-308 Nueva York-Arizona,308,19.393643,-99.178156,31,False,True
+66,CE-312 Avenida 2-Calle 7,312,19.39270929935713,-99.18373167525715,27,False,True
+67,CE-325 Providencia -Avenida Del Valle,325,19.38817793281278,-99.16966706519814,23,False,True
+68,CE-327 Georgia -Pensilvania,327,19.38885,-99.17772,23,False,True
+69,CE-335 Magdalena-Ameyalco,335,19.386989,-99.173438,35,False,True
+70,CE-324 Amores-Avenida Eugenia,324,19.387483,-99.165409,19,False,True
+71,CE-059 Popocatépetl - Ámsterdam,059,19.4152434,-99.1667561,35,False,True
+72,CE-072 Mazatlán - Alfonso Reyes,072,19.409859,-99.179565,31,False,True
+73,CE-067 Vicente Suárez - Michoacán,067,19.411813726946605,-99.17595729242748,23,False,True
+74,CE-343 Enrique Rébsamen-División Del Norte,343,19.384079,-99.160915,15,False,True
+75,CE-330 Calle 15-Avenida Patriotismo,330,19.389358,-99.182606,19,False,True
+76,CE-315 Alabama-Montana,315,19.391444264426035,-99.17368702595921,27,False,True
+77,CE-341 San Borja-Avenida Cuauhtémoc,341,19.382889,-99.158352,31,False,True
+78,CE-300 Providencia -Luz Saviñón,300,19.393228574754442,-99.16839435702059,23,False,True
+79,CE-074 Nuevo León - Ozulama,074,19.410468,-99.172802,35,False,True
+80,CE-042 Sinaloa - Valladolid,042,19.420627,-99.16821,23,False,True
+81,CE-076 Chilpancingo - Campeche,076,19.4086886,-99.169938,19,False,True
+82,CE-064 Sonora - Ámsterdam,064,19.412967269545486,-99.16692517703268,27,False,True
+83,CE-056 Alvaro Obregón - Medellin,056,19.417102,-99.165607,35,False,True
+84,CE-071 Amsterdam - Michoacan,071,19.411361,-99.171271,35,False,True
+85,CE-083 Alfonso Reyes - Nuevo León,083,19.40655,-99.172275,15,False,True
+86,CE-081 Aguascalientes - Insurgentes,081,19.407927,-99.168734,27,False,True
+87,CE-079 Saltillo - Alfonso Reyes,079,19.407548521979454,-99.17434785516434,31,False,True
+88,CE-128 Orizaba-Río de Janeiro,128,19.422148,-99.160645,23,False,True
+89,CE-049 Mazatlán - Juan de la Barrera,049,19.41689,-99.17562,39,False,True
+90,CE-066 Mazatlán - Francisco Márquez,066,19.411825,-99.178456,27,False,True
+91,CE-040 Oaxaca - Puebla,040,19.42235098990008,-99.16417356581859,23,False,True
+92,CE-053 Fernando Montes de Oca - Tula,053,19.4148233,-99.1783527,15,False,True
+93,CE-046 Durango - Salamanca,046,19.41910678068996,-99.16973479097578,39,False,True
+94,CE-447 Agustín Melgar-Zamora,447,19.418879,-99.176854,27,False,True
+95,CE-060 Mazatlán - Fernando Montes de Oca,060,19.414099314684794,-99.17715847497675,39,False,True
+96,CE-302 Luz Saviñón-Magdalena,302,19.393914210245562,-99.1716746986458,39,False,True
+97,CE-070 Parque México - Michoacán,070,19.41128,-99.169825,45,False,True
+98,CE-125 Morelia-Circular de Morelia,125,19.424197,-99.156127,35,False,True
+99,CE-100 20 de Noviembre-Mesones,100,19.428485,-99.1338,23,False,True
+100,CE-105 San Jerónimo-5 de Febrero,105,19.426755,-99.135014,23,False,True
+101,CE-102 Echeveste-Bolivar,102,19.428214,-99.139494,15,False,True
+102,CE-097 República de Salvador-Pino Suárez,097,19.429189,-99.132759,27,False,True
+103,CE-099 Ernesto Pugibet-Luis Moya,099,19.429947,-99.14591,27,False,True
+104,CE-107-108 Tolsa-Balderas,107-108,19.427305,-99.149533,59,False,True
+105,CE-122 José María Vértiz-Av. Dr. Río de la Loza,122,19.425502,-99.146337,31,False,True
+106,CE-029 Reforma - Bucareli,029,19.434944,-99.150295,35,False,True
+107,CE-110 Dr. Valenzuela-Dr. Río de la loza,110,19.425126,-99.143391,35,False,True
+108,CE-093 Palma Norte-República de Cuba,093,19.436741,-99.134811,35,False,True
+109,CE-091 Republica de Cuba-Allende,091,19.4374,-99.137571,19,False,True
+110,CE-112 Av. Morelos-Abraham González,112,19.432819,-99.151734,23,False,True
+111,CE-065 Marconi - Tacuba,065,19.436522,-99.139811,19,False,True
+112,CE-088 2a Cerrada de 5 de Mayo - Palma,088,19.433757,-99.135331,15,False,True
+113,CE-003 Reforma - Insurgentes,003,19.43163,-99.158547,31,False,True
+114,CE-109 Nezahualcóyotl-Isabel la Católica,109,19.425311,-99.137421,31,False,True
+115,CE-113 General Prim-Versalles,113,19.430369,-99.154419,15,False,True
+116,CE-123 Claudio Bernard-Dr. Lavista,123,19.424161,-99.153117,27,False,True
+117,CE-259 Tómas Alva Edison-Ponciano Arriaga,259,19.437569,-99.15468,27,False,True
+118,CE-260 Av. Juárez-Balderas,260,19.43531137040153,-99.14778560405466,21,False,True
+119,CE-016 Reforma - Río Tiber,016,19.4267528,-99.16861944,31,False,True
+120,CE-025 Reforma - Estocolmo,025,19.427338,-99.16672,27,False,True
+121,CE-116 Londres-Roma,116,19.428985,-99.15664,23,False,True
+122,CE-019 Reforma - Río Rhin,019,19.429453,-99.16283,31,False,True
+123,CE-005 Río Pánuco Río Tiber,005,19.429804,-99.169451,23,False,True
+124,CE-261 Paseo de la Reforma-Río de la Plata,261,19.42491,-99.172455,43,False,True
+125,CE-263 Sadi Carnot - Gómez Farias,263,19.436274,-99.158425,29,False,True
+126,CE-111 Guillermo Prieto - Joaquín Velázquez de León,111,19.438197,-99.165918,27,False,True
+127,CE-265 Mina - Jesús García,265,19.440839,-99.152265,33,False,True
+128,CE-264-275 Héroes Ferrocarrileros - Jesús Garcia,264-275,19.440985,-99.152935,71,False,True
+129,CE-255 José Rosas Moreno-Guillermo Prieto,255,19.437118,-99.161862,35,False,True
+130,CE-268-269 Luis Donaldo Colosio - Av. Jesús García,268-269,19.442467,-99.151658,69,False,True
+131,CE-007 Río Elba - Río Lerma,007,19.425355,-99.17515,23,False,True
+132,CE-254 Alfonso Herrera-Miguel Shultz,254,19.439177,-99.159957,31,False,True
+133,CE-115 Roma-Dinamarca,115,19.429947,-99.159698,27,False,True
+134,CE-273-274 Luis Donaldo Colosio - Av. Jesús García,273-274,19.442707,-99.152956,70,False,True
+135,CE-035 Liverpool - Génova,035,19.424558,-99.163518,41,False,True
+136,CE-012 Río Lerma - Villalongín,012,19.432223,-99.161686,15,False,True
+137,CE-006 Río Pánuco - Río Sena,006,19.430963,-99.166986,15,False,True
+138,CE-132 Colima-Frontera,132,19.420667,-99.15645,23,False,True
+139,CE-144 Frontera-San Luis Potosí,144,19.415192,-99.154837,27,False,True
+140,CE-147 Coahuila-Orizaba,147,19.412182,-99.158443,27,False,True
+141,CE-271-272 Jesús García - Carlos J. Meneses,271-272,19.443684,-99.152465,74,False,True
+142,CE-002 Río Guadalquivir - Río Nazas,002,19.430495377066244,-99.17115971451493,23,False,True
+143,CE-137 Álvaro Obregón-Mérida,137,19.418774,-99.157081,27,False,True
+144,CE-139 Tonalá-Guanajuato,139,19.416128,-99.162097,23,False,True
+145,CE-190 Gobernador Ignacio Esteva-Maestro José Vasconcelos,190,19.409577,-99.183818,31,False,True
+146,CE-185 General Antonio Léon-General Pedro Antonio de los Santos,185,19.412776,-99.182805,29,False,True
+147,CE-228 Campos Elíseos-La Fontaine,228,19.427705,-99.19912,19,False,True
+148,CE-220 Plinio-Presidente Masaryk,220,19.432655,-99.205727,27,False,True
+149,CE-204 Temístocles-Homero,204,19.435882,-99.19152,27,False,True
+150,CE-199 Anatole France-Av. Ejército Nacional,199,19.437934,-99.197241,23,False,True
+151,CE-247 Herschel-Rousseau,247,19.432276,-99.18064,27,False,True
+152,CE-158-159 Huatabampo-Eje 1 Pte. Av. Cuauhtémoc,158-159,19.407517,-99.155373,74,False,True
+153,CE-207 Torquato Tasso-Homero,207,19.434861,-99.183322,23,False,True
+154,CE-222 Alejandro Dumas-Presidente Masarik,222,19.431417,-99.195774,27,False,True
+155,CE-216 Alejandro Dumas-Horacio,216,19.433419,-99.195746,27,False,True
+156,CE-212 Hegel-Horacio,212,19.433863944714325,-99.18809428821986,35,False,True
+157,CE-140 Mérida-Zacatecas,140,19.416596,-99.156879,19,False,True
+158,CE-229 Carlos Dickens-Séneca,229,19.430515,-99.203331,23,False,True
+159,CE-231 Isaac Newton-Aristóteles,231,19.429711892530808,-99.19357940565533,27,False,True
+160,CE-460 Juan Vázquez De Mella-Homero,460,19.43716476942747,-99.20793056498951,35,False,True
+161,CE-214 Platón-Horacio,214,19.434353,-99.20322,27,False,True
+162,CE-218 Hegel-Ibarbourou,218,19.432451,-99.188033,23,False,True
+163,CE-243 Lago Filt-Miguel de Cervantes Saavedra,243,19.441123,-99.195857,23,False,True
+164,CE-192-193 Rubén Darío.Reforma,192-193,19.425907,-99.190733,49,False,True
+165,CE-464 Mateo Alemán-Prolongación Moliere,464,19.442421,-99.199838,23,False,True
+166,CE-195 Reforma-Circuito Mahatma Gandhi,195,19.424858,-99.185181,31,False,True
+167,CE-120 Marsella-Nápoles,120,19.425437,-99.159458,15,False,True
+168,CE-143 Córdoba-San Luis Potosí,143,19.414303,-99.157542,23,False,True
+169,CE-150 Campeche-Medellín,150,19.409894,-99.164288,31,False,True
+170,CE-161 Quintana Roo-Manzanillo,161,19.405533,-99.164913,23,False,True
+171,CE-031 Hamburgo - Insurgentes,031,19.427922277979096,-99.16124593467885,37,False,True
+172,CE-280 Anaxágoras-Obrero Mundial,280,19.4015,-99.156406,39,False,True
+173,CE-032 Londres - Sevilla,032,19.42268552552878,-99.16998323054486,35,False,True
+174,CE-118 Liverpool-Dinamarca,118,19.427171,-99.158108,19,False,True
+175,CE-134 Álvaro Obregón-Orizaba,134,19.418293491655607,-99.15993556380272,31,False,True
+176,CE-033 Londres - Florencia,033,19.424187,-99.166497,17,False,True
+177,CE-165 Bajío-Eje 2 Pte. Monterrey,165,19.404268,-99.160503,23,False,True
+178,CE-179 Nuevo León-Quintana Roo,179,19.404435569698265,-99.17138099675866,27,False,True
+179,CE-293 Mier y Pesado-Eje 4 Sur Xola,293,19.397373,-99.164598,31,False,True
+180,CE-037 Guadalajara - Puebla,037,19.42041712015948,-99.17271204298231,35,False,True
+181,CE-156 Tepic-Ario,156,19.406959,-99.163021,19,False,True
+182,CE-285 12 de Octubre-Minería,285,19.399763,-99.177538,19,False,True
+183,CE-131 Colima-Jalapa,131,19.419579,-99.161314,19,False,True
+184,CE-030 Hamburgo - Amberes,030,19.426099760030304,-99.16493654251099,36,False,True
+185,CE-057 Cuernavaca - Juan Escutia,057,19.414968,-99.174766,11,False,True
+186,CE-058 Parque España - Juan de la Barrera,058,19.415358,-99.171902,27,False,True
+187,CE-175 Mutualismo-José Martí,175,19.400599004903363,-99.17245991533491,23,False,True
+188,CE-148 Coahuila-Av. Cuauhtémoc,148,19.412829,-99.155116,21,False,True
+189,CE-177 Benjamín Hill - Carlos Zetina,177,19.408841,-99.181692,19,False,True
+190,CE-166 Progreso-Cda. Antonio Maceo,166,19.406069,-99.183549,23,False,True
+191,CE-241 Ejército Nacional-Juan Vázquez de la Mella,241,19.43869310388943,-99.20757338410112,19,False,True
+192,CE-173 Minería-José Martí,173,19.401682,-99.176398,23,False,True
+193,CE-126 Jalapa-Puebla,126,19.422288,-99.162138,34,False,True
+194,CE-127 Puebla-Merida,127,19.423318,-99.15833,27,False,True
+195,CE-180 Quintana Roo-Villahermosa,180,19.404554,-99.169953,27,False,True
+196,CE-467 Lago Mayor-Lago Alberto,467,19.440399,-99.186784,27,False,True
+197,CE-167 General Salvador Alvarado-Progreso,167,19.404608864422567,-99.1794095188925,23,False,True
+198,CE-196 Lago Tanganica- Av. Ejército Nacional,196,19.438349,-99.192904,27,False,True
+199,CE-152 Tlacotalpan-Campeche,152,19.409098,-99.167181,35,False,True
+200,CE-200 Emerson-Av. Ejército Nacional,200,19.437596,-99.188785,27,False,True
+201,CE-461 Presa Don Martín-Boulevard Miguel De Cervantes Saavedra,461,19.440106,-99.210031,31,False,True
+202,CE-454 Montes Urales-Monte Pelvoux,454,19.425905,-99.204236,15,False,True
+203,CE-466 Lago Onega-Lago Ladoga,466,19.44269,-99.19083,27,False,True
+204,CE-213 Solón-Cicerón,213,19.434366028509015,-99.206306487431,27,False,True
+205,CE-157 Tepic-Tlacotalpan,157,19.406236,-99.166616,30,False,True
+206,CE-456 Alpes-Montes Escandinavos,456,19.427517,-99.208412,27,False,True
+207,CE-459 Volcán-Montes Urales,459,19.429323620268587,-99.2071587592636,31,False,True
+208,CE-457 Av. Prado Norte-Explanada,457,19.42703,-99.212845,17,False,True
+209,CE-283 Av. Coyoacán-Rafael Dondé,283,19.397923,-99.167248,19,False,True
+210,CE-294 Nicolás San Juan-Eje 4 Sur Xola,294,19.39644167553825,-99.16090227668974,21,False,True
+211,CE-278 Mier Y Pesado-Obrero Mundial,278,19.40071,-99.163831,19,False,True
+212,CE-282 La Morena-Eje 2 Poniente Gabriel Mancera,282,19.398719270170474,-99.16128046816084,19,False,True
+213,CE-320 Enrique Rébsamen-Luz Saviñón,320,19.391323,-99.15936,19,False,True
+214,CE-044 Durango - Veracruz,044,19.418141,-99.174709,27,False,True
+215,CE-114 Lucerna-Abraham González,114,19.428989,-99.153618,23,False,True
+216,CE-322 Heriberto Frías-Concepción Beistegui,322,19.388456876549792,-99.16064277296753,27,False,True
+217,CE-318 Luz Saviñón-Amores,318,19.392195,-99.163987,23,False,True
+218,CE-009 Río Guadalquivir - Río Lerma,009,19.428184,-99.170013,19,False,True
+219,CE-234 Tres Picos-Arquímides,234,19.42786220267939,-99.1914046928423,27,False,True
+220,CE-339 Enrique Rébsamen-Avenida Eugenia,339,19.386212,-99.160583,23,False,True
+221,CE-188 Gobernador Melchor Múzquiz-Gobernador Ignacio Esteva,188,19.411711,-99.190139,19,False,True
+222,CE-298 Romero de Terreros-Gabriel Mancera,298,19.394092,-99.162139,19,False,True
+223,CE-189 Gobernador Rafael Rebollar-Gobernador José Ceballos,189,19.410046050731914,-99.18795973067971,19,False,True
+224,CE-249 Shakespeare-Darwin,249,19.42988388240091,-99.1775936633894,15,False,True
+225,CE-043 Revillagigedo - Juárez,043,19.4351365,-99.1460756,31,False,True
+226,CE-469 Bahía de la Concepción-Bahía de Todos Los Santos,469,19.434183,-99.173089,27,False,True
+227,CE-472 Bahía de Santa Bárbara-Bahía de Ballenas,472,19.437667,-99.17711,23,False,True
+228,CE-048 Independencia - Azueta,048,19.433705,-99.146665,11,False,True
+229,CE-181 Benjamín Franklin - Ometusco,181,19.404825166337652,-99.17472235863897,27,False,True
+230,CE-246 Leibnitz-Thiers,246,19.434147,-99.179835,15,False,True
+231,CE-479 Lago Muritz-Av.Marina Nacional,479,19.444433,-99.179664,25,False,True
+232,CE-281 Pitágoras-La Morena,281,19.398532,-99.157308,31,False,True
+233,CE-480 Lago Iseo-Av. Marina Nacional,480,19.446073,-99.181654,19,False,True
+234,CE-041 Reforma - Av. de la República,041,19.43542,-99.150317,33,False,True
+235,CE-226 Wallon-Presidente Masaryk,226,19.431044265870334,-99.18220639234278,27,False,True
+236,CE-468 Lago Xochimilco-Av. Ejército Nacional,468,19.437250121513653,-99.1795731336424,33,False,True
+237,CE-256 Gómez Farías-Sadi Carnot,256,19.437128,-99.158363,23,False,True
+238,CE-119 Turín-Abraham González,119,19.4268522887659,-99.1556279361248,29,False,True
+239,CE-475 Lago Muritz-Lago Alberto,475,19.439249,-99.181065,23,False,True
+240,CE-010 Reforma - Ramírez,010,19.433431,-99.155142,27,False,True
+241,CE-450 Ramos Arizpe- Av México Tenochtitlan,450,19.43832573320297,-99.15223784747468,31,False,True
+242,CE-555 Ribera de San Cosme - Insurgentes Centro,555,19.44021597,-99.1561678,35,False,True
+243,CE-270 De la República-Ponciano Arriaga,270,19.436764,-99.153865,33,False,True
+244,CE-248 Shakespeare-Lafayette,248,19.43175,-99.177399,23,False,True
+245,CE-476 Lago Como-Laguna de Mayrán,476,19.442127,-99.184433,35,False,True
+246,CE-174 Joaquín Garcia Icazbalceta-Ignacio Manuel Altamirano,174,19.441133258345886,-99.16170336308824,31,False,True
+247,CE-237-238 Andrés Bello-George Eliot,237-238,19.426744,-99.193986,63,False,True
+249,CE-124 Claudio Bernard-Dr. Liceaga,124,19.422392,-99.150358,35,False,True
+250,CE-082 Independencia - Marroquí,082,19.433344,-99.14404,11,False,True
+251,CE-262 República de Cuba-República de Brasil,262,19.436931,-99.133952,31,False,True
+252,CE-235-236 Campos Elíseos-Moliere,235-236,19.429332,-99.202181,55,False,True
+253,CE-104 San Jerónimo-Isabel la Católica,104,19.427059,-99.137116,11,False,True
+254,CE-136 Álvaro Obregón-Tonalá,136,19.417715,-99.162729,23,False,True
+255,CE-183 Gabino Barreda-Guillermo Prieto,183,19.437665,-99.164018,35,False,True
+256,CE-095 20 de Noviembre-Venustiano Carranza,095,19.430682555945197,-99.1337009892004,19,False,True
+257,CE-036 Puebla - Veracruz,036,19.41966,-99.17588,31,False,True
+258,CE-063 Nuevo León - Laredo,063,19.413091238892452,-99.1716201604504,35,False,True
+259,CE-087 Gante - Venustiano Carranza,087,19.432024,-99.139705,25,False,True
+260,CE-020 Reforma- Río Támesis,020,19.43086152710901,-99.16025899353372,23,False,True
+261,CE-015 Reforma - Río Mississippi,015,19.425597,-99.171409,23,False,True
+262,CE-075 Alfonso Reyes - Atlixco,075,19.408740687234836,-99.17677424853537,33,False,True
+263,CE-017 Reforma - Río Tiber,017,19.427553,-99.167396,27,False,True
+264,CE-080 Nuevo León - Aguascalientes,080,19.407239898913133,-99.17207747708744,35,False,True
+265,CE-023 Reforma - Praga,023,19.42528,-99.171099,36,False,True
+266,CE-085 Rosas Moreno - Sullivan,085,19.434059327049166,-99.16243817658597,15,False,True
+267,CE-014 Reforma - Río de Plata,014,19.42454,-99.173247,39,False,True
+268,CE-135 Álvaro Obregón-Morelia,135,19.419250969141167,-99.15503863246612,38,False,True
+269,CE-089 República de Guatemala - Monte de Piedad,089,19.434962,-99.133729,11,False,True
+270,CE-133 Colima-Morelia,133,19.421138,-99.154725,35,False,True
+271,CE-141 Zacatecas-Luis Cabrera,141,19.415905,-99.15954,31,False,True
+272,CE-092 San Ildefonso-República de Argentina,092,19.436531,-99.131497,23,False,True
+273,CE-470 Bahía de Las Palmas-Bahía de Todos Los Santos,470,19.435039,-99.173879,23,False,True
+275,CE-239 Rincón del Bosque-Ruben Darío,239,19.430153,-99.181355,19,False,True
+276,CE-656 Ignacio Allende - Paris,656,19.3543111,-99.1624361,35,False,True
+277,CE-305 Avenida del Parque-Arizona,305,19.394693,-99.175531,31,False,True
+278,CE-121 Niza-Chapultepec,121,19.424178,-99.16115,15,False,True
+279,CE-027 Reforma- Havre,027,19.42916,-99.162703,43,False,True
+280,CE-252 Víctor Hugo-Shakespeare,252,19.427575,-99.17702,19,False,True
+281,CE-251 Goethe-Darwin,251,19.429261,-99.17538,15,False,True
+282,CE-117 Londres-Nápoles,117,19.427166592327957,-99.16029106826954,31,False,True
+283,CE-250 Darwin-Mariano Escobedo,250,19.428949,-99.179796,23,False,True
+284,CE-217 Euler-Horacio,217,19.432850919536445,-99.18354526173061,31,False,True
+285,CE-224 Hegel-Presidente Masaryk,224,19.431115,-99.188082,15,False,True
+286,CE-215 Edgar Alan Poe-Horacio,215,19.43384,-99.19968,23,False,True
+287,CE-202 Calderón de la Barca-Av. Homero,202,19.436064,-99.198898,19,False,True
+288,CE-240 Ejército Nacional-F.C. de Cuernavaca,240,19.438634297233477,-99.20629061763975,17,False,True
+289,CE-047 Plaza Madrid-Medellín,047,19.419506460644055,-99.16636526590081,29,False,True
+290,CE-258 Circuito Interior-Juan Escutia,258,19.4165298,-99.1790435,33,False,True
+291,CE-011 Río Amazonas - Río Lerma,011,19.431192,-99.163546,15,False,True
+292,CE-001 Río Sena-Río Balsas,001,19.43347819859695,-99.16778985412292,35,False,True
+293,CE-103 Joaquín Velázquez de León - García Icazbalceta,103,19.441533,-99.165268,31,False,True
+294,CE-013 Reforma - Río Mississippi,013,19.424941,-99.17233,28,False,True
+295,CE-018 Reforma - Río Rhin,018,19.428802,-99.164381,39,False,True
+296,CE-038 Cozumel - Puebla,038,19.420829444872908,-99.17142122989388,35,False,True
+297,CE-449 Acapulco-Puebla,449,19.420281,-99.174392,27,False,True
+298,CE-028 Toledo- Tokio,028,19.423664,-99.172568,35,False,True
+299,CE-034 Liverpool - Génova,034,19.42472751913646,-99.16334755721435,23,False,True
+300,CE-232 Taine - Rubén Darío,232,19.42894,-99.185389,31,False,True
+301,CE-227 Campos Elíseos-Periférico,227,19.431783492215445,-99.20738060028725,23,False,True
+302,CE-211 Isaac Newton-Horacio,211,19.43385,-99.188275,35,False,True
+303,CE-478 Laguna de Mayrán-Lago Chalco,478,19.440818,-99.176961,27,False,True
+304,CE-474 Bahía de San Hipólito-Bahía del Espíritu Santo,474,19.438984,-99.177549,31,False,True
+305,CE-176 Av. Jesús García-Luis Donaldo Colosio,176,19.442717,-99.152262,39,False,True
+306,CE-244 Lago Victoria-Miguel de Cervantes Saavedra,244,19.440508,-99.193681,23,False,True
+307,CE-219 Esopo-FC de Cuernavaca,219,19.433364,-99.207553,39,False,True
+309,CE-465 Lago Ginebra-Lago Wetter,465,19.445039,-99.194078,27,False,True
+311,CE-257 Manuel Maria Contreras-Villalongin,257,19.433803,-99.166223,19,False,True
+312,CE-455 Pedregal-Ferrocarril De Cuernavaca,455,19.426308,-99.2033,23,False,True
+313,CE-266-267 Jesús García - Carlos J. Meneses,266-267,19.444031,-99.152187,75,False,True
+314,CE-201 Lope de Vega-Av. Ejército Nacional,201,19.437496732030738,-99.18721206491682,19,False,True
+315,CE-208 Hesiodo-Lamartine,208,19.434182,-99.189835,25,False,True
+316,CE-221 Emilio Castelar-Presidente Masaryk,221,19.431799,-99.201565,25,False,True
+317,CE-210 Eugenio Sue-Horacio,210,19.434076,-99.194091,27,False,True
+318,CE-021 Reforma - Dublín,021,19.424809702659765,-99.1717654466629,25,False,True
+319,CE-206 Homero-Moliere,206,19.436142,-99.200996,23,False,True
+320,CE-086 Sullivan-Insurgentes,086,19.432452,-99.15924,17,False,True
+321,CE-233 Julio Verne-Luis G. Urbina,233,19.429314,-99.196965,15,False,True
+322,CE-451 Campos Elíseos-Goldsmith,451,19.428847,-99.201299,33,False,True
+323,CE-008 Reforma - General Prim,008,19.431256,-99.158153,17,False,True
+324,CE-223 Isaac Newton-Presidente Masaryk,223,19.431242,-99.191613,35,False,True
+325,CE-668 Plateros - Capuchinas,668,19.367522,-99.181727,33,False,True
+326,CE-242 Pról. Moliere-Miguel de Cervantes Saavedra,242,19.44002672090815,-99.20071095250022,31,False,True
+327,CE-050 Cuernavaca - Veracruz,050,19.41682441224743,-99.17378827934954,27,False,True
+328,CE-145 Yucatán-Chiapas,145,19.41286,-99.160661,27,False,True
+329,CE-142 San Luis Potosí-Eje 2 Pte. Monterrey,142,19.41325186264067,-99.16412428026888,31,False,True
+330,CE-155 Jalapa-Tlaxcala,155,19.408218,-99.159911,35,False,True
+331,CE-225 Petrarca-Presidente Masaryk,225,19.431172,-99.185612,21,False,True
+332,CE-553  Jaime Torres Bodet - Ribera de San Cosme,553,19.442,-99.1593333,35,False,True
+333,CE-051 Colima - Oaxaca,051,19.418031,-99.168435,27,False,True
+334,CE-170 Observatorio Oriente-Revolución,170,19.404029,-99.184342,23,False,True
+335,CE-452 Leibnitz-Av. Ejercito Nacional,452,19.435867,-99.179856,15,False,True
+336,CE-552 Fresno - Ribera de San Cosme,552,19.4431081,-99.1624537,23,False,True
+337,CE-130 Mérida-Durango,130,19.421576,-99.158015,23,False,True
+338,CE-062 Fernando Montes de Oca - Amatlan,062,19.41331637033966,-99.17530506854746,19,False,True
+339,CE-061 Avenida México - Sonora,061,19.413832444192096,-99.16939929138606,35,False,True
+340,CE-129 Tonalá-Durango,129,19.4206,-99.163312,23,False,True
+341,CE-068 Tamaulipas - Michoacán,068,19.41166825384696,-99.17382381861898,25,False,True
+342,CE-448 Dr. Andrade-Arcos De Belén,448,19.426611,-99.14447,31,False,True
+343,CE-253 Dante-Tolstoi,253,19.42644758104329,-99.17815290396902,19,False,True
+344,CE-487 Nopaltzin - Quetzalcoatl,487,19.441728,-99.167477,19,False,True
+345,CE-554 Heroes Ferrocarrileros - Mariano Azuela,554,19.4417473,-99.155639,27,False,True
+346,CE-151 Campeche-Tonalá,151,19.410529,-99.160873,27,False,True
+347,CE-550 Sor Juana Ines de la Cruz - Fresno,550,19.445947026056686,-99.16137836878987,23,False,True
+348,CE-551 Nogal - Ribera de San Cosme,551,19.4435806,-99.1648833,23,False,True
+349,CE-549 Sor Juana Ines de la Cruz - Dr. Atl,549,19.4450444,-99.1571333,27,False,True
+350,CE-162 Tehuantepec-Medellín,162,19.404907,-99.162485,27,False,True
+352,CE-024 Reforma- Varsovia,024,19.426614,-99.168078,19,False,True
+353,CE-026 Reforma - Versalles,026,19.432595,-99.154995,15,False,True
+354,CE-191 Gobernador Rafael Rebollar-Gobernador Vicente Eguía,191,19.40796,-99.187901,19,False,True
+355,CE-045 Durango - Sonora,045,19.418749,-99.171942,39,False,True
+356,CE-052 Hidalgo - Trujano,052,19.436208,-99.141931,19,False,True
+357,CE-286 13 de Septiembre-Avenida Patriotismo,286,19.399201,-99.179943,19,False,True
+358,CE-160 Alfonso Herrera-Gabino Barreda,160,19.440252,-99.163455,23,False,True
+359,CE-194 Circuito Mahatma Gandhi-Reforma,194,19.424282,-99.180334,35,False,True
+360,CE-659  Madrid - Avenida Mexico,659,19.3564861,-99.1694556,23,False,True
+361,CE-096 López-Ayuntamiento,096,19.430625,-99.14248,35,False,True
+362,CE-667 Hermes - Mosqueta,667,19.363955445342725,-99.1807891801136,23,False,True
+363,CE-084 Chilpancingo - Tlaxcala,084,19.406872,-99.169572,19,False,True
+364,CE-660 Josefa Ortiz de Dominguez - Circuito Interior,660,19.3580028,-99.1701056,27,False,True
+365,CE-168 Comercio-Progreso,168,19.403997,-99.1776,23,False,True
+366,CE-670 Felix Parra - Flamencos,670,19.3676,-99.1849917,23,False,True
+367,CE-154 Tuxpan-Tlaxcala,154,19.406683,-99.167962,35,False,True
+368,CE-658 Vicente Guerrero - Berlín,658,19.355339,-99.165613,19,False,True
+369,CE-657 Madrid - Centenario,657,19.3574361,-99.1637944,19,False,True
+370,CE-184 General Gómez Pedraza-Gobernador Tiburcio Montiel,184,19.414793,-99.185083,35,False,True
+371,CE-153 Manzanillo-Tlaxcala,153,19.407468,-99.165141,23,False,True
+372,CE-077 Choapan - Tamaulipas,077,19.406745,-99.178272,15,False,True
+373,CE-073 Campeche - Tamaulipas,073,19.410073,-99.175542,35,False,True
+374,CE-078 Benjamín Hill - Tamaulipas,078,19.407512,-99.177361,35,False,True
+375,CE-163 Toluca-Bajío,163,19.405246,-99.15643,35,False,True
+376,CE-054 Parque España - Sonora,054,19.416163,-99.170795,35,False,True
+377,CE-169 Prosperidad-Progreso,169,19.403019,-99.174934,23,False,True
+378,CE-430 Tripoli-Av. Popocatépetl (Eje 8),430,19.36205,-99.154976,23,False,True
+379,CE-171 Comercio-Jose Martí,171,19.40253247789727,-99.1782025248358,27,False,True
+380,CE-309 Pensilvania-Arizona,309,19.393059,-99.179483,31,False,True
+381,CE-182 Progreso-Astrónomos,182,19.402028398340054,-99.17129248386118,31,False,True
+382,CE-331 Avenida 2-Calle 17,331,19.388748,-99.183924,27,False,True
+383,CE-279 La Morena-Providencia,279,19.399908,-99.166553,31,False,True
+384,CE-187 General Cano-Gobernador Gregorio V. Gelati,187,19.411227,-99.185514,23,False,True
+385,CE-291 Magdalena-División Del Norte,291,19.397651,-99.169946,35,False,True
+386,CE-297 Diagonal San Antonio-Enrique Rébsamen,297,19.394412,-99.158907,27,False,True
+387,CE-310 Calle 1-Av. Patriotismo,310,19.395316464981526,-99.18172560637684,15,False,True
+388,CE-314 Nueva York-Louisiana,314,19.391647,-99.177331,19,False,True
+389,CE-351 Calle 27-Avenida Revolución,351,19.385751,-99.186297,15,False,True
+390,CE-319 Diagonal San Antonio-Luz Saviñón,319,19.391991,-99.162684,27,False,True
+391,CE-329 Calle 13-Avenida 1,329,19.390306,-99.184812,31,False,True
+392,CE-164 Bajío-Tlacotalpan,164,19.4032285,-99.1658539,27,False,True
+393,CE-295 Anaxágoras-Eje 4 Sur Xola,295,19.396189323455705,-99.15687739860005,35,False,True
+394,CE-336 San Borja-Cda. Dr. J. Bartolache,336,19.385531,-99.169673,23,False,True
+395,CE-296 Diagonal San Antonio-Enrique Rébsamen,296,19.394283,-99.158756,23,False,True
+396,CE-323 Concepción Beistegui-Gabriel Mancera,323,19.388986312246836,-99.1632449628014,27,False,True
+397,CE-340 Anaxágoras-Avenida Eugenia,340,19.385625037771153,-99.15819257503244,31,False,True
+398,CE-669 Los Juarez - Sagredo,669,19.37076863433144,-99.1873613745247,23,False,True
+399,CE-209 Solón-Horacio,209,19.435478,-99.206359,19,False,True
+400,CE-317 Avenida Coyoacán-Torres Adalid,317,19.391456,-99.166157,35,False,True
+401,CE-299 Romero de Terreros-Mier Y Pesado,299,19.394601,-99.165054,27,False,True
+402,CE-276 Anaxágoras-Obrero Mundial,276,19.401986,-99.156366,19,False,True
+403,CE-090 José María Pino Suárez - Corregidora,090,19.43144,-99.132513,27,False,True
+404,CE-304 Montecito-Dakota,304,19.395043,-99.173821,35,False,True
+405,CE-352 Tintoreto-Giorgione,352,19.384146,-99.185491,31,False,True
+406,CE-366 Porfirio Díaz-Augusto Rodin,366,19.378423,-99.181891,19,False,True
+407,CE-395 San Lorenzo-Martín Mendalde,395,19.373725,-99.169807,31,False,True
+408,CE-316 San Francisco-Concepción Beistegui,316,19.391056,-99.1712,27,False,True
+409,CE-292 Adolfo Prieto-Eje 4 Sur Xola,292,19.396917,-99.166264,31,False,True
+410,CE-380 Moras-San Lorenzo,380,19.374756,-99.173539,23,False,True
+411,CE-338 Nicolás San Juan-San Borja,338,19.384242,-99.16326,27,False,True
+412,CE-420 María Luz Bringas-Oso,420,19.36967233269665,-99.17958118026945,23,False,True
+413,CE-373 Pilares-Gabriel Mancera,373,19.377932,-99.166594,19,False,True
+414,CE-416 Recreo-Parroquia,416,19.371279,-99.177623,27,False,True
+415,CE-386 Poussin-Donatello,386,19.374912,-99.185807,39,False,True
+416,CE-347 Pensilvania-Maximino Avila Camacho,347,19.384474,-99.176084,19,False,True
+417,CE-342 Pitágoras-Av. División del Norte,342,19.38237,-99.1598779,31,False,True
+418,CE-328 Avenida 1-Calle 7,328,19.392721,-99.184727,15,False,True
+419,CE-369 Porfirio Díaz-Av. Insurgentes,369,19.379941,-99.177224,35,False,True
+420,CE-389 Santander-Félix Cuevas,389,19.373438,-99.179531,39,False,True
+421,CE-205 Taine-Homero,205,19.43552573443183,-99.18474711483212,19,False,True
+422,CE-396 Martin Mendalde-Felix Cuevas,396,19.37165,-99.17015,19,False,True
+423,CE-436 Rodríguez Saro-Búfalo,436,19.36623,-99.177904,30,False,True
+424,CE-334 Nueva York-Av. Insurgentes,334,19.386530826718293,-99.17510658508034,27,False,True
+425,CE-385 Poussin-Empresa,385,19.375650918831095,-99.18558642279095,35,False,True
+426,CE-422 Búfalo-José María Rico (Eje 8),422,19.368403,-99.177472,19,False,True
+427,CE-363 Holbein-Paulo Ucello,363,19.380839,-99.183932,23,False,True
+428,CE-355 California-Sacramento,355,19.38201131984727,-99.17328938847277,19,False,True
+429,CE-346 San Francisco-Santa Margarita,346,19.38496594717172,-99.17411729704327,26,False,True
+430,CE-290 Yosemite-Colorado,290,19.39638,-99.1727082,26,False,True
+431,CE-371 Tlacoquemécatl-Capulín,371,19.378546,-99.174297,23,False,True
+432,CE-401 San Lorenzo-Avenida Cuauhtémoc,401,19.372101,-99.161501,31,False,True
+433,CE-356 Matías Romero -Adolfo Prieto,356,19.381287,-99.1702,15,False,True
+434,CE-433 Jose María Olloqui-Lopéz Cotilla,433,19.363548,-99.170766,19,False,True
+435,CE-277 Prolongación Tonalá-Obrero Mundial,277,19.401807,-99.15909,31,False,True
+436,CE-172 General Francisco Murguía-José Martí,172,19.403507124790526,-99.18165966879315,19,False,True
+437,CE-404 Miguel Laurent-Avenida División Del Norte,404,19.373833,-99.157433,31,False,True
+438,CE-203 Tennyson-Av. Homero,203,19.435985,-99.194832,23,False,True
+439,CE-473 Bahía del Espíritu Santo-Bahía de Banderas,473,19.438143,-99.17519,35,False,True
+440,CE-462 Presa Falcón-Presa Danxhó,462,19.442338,-99.205198,23,False,True
+441,CE-477 Lago Iseo-Laguna de Mayrán,477,19.440905,-99.181743,23,False,True
+442,CE-471 Bahía de Chachalacas-Bahía de Santa Bárbara,471,19.436287,-99.174888,19,False,True
+443,CE-321 Torres Adalid-Anaxágoras,321,19.389477,-99.157513,27,False,True
+444,CE-444 General Manuel Rincón-Agustín Gutierrez,444,19.359475,-99.159437,19,False,True
+445,CE-441 Puente Xoco-Real de Mayorazgo,441,19.361213660076572,-99.16772089901315,31,False,True
+446,CE-055  5 De Mayo - Bolívar,055,19.434514,-99.138068,15,False,True
+447,CE-138 Guanajuato-Frontera,138,19.417702,-99.155313,27,False,True
+448,CE-359 Matías Romero -Pestalozzi,359,19.379331,-99.161163,31,False,True
+449,CE-398 Juan Sánchez Azcona-Félix Cuevas,398,19.37104,-99.165653,27,False,True
+450,CE-178 Tamaulipas-Francisco Murguía,178,19.406833,-99.180457,23,False,True
+451,CE-198 Sócrates-Ejército Nacional,198,19.438173973703993,-99.20383617292828,25,False,True
+452,CE-326 Eugenia-Nebraska,326,19.388978,-99.174811,35,False,True
+453,CE-622 Fernando Montes de Oca - Eje 6 Sur,622,19.378362,-99.144007,27,False,True
+454,CE-402 Uxmal-Municipio Libre,402,19.370934360592926,-99.15874142201119,27,False,True
+455,CE-039 Puebla - Medellín,039,19.421762,-99.166931,23,False,True
+456,CE-483 Colegio Salesiano - Marina Nacional,483,19.443092,-99.177612,23,False,True
+457,CE-313 Pensilvania-Oklahoma,313,19.391431,-99.178989,23,False,True
+458,CE-230 Edgar Allan Poe - Carlos Dickens,230,19.430098,-99.200074,15,False,True
+459,CE-485 Lago de Pátzcuaro - Marina Nacional,485,19.438506,-99.172696,23,False,True
+460,CE-392 Patricio Sanz-Félix Cuevas,392,19.373004,-99.174764,19,False,True
+461,CE-453 Pedregal-Teapa,453,19.424842,-99.203739,31,False,True
+462,CE-357 Matías Romero -Amores,357,19.380617,-99.167066,27,False,True
+463,CE-546 Salvador Díaz Mirón - Santa María la Ribera,546,19.448764,-99.156817,23,False,True
+464,CE-301 Luz Saviñón-Magdalena,301,19.393807,-99.171133,25,False,True
+465,CE-004 Río Nilo - Río Panuco,004,19.428491,-99.171693,19,False,True
+466,CE-496 Maestro Rural - José Parres,496,19.449039,-99.170246,35,False,True
+467,CE-146 Coahuila-Manzanillo,146,19.410699360989387,-99.16587710386011,23,False,True
+468,CE-149 Mérida-Antonio M. Anza,149,19.41199,-99.155699,31,False,True
+469,CE-495 Amado Nervo - de los Maestros,495,19.445528,-99.166934,39,False,True
+470,CE-537 Fresno - Clavel,537,19.457543649054422,-99.15946327155325,23,False,True
+471,CE-069 Michoacán - Ámsterdam,069,19.410797,-99.168143,17,False,True
+472,CE-245 Lago Onega-Av. Ejército Nacional,245,19.438347,-99.190503,21,False,True
+473,CE-425 Nicolas San Juan-Avenida Universidad,425,19.36704,-99.167387,35,False,True
+474,CE-481 Lago Garda - Mariano Escobedo,481,19.449367,-99.182461,19,False,True
+475,CE-502 Mar Mediterráneo - Callejón de la Zanja,502,19.453432,-99.174636,35,False,True
+476,CE-504 Mar Blanco - Calzada México Tacuba,504,19.455343,-99.179056,27,False,True
+477,CE-498 de los Maestros - Plan de Agua Prieta,498,19.453146248510524,-99.16645511990282,37,False,True
+478,CE-536 Fresno - Eulalia Guzmán (Eje 2 Norte),536,19.458881,-99.159215,23,False,True
+479,CE-497 Manuel Carpio - Plan de Ayala,497,19.452688,-99.170157,51,False,True
+480,CE-492 Lago Cuitzeo - Felipe Carrillo Puerto,492,19.449153,-99.173433,35,False,True
+481,CE-503 Nextitla - Mar Egeo,503,19.455571630398424,-99.17513005440924,19,False,True
+482,CE-506 Mar Mediterráneo - Mar Arábigo,506,19.459553,-99.185111,27,False,True
+483,CE-507 Mar Mediterráneo - Azcapotzalco,507,19.460292,-99.188303,31,False,True
+484,CE-499 de los Maestros - Calzada de los Gallos,499,19.455986,-99.165966,39,False,True
+485,CE-458 Montes Urales-Volcán,458,19.428679,-99.206605,19,False,True
+486,CE-541 Eligio Ancona - Naranjo,541,19.45272,-99.158014,27,False,True
+487,CE-482 Lago Xochimilco - Laguna de San Cristóbal,482,19.444826,-99.178393,23,False,True
+488,CE-545 Sabino - Salvador Díaz Mirón,545,19.449098384943877,-99.15995210414621,27,False,True
+489,CE-486 Izcoatl - Circuito Interior Melchor Ocampo,486,19.437334,-99.169573,23,False,True
+490,CE-098 Emilio Dondé-Av. Balderas,098,19.430267,-99.14861,31,False,True
+491,CE-491 Colegio Salesiano - Lago Catemaco,491,19.449405,-99.176635,23,False,True
+492,CE-672 José María Velasco - Damas,672,19.36295,-99.183161,31,False,True
+493,CE-543 Jaime Torres Bodet - Manuel Carpio,543,19.450506,-99.157375,27,False,True
+494,CE-540 Eucalipto - Ricardo Flores Magón,540,19.453965040246473,-99.15246807044241,23,False,True
+495,CE-703 Miguel Hidalgo - Calzada General Anaya,703,19.350776,-99.155379,23,False,True
+496,CE-673 Miguel Noreña - José María Ibarrarán,673,19.363153,-99.186963,35,False,True
+497,CE-700 Abasolo - Miguel Hidalgo,700,19.350062,-99.160024,35,False,True
+498,CE-704 Pacífico - Asia,704,19.344976,-99.157824,23,False,True
+499,CE-709 Inglaterra - Antigua Taxqueña,709,19.344236764049867,-99.15006525817262,23,False,True
+500,CE-706 Canadá - Acolotitla,706,19.347503,-99.15244,23,False,True
+501,CE-702 Fernández Leal - Plaza de la Conchita,702,19.347246,-99.15857,31,False,True
+502,CE-708 Irlanda-Canada,708,19.346419552561255,-99.14566911759721,27,False,True
+503,CE-643 Filipinas - Av. Pirineos,643,19.362323,-99.148805,39,False,True
+504,CE-597 Diagonal San Antonio - Icacos,597,19.398858,-99.151211,27,False,True
+505,CE-694 Ignacio Aldama - Centenario,694,19.353243,-99.163753,23,False,True
+506,CE-696 México - Malintzin,696,19.351576,-99.164567,39,False,True
+507,CE-626 San Borja - Petén,626,19.382115,-99.153988,27,False,True
+508,CE-615 Tajín - Universidad,615,19.38748,-99.153876,31,False,True
+509,CE-630 Cuicuilco - Motozintla,630,19.375677,-99.152953,31,False,True
+510,CE-701 Cuauhtémoc - Morelos,701,19.352052,-99.157981,23,False,True
+511,CE-617 Mitla - Eje 5 Sur,617,19.384589,-99.150517,31,False,True
+512,CE-692 Presidente Carranza - Francisco Sosa,692,19.349149,-99.169646,19,False,True
+513,CE-688 Panzacola - Miguel Ángel de Quevedo,688,19.346975,-99.178791,33,False,True
+514,CE-661 Madrid - Universidad,661,19.35675,-99.171769,27,False,True
+515,CE-618 Bartolomé R. Salido - Edzna,618,19.381824,-99.148086,31,False,True
+516,CE-602 Correspondencia - Eje Central Lázaro Cárdenas,602,19.392523,-99.146194,35,False,True
+517,CE-559 Fernando de Alva Ixtlilxochitl - Diagonal 20 de noviembre,559,19.420029,-99.140999,27,False,True
+518,CE-691 Melchor Ocampo - Dulce Olivia,691,19.347283,-99.170834,23,False,True
+519,CE-689 G. Pérez Valenzuela - Salvador Novo,689,19.351426,-99.175455,23,False,True
+520,CE-619 Kiff - Rafael Solana Verduguillo,619,19.381277,-99.145804,23,False,True
+521,CE-649 Héroes del 47 - Calzada de Tlalpan,649,19.35072,-99.146786,23,False,True
+522,CE-629 Tajín - Chichen Itzá,629,19.376367,-99.155872,19,False,True
+523,CE-562 Claudio Bernard - José María Vertiz,562,19.42037,-99.146818,23,False,True
+524,CE-609 Romero - Calzada de Tlalpan,609,19.384623,-99.139817,31,False,True
+525,CE-623 Fernando Montes de Oca - Antonio Rodríguez,623,19.375518,-99.144118,35,False,True
+526,CE-651 Héroes del 47 - División del Norte,651,19.351578,-99.150941,31,False,True
+527,CE-612 Torres Adalid - Cumbres de Maltrata,612,19.388148,-99.148446,31,False,True
+528,CE-577 Doctor Márquez - Doctor Jiménez,577,19.411609,-99.15314,31,False,True
+529,CE-624 Luis Spota - Eje Central Lázaro Cárdenas,624,19.377516,-99.148116,35,False,True
+530,CE-620 Fernando Montes de Oca - Priv. Lago,620,19.381804,-99.142997,23,False,True
+531,CE-592 Cádiz - Eje Central Lázaro Cárdenas,592,19.399664,-99.145136,27,False,True
+532,CE-637 Ajusco - Emperadores,637,19.36576,-99.144413,23,False,True
+533,CE-604 Andalucía - Carteros,604,19.390945,-99.142972,31,False,True
+534,CE-634 Rumania - Víctor Hugo,634,19.370133,-99.145866,27,False,True
+535,CE-568 Doctor Barragán - Doctor Erazo,568,19.418013,-99.144598,23,False,True
+536,CE-639 Bulgaria - Rumania,639,19.364528,-99.146988,23,False,True
+537,CE-573 Fernando Ramírez - Isabel la Católica,573,19.412853,-99.138723,27,False,True
+538,CE-494 Tláloc - Calzada México Tacuba,494,19.444053,-99.167429,22,False,True
+539,CE-563 Doctor Velasco - Niños Héroes,563,19.419444,-99.149776,23,False,True
+540,CE-560 Doctor Liceaga - Eje Central,560,19.421599,-99.143408,27,False,True
+541,CE-611 Miguel Negrete - Niños Héroes de Chapultepec,611,19.387506,-99.146338,23,False,True
+542,CE-567 Doctor Martínez del Río - Doctor José Terrés,567,19.417133,-99.145649,23,False,True
+543,CE-589 Cádiz - Calzada de Tlalpan,589,19.39859,-99.137732,23,False,True
+544,CE-564 Doctor Carmona y Valle - Doctor Velasco,564,19.419509,-99.153227,23,False,True
+545,CE-633 Canarias - Calzada Santa Cruz,633,19.372175,-99.146356,27,False,True
+546,CE-664 Hortensia - 2da cerrada de Minerva,664,19.355544,-99.178992,23,False,True
+547,CE-579 Doctor Márquez - Privada Doctor Duran,579,19.410884,-99.144975,27,False,True
+548,CE-652 Xicoténcatl - División del Norte,652,19.354876,-99.153611,23,False,True
+549,CE-663 Hortensia - Avenida Universidad,663,19.3548028,-99.1754194,23,False,True
+550,CE-603 Castilla - Eje 4 sur Xola,603,19.394422,-99.143291,27,False,True
+551,CE-548 Dr. Mariano Azuela - Jose Antonio Alzate,548,19.447028903088047,-99.15431119504319,39,False,True
+552,CE-463 Lago Andrómaco-Lago Zurich,463,19.443228,-99.202492,27,False,True
+553,CE-662 Manzano - Circuito Interior,662,19.362041,-99.175158,23,False,True
+554,CE-679 Olivo - Tecoyotitla,679,19.354886,-99.184642,31,False,True
+555,CE-571 Manuel M. Flores - Calzada San Antonio Abad,571,19.416221,-99.134909,35,False,True
+556,CE-578 Doctor Jiménez - Doctor Federico Gómez Santos,578,19.408649,-99.151126,27,False,True
+557,CE-666 Moras - Naranjo,666,19.3614885,-99.1774325,23,False,True
+558,CE-556 Plaza Tlaxcoaque - Diagonal 20 de noviembre,556,19.423056,-99.134941,33,False,True
+559,CE-678 Francia - Tecoyotitla,678,19.3588634,-99.1829297,27,False,True
+560,CE-645 Saratoga - Ajusco,645,19.358634,-99.152732,27,False,True
+561,CE-569 Gutiérrez Nájera - Bolívar,569,19.415713,-99.141227,19,False,True
+562,CE-686 Vito Alessio Robles - Universidad,686,19.352203,-99.178393,27,False,True
+563,CE-501 Plan de Guadalupe /Ferrocarril de Cuernavaca - Eligio Ancona,501,19.454257,-99.172593,27,False,True
+564,CE-697 Francisco Sosa - Tres Cruces,697,19.349277,-99.164921,35,False,True
+565,CE-530  Membrillo - Cda. Nueces,530,19.4645,-99.16948,27,False,True
+566,CE-584 Enrique Granados - José Peón Contreras (Eje 3),584,19.40697,-99.14383,31,False,True
+567,CE-580 Antonio Solís - Bolívar,580,19.409817,-99.141643,19,False,True
+568,CE-575 Fernando Ramírez - Eje Central,575,19.413235,-99.143476,31,False,True
+569,CE-590 Fernando - Isabel la Católica,590,19.399172,-99.140625,31,False,True
+570,CE-650 Xicoténcatl- Prolongación Xicoténcatl,650,19.355809,-99.149393,27,False,True
+571,CE-631 Miguel Laurent - Eje Central,631,19.372907,-99.149207,27,False,True
+572,CE-687 Francisco Sosa - Panzacola,687,19.349307,-99.179074,27,False,True
+573,CE-640 Odesa - Bulgaria,640,19.367465,-99.148786,23,False,True
+574,CE-628 Tenayuca - Chichen Itzá,628,19.378281,-99.15841,23,False,True
+575,CE-510 Egipto - Calle Norte 79 A,510,19.462152,-99.178291,23,False,True
+576,CE-635 Calzada Santa Cruz - Antillas,635,19.370586,-99.142294,39,False,True
+577,CE-655 Gomez Farias - Viena,655,19.357086311891955,-99.16019652040175,19,False,True
+578,CE-531 Norte 67 - Poniente 44,531,19.460356,-99.174283,35,False,True
+579,CE-684 Vito Alessio Robles - Tecoyotitla,684,19.351594,-99.184772,31,False,True
+580,CE-613 Luz Saviñón - Doctor José María Vertiz,613,19.390019,-99.15111,31,False,True
+581,CE-557 5 de Febrero - Fernando de Alva Ixtlilxochitl,557,19.41981,-99.135941,27,False,True
+582,CE-642 Repúblicas - Monrovia,642,19.364001,-99.150422,23,False,True
+583,CE-512 Clavería - Floresta,512,19.465638,-99.186178,27,False,True
+584,CE-665 Moras - Mango,665,19.3589028,-99.1779972,23,False,True
+585,CE-594 Xochicalco - Obrero Mundial,594,19.402277,-99.153294,31,False,True
+586,CE-514 José F. Gutiérrez - Invierno,514,19.470485,-99.188509,31,False,True
+587,CE-525 Boldo - Tila,525,19.4683001,-99.165619,23,False,True
+588,CE-527 Boldo - Alcanfores,527,19.464826,-99.163177,23,False,True
+589,CE-516 Texcoco - Nilo,516,19.46669,-99.180302,19,False,True
+590,CE-595 Yacatas - Diagonal de San Antonio,595,19.396983,-99.155114,27,False,True
+591,CE-517 Ignacio Allende - Clavería,517,19.465377,-99.179197,27,False,True
+592,CE-519 Poniente 58 - Cuitláhuac,519,19.464891,-99.177242,23,False,True
+593,CE-521 Yuca - Clavelinas,521,19.466423,-99.173061,31,False,True
+594,CE-518 Heliópolis - Norte 79A,518,19.468315,-99.177386,27,False,True
+595,CE-654 Londres - San Pedro,654,19.355942,-99.157461,23,False,True
+596,CE-653 Londres - División del Norte,653,19.356689,-99.153269,23,False,True
+597,CE-707 Irlanda - División del Norte,707,19.348076,-99.14906,27,False,True
+598,CE-542 Dr. Enrique González Martínez - Eligio Ancona,542,19.451838,-99.154584,23,False,True
+599,CE-636 Ajusco - Antillas,636,19.367131,-99.142838,23,False,True
+600,CE-561 Dr. Jiménez - Dr. Lavista,561,19.423673,-99.147957,27,False,True
+601,CE-585 José Toribio Medina - Manuel Navarrete,585,19.405358,-99.14316,27,False,True
+602,CE-600 Cumbres de Acultzingo - Av. Universidad,600,19.392463,-99.150544,31,False,True
+603,CE-599 La Morena - Zempoala,599,19.398143,-99.148333,27,False,True
+604,CE-638 Av Pirineos - C. Antillas,638,19.361743,-99.143867,19,False,True
+605,CE-591 Simón Bolívar - La Coruña,591,19.402088,-99.142976,27,False,True
+606,CE-500 Plan de Guadalupe /Ferrocarril de Cuernavaca - Juan Sarabia,500,19.456546,-99.169344,23,False,True
+607,CE-484 Laguna Mayran - Lago Cuitzeo,484,19.44046,-99.174564,15,False,True
+608,CE-601 Navarra - Fernando,601,19.395812,-99.145347,31,False,True
+609,CE-685 Av De la Paz - Insurgentes,685,19.347698842866482,-99.18690070520825,27,False,True
+610,CE-535 Av. Jardín - Orquídea,535,19.461773,-99.162241,19,False,True
+611,CE-544 Salvador Díaz Mirón - Nogal,544,19.449773,-99.163136,23,False,True
+612,CE-505 Mar Negro - Mariano Escobedo,505,19.455319,-99.181368,23,False,True
+613,CE-106 San Jerónimo-José María Pino Suarez,106,19.42649,-99.133537,23,False,True
+614,CE-695 Malintzin - Allende,695,19.352143,-99.162096,23,False,True
+615,CE-607 Unión Postal - Calzada de Tlalpan,607,19.39091,-99.138953,19,False,True
+616,CE-690 Tata Vasco - Av. Miguel Ángel de Quevedo,690,19.345966,-99.172975,23,False,True
+617,CE-648 Rafael Olivia - 20 de agosto,648,19.354411,-99.147795,25,False,True
+618,CE-693 Xicoténcatl - Vicente Guerrero,693,19.352531,-99.164913,31,False,True
+619,CE-644 Monrovia - Popocatépetl (Eje 8 Sur),644,19.361371,-99.150619,23,False,True
+620,CE-705 Europa - Miguel Ángel de Quevedo,705,19.344107,-99.155933,27,False,True
+621,CE-539 Naranjo - Av. Ricardo Flores Magon,539,19.4551042,-99.1576905,23,False,True
+622,CE-538 Nogal - Eligio Ancona,538,19.453778,-99.163128,23,False,True
+623,CE-588  Av. Fernando - La coruña,588,19.401175,-99.13748,31,False,True
+624,CE-558 Chimalpopoca - Simón Bolívar,558,19.4223,-99.139872,27,False,True
+625,CE-593 Zempoala - Diagonal de San Antonio,593,19.401018,-99.147952,31,False,True
+626,CE-699 San Gregorio - Felipe Carrillo Puerto,699,19.346895,-99.163868,23,False,True
+627,CE-490 Lago Garda - FFCC,490,19.448935,-99.179295,23,False,True
+628,CE-627 San Borja - Av. Universidad,627,19.382606,-99.156592,31,False,True
+629,CE-621 Lago Poniente - Calzada de Tlalpan,621,19.379458,-99.140943,26,False,True
+630,CE-605 5 de Febrero - Alfonso XIII,605,19.395084,-99.139519,27,False,True
+631,CE-674 Silvestre Revueltas - Macedonio Alcalá,674,19.361846,-99.186814,27,False,True
+632,CE-528 Tlatilco - Av. Jardín,528,19.464964,-99.160455,27,False,True
+633,CE-598 Palenque - Cumbres de Maltrata,598,19.3931,-99.152012,31,False,True
+634,CE-671 Plateros - Jose María Velasco,671,19.364577,-99.186288,36,False,True
+635,CE-583 Ángel del Campo - 5 de Febrero,583,19.408087,-99.137763,35,False,True
+636,CE-493 Lago Tláhuac - Laguna de Guzmán,493,19.445916,-99.170401,19,False,True
+637,CE-572 Manuel J. Othón - José T. Cuellar,572,19.414677,-99.136894,27,False,True
+638,CE-596 Cumbres de Maltrata - Uxmal,596,19.395205,-99.155049,27,False,True
+639,CE-186 Gob. Gregorio V. Gelati-Gral. Francisco Molinos del Campo,186,19.412438,-99.188493,15,False,True
+640,CE-442  Real de Mayorazgo - Avenida México - Coyoacán,442,19.359863,-99.165065,23,False,True
+641,CE-570 Alfredo Chavero - Simón Bolívar,570,19.417595,-99.140972,27,False,True
+642,CE-647 Antillas - Nevado,647,19.359256,-99.144433,23,False,True
+643,CE-608 Ahorro Postal - Francisco Márquez,608,19.3884304,-99.1397718,51,False,True
+644,CE-698 Cerrada Zamora - Av. Miguel Ángel de Quevedo,698,19.344873,-99.16357,15,False,True
+645,CE-610  Av. Víctor Hugo - Av. Niños Héroes de Chapultepec,610,19.387174,-99.143708,31,False,True
+646,CE-641 Sevilla - Av. Presidentes,641,19.368156,-99.151883,23,False,True
+647,CE-534 Tlatilco - Jazmín,534,19.4587727,-99.1644993,27,False,True
+648,CE-574 José María Roa Bárcenas - Simón Bolívar,574,19.411768,-99.140899,15,False,True
+649,CE-616 Petén - Eje 5 Sur,616,19.384965,-99.1535881,23,False,True
+650,CE-646  Rumania - Av. Popocatépetl,646,19.360545,-99.147501,27,False,True
+651,CE-489 Lago Chalco - Laguna Tamiahua,489,19.446383,-99.17598,27,False,True
+652,CE-614 Torres Adalid - Av. Cuauhtémoc,614,19.389293,-99.156348,27,False,True
+653,CE-632 Victor Hugo - Sevilla,632,19.370891,-99.151577,27,False,True
+654,CE-625 Zempoala - Angel Urraza,625,19.379442,-99.150064,19,False,True
+655,CE-581 José María Roa Bárcenas - San Antonio Abad,581,19.411398,-99.135655,27,False,True
+656,CE-513 Av. Aquiles Serdán - Av. Invierno,513,19.469578,-99.189828,39,False,True
+657,CE-197 Presa Falcón - Miguel De Cervantes Saavedra,197,19.440924618966452,-99.20504942541811,31,False,True
+658,CE-576 Doctor Arce - Jose Maria Vertiz,576,19.413464371675584,-99.14802946153031,27,False,True
+659,CE-520 Salónica - Eje 3 Norte Camarones,520,19.470699086375355,-99.17832344770432,33,False,True
+660,CE-606 Alfonso XIII - Aragón,606,19.394974,-99.138949,27,False,True
+662,CE-566 Dr. Jiménez - Dr. García Diego,566,19.416239,-99.149542,23,False,True
+663,CE-565 Dr. Martinez del Rio - Dr. Lucio,565,19.4176712000745,-99.15278613567352,23,False,True
+664,CE-587 Jose Toribio Medina - Marcelino Davalos,587,19.404668302672064,-99.13694635033607,27,False,True
+665,CE-586 Bernardo Couto-Juan E. Hernández y Davalos,586,19.40632606093993,-99.13877864484675,27,False,True
+666,CE-526 Toronjil - Mejorana,526,19.466952,-99.162928,19,False,True
+667,CE-547 Dr. Enrique González Martínez - Salvador Díaz Mirón,547,19.447481,-99.155443,31,False,True
+668,CE-488 Huetzin - Cuitláhuac,488,19.444812,-99.170307,31,False,True
+669,CE-683 Pedro Luis Ogazón-Insurgentes Sur,683,19.35038263626101,-99.18722301721573,27,False,True
+670,CE-582 Antonio Solis-San Antonio Abad,582,19.40948,-99.135894,19,False,True
+671,CE-522 Prol. Nueces - Av. Cuitlahuac,522,19.470597,-99.1700529,27,False,True
+672,CE-523 Toronjil - Av. Cuitlahuac,523,19.471112,-99.165294,19,False,True
+673,CE-508 Libertad-C. José Sánchez Trujillo,508,19.462364,-99.183671,19,False,True
+674,CE-515 Tebas-C. Salónica,515,19.469621805880028,-99.18408215045929,19,False,True
+678,CE-532  Av. Biólogo Maximino Martínez - Camarones,532,19.4608358,-99.1711512,23,False,True
+681,CE-509  Juárez - Venecia,509,19.459686,-99.1817781,23,False,True
+682,CE-533  Av Plan de San Luis - Eulalia Gúzman,533,19.4604943,-99.1672704,23,False,True
+683,CE-440  Martin Mendalde - M. López Cotilla,440,19.3617925,-99.1714707,27,False,True
+684,CE-676  Ricardo Palmerín - Abundio Martínez,676,19.3582358,-99.1881061,19,False,True
+685,CE-680  Diego Becerra - Av. Revolución,680,19.366701,-99.188228,27,False,True
+686,CE-675 Manuel Castro Padilla - Av. Revolución,675,19.3625257,-99.1889584,35,False,True
+694,CE-529  Av Plan de San Luis - Calle Clavelinas,529,19.465541,-99.166726,19,False,True
+695,CE-677  Juan Pablo II - Av. de los Insurgentes Sur,677,19.35904,-99.184498,35,False,True
+697,CE-511 Palestina - Egipto,511,19.463941,-99.18228,27,False,True
+698,CE-682 Manuel M. Ponce - Fernando M. Villalpando,682,19.353534,-99.189548,23,False,True
+699,CE-681 Guty Cárdenas - Ricardo Castro,681,19.355844,-99.189141,19,False,True
+700,CE-711 Molino del Rey - Av. Constituyentes,711,19.414108,-99.191983,39,False,True
+702,CE-524 Malvón - Juan Sarabia,524,19.468119,-99.167268,23,False,True
+711,MTL-LAB,MTL-LAB,0.0,0.0,0,False,True

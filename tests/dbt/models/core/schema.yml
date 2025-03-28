@@ -20,3 +20,6 @@ models:
         description: "Datetime when the ride ended"
       - name: ride_duration_minutes
         description: "Duration of the ride in minutes"
+      - name: ride_quality_flag
+        description: "Classification of each ride based on duration and datetime integrity"
+

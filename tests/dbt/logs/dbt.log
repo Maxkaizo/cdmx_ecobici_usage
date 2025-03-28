@@ -2929,3 +2929,2091 @@ left join `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_stations` s_to
 [0m13:36:35.032528 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f16d359c4c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f16a4be96d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f16ca905ee0>]}
 [0m13:36:35.033039 [debug] [MainThread]: Flushing usage events
 [0m13:36:35.461890 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:15:53.966180 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa64ac34400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa649dee640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa64aa541c0>]}
+
+
+============================== 15:15:53.972567 | 859b29af-406a-411e-b1e4-e8fd6585c98e ==============================
+[0m15:15:53.972567 [info ] [MainThread]: Running with dbt=1.9.3
+[0m15:15:53.973116 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/home/maxkaizo/cdmx_ecobici_usage/tests/dbt/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run --profiles-dir .dbt', 'send_anonymous_usage_stats': 'True'}
+[0m15:15:56.493937 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '859b29af-406a-411e-b1e4-e8fd6585c98e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa64c217280>]}
+[0m15:15:56.559647 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '859b29af-406a-411e-b1e4-e8fd6585c98e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa649dafe20>]}
+[0m15:15:56.560376 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m15:15:56.709663 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m15:15:56.858101 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 3 files added, 0 files changed.
+[0m15:15:56.858723 [debug] [MainThread]: Partial parsing: added file: ecobici_dbt://models/marts/schema.yml
+[0m15:15:56.859072 [debug] [MainThread]: Partial parsing: added file: ecobici_dbt://models/marts/top_origin_stations.sql
+[0m15:15:56.859431 [debug] [MainThread]: Partial parsing: added file: ecobici_dbt://models/marts/fct_rides_daily.sql
+[0m15:15:57.185247 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '859b29af-406a-411e-b1e4-e8fd6585c98e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa641f7eee0>]}
+[0m15:15:57.247670 [debug] [MainThread]: Wrote artifact WritableManifest to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/manifest.json
+[0m15:15:57.252746 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/semantic_manifest.json
+[0m15:15:57.273089 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '859b29af-406a-411e-b1e4-e8fd6585c98e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa641f68130>]}
+[0m15:15:57.273723 [info ] [MainThread]: Found 5 models, 2 sources, 491 macros
+[0m15:15:57.274097 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '859b29af-406a-411e-b1e4-e8fd6585c98e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa6446449a0>]}
+[0m15:15:57.275721 [info ] [MainThread]: 
+[0m15:15:57.276138 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:15:57.276857 [info ] [MainThread]: 
+[0m15:15:57.277469 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:15:57.281920 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataeng-448500'
+[0m15:15:57.282460 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:15:57.872784 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dataeng-448500, now list_dataeng-448500_dataeng_448500_ecobici_ds)
+[0m15:15:57.873409 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:15:58.349691 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '859b29af-406a-411e-b1e4-e8fd6585c98e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa6451f4280>]}
+[0m15:15:58.350208 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:15:58.363808 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.stg_rides_enriched
+[0m15:15:58.364672 [info ] [Thread-1  ]: 1 of 5 START sql view model dataeng_448500_ecobici_ds.stg_rides_enriched ....... [RUN]
+[0m15:15:58.365287 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_dataeng-448500_dataeng_448500_ecobici_ds, now model.ecobici_dbt.stg_rides_enriched)
+[0m15:15:58.365666 [debug] [Thread-1  ]: Began compiling node model.ecobici_dbt.stg_rides_enriched
+[0m15:15:58.372716 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecobici_dbt.stg_rides_enriched"
+[0m15:15:58.374288 [debug] [Thread-1  ]: Began executing node model.ecobici_dbt.stg_rides_enriched
+[0m15:15:58.398215 [debug] [Thread-1  ]: Writing runtime sql for node "model.ecobici_dbt.stg_rides_enriched"
+[0m15:15:58.398964 [debug] [Thread-1  ]: On model.ecobici_dbt.stg_rides_enriched: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "ecobici_profile", "target_name": "dev", "node_id": "model.ecobici_dbt.stg_rides_enriched"} */
+
+
+  create or replace view `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_rides_enriched`
+  OPTIONS()
+  as -- models/staging/stg_rides_enriched.sql
+-- Enriched version of raw ride data with typed fields, local datetime and ride duration
+
+select
+  -- Technical identifiers
+  ride_id,
+  source_file,
+  ingestion_ts,
+
+  -- Bike information
+  cast(bici as int64) as bike_id,
+
+  -- Origin station
+  trim(split(ltrim(ciclo_estacion_retiro, '0'), '-')[safe_offset(0)]) as origin_station_id,
+  fecha_retiro as origin_date,
+  hora_retiro as origin_time,
+  safe.parse_datetime('%d/%m/%Y %H:%M:%S', concat(fecha_retiro, ' ', hora_retiro)) as origin_datetime,
+
+  -- Destination station
+  trim(split(ltrim(ciclo_estacion_arribo, '0'), '-')[safe_offset(0)]) as destination_station_id,
+  fecha_arribo as destination_date,
+  hora_arribo as destination_time,
+  safe.parse_datetime('%d/%m/%Y %H:%M:%S', concat(fecha_arribo, ' ', hora_arribo)) as destination_datetime,
+
+  -- User info
+  cast(edad_usuario as int64) as user_age,
+  genero_usuario as user_gender,
+
+  -- Ride duration in minutes
+  datetime_diff(
+    safe.parse_datetime('%d/%m/%Y %H:%M:%S', concat(fecha_arribo, ' ', hora_arribo)),
+    safe.parse_datetime('%d/%m/%Y %H:%M:%S', concat(fecha_retiro, ' ', hora_retiro)),
+    minute
+  ) as ride_duration_minutes
+
+from `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_rides`
+where
+  fecha_retiro is not null
+  and hora_retiro is not null
+  and fecha_arribo is not null
+  and hora_arribo is not null;
+
+
+[0m15:15:58.399347 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:15:59.061443 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataeng-448500&j=bq:us-central1:b175d8ef-17fa-4273-93e0-9366b794f211&page=queryresults
+[0m15:15:59.580926 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '859b29af-406a-411e-b1e4-e8fd6585c98e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa63d5c0ee0>]}
+[0m15:15:59.581697 [info ] [Thread-1  ]: 1 of 5 OK created sql view model dataeng_448500_ecobici_ds.stg_rides_enriched .. [[32mCREATE VIEW (0 processed)[0m in 1.21s]
+[0m15:15:59.582259 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.stg_rides_enriched
+[0m15:15:59.582634 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.stg_stations
+[0m15:15:59.583164 [info ] [Thread-1  ]: 2 of 5 START sql view model dataeng_448500_ecobici_ds.stg_stations ............. [RUN]
+[0m15:15:59.583629 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.ecobici_dbt.stg_rides_enriched, now model.ecobici_dbt.stg_stations)
+[0m15:15:59.583954 [debug] [Thread-1  ]: Began compiling node model.ecobici_dbt.stg_stations
+[0m15:15:59.586511 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecobici_dbt.stg_stations"
+[0m15:15:59.587035 [debug] [Thread-1  ]: Began executing node model.ecobici_dbt.stg_stations
+[0m15:15:59.589943 [debug] [Thread-1  ]: Writing runtime sql for node "model.ecobici_dbt.stg_stations"
+[0m15:15:59.590592 [debug] [Thread-1  ]: On model.ecobici_dbt.stg_stations: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "ecobici_profile", "target_name": "dev", "node_id": "model.ecobici_dbt.stg_stations"} */
+
+
+  create or replace view `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_stations`
+  OPTIONS()
+  as -- models/staging/stg_stations.sql
+-- Staging model for the Ecobici station catalog
+
+select
+  cast(station_id as string) as station_id,
+  name,
+  short_name,
+  lat,
+  lon,
+  capacity,
+  is_charging,
+  has_kiosk,
+  ingestion_ts
+from `dataeng-448500`.`dataeng_448500_ecobici_ds`.`dim_stations`;
+
+
+[0m15:15:59.590953 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:16:00.375144 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataeng-448500&j=bq:us-central1:22032432-ede3-4831-9341-663b37aee1ab&page=queryresults
+[0m15:16:00.886498 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '859b29af-406a-411e-b1e4-e8fd6585c98e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa64adf2f40>]}
+[0m15:16:00.887229 [info ] [Thread-1  ]: 2 of 5 OK created sql view model dataeng_448500_ecobici_ds.stg_stations ........ [[32mCREATE VIEW (0 processed)[0m in 1.30s]
+[0m15:16:00.887844 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.stg_stations
+[0m15:16:00.888835 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.rides_with_stations
+[0m15:16:00.889456 [info ] [Thread-1  ]: 3 of 5 START sql table model dataeng_448500_ecobici_ds.rides_with_stations ..... [RUN]
+[0m15:16:00.890007 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.ecobici_dbt.stg_stations, now model.ecobici_dbt.rides_with_stations)
+[0m15:16:00.890311 [debug] [Thread-1  ]: Began compiling node model.ecobici_dbt.rides_with_stations
+[0m15:16:00.893334 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecobici_dbt.rides_with_stations"
+[0m15:16:00.893983 [debug] [Thread-1  ]: Began executing node model.ecobici_dbt.rides_with_stations
+[0m15:16:00.903460 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:16:01.377698 [debug] [Thread-1  ]: Writing runtime sql for node "model.ecobici_dbt.rides_with_stations"
+[0m15:16:01.378461 [debug] [Thread-1  ]: On model.ecobici_dbt.rides_with_stations: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "ecobici_profile", "target_name": "dev", "node_id": "model.ecobici_dbt.rides_with_stations"} */
+
+  
+    
+
+    create or replace table `dataeng-448500`.`dataeng_448500_ecobici_ds`.`rides_with_stations`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      -- models/core/rides_with_stations.sql
+-- Join enriched ride data with station catalog for origin and destination context
+
+select
+  r.ride_id,
+  r.source_file,
+  r.ingestion_ts,
+
+  r.bike_id,
+  r.user_age,
+  r.user_gender,
+  r.origin_datetime,
+  r.destination_datetime,
+  r.ride_duration_minutes,
+
+  -- Estación de origen
+  r.origin_station_id,
+  s_from.name as origin_station_name,
+  s_from.lat as origin_lat,
+  s_from.lon as origin_lon,
+
+  -- Estación de destino
+  r.destination_station_id,
+  s_to.name as destination_station_name,
+  s_to.lat as destination_lat,
+  s_to.lon as destination_lon
+
+from `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_rides_enriched` r
+left join `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_stations` s_from
+  on r.origin_station_id = s_from.station_id
+
+left join `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_stations` s_to
+  on r.destination_station_id = s_to.station_id
+    );
+  
+[0m15:16:02.084857 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataeng-448500&j=bq:us-central1:418eff66-cff3-45bf-8694-9cc54d499615&page=queryresults
+[0m15:16:08.097868 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '859b29af-406a-411e-b1e4-e8fd6585c98e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa645205400>]}
+[0m15:16:08.099080 [info ] [Thread-1  ]: 3 of 5 OK created sql table model dataeng_448500_ecobici_ds.rides_with_stations  [[32mCREATE TABLE (5.5m rows, 854.2 MiB processed)[0m in 7.21s]
+[0m15:16:08.100090 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.rides_with_stations
+[0m15:16:08.101816 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.fct_rides_daily
+[0m15:16:08.102503 [info ] [Thread-1  ]: 4 of 5 START sql view model dataeng_448500_ecobici_ds.fct_rides_daily .......... [RUN]
+[0m15:16:08.103163 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.ecobici_dbt.rides_with_stations, now model.ecobici_dbt.fct_rides_daily)
+[0m15:16:08.103619 [debug] [Thread-1  ]: Began compiling node model.ecobici_dbt.fct_rides_daily
+[0m15:16:08.107213 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecobici_dbt.fct_rides_daily"
+[0m15:16:08.109863 [debug] [Thread-1  ]: Began executing node model.ecobici_dbt.fct_rides_daily
+[0m15:16:08.115166 [debug] [Thread-1  ]: Writing runtime sql for node "model.ecobici_dbt.fct_rides_daily"
+[0m15:16:08.117448 [debug] [Thread-1  ]: On model.ecobici_dbt.fct_rides_daily: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "ecobici_profile", "target_name": "dev", "node_id": "model.ecobici_dbt.fct_rides_daily"} */
+
+
+  create or replace view `dataeng-448500`.`dataeng_448500_ecobici_ds`.`fct_rides_daily`
+  OPTIONS()
+  as -- models/marts/fct_rides_daily.sql
+-- Daily summary of Ecobici rides with basic metrics and long ride count
+
+select
+  date(origin_datetime) as ride_date,
+  count(*) as total_rides,
+  avg(ride_duration_minutes) as avg_duration_minutes,
+  count(distinct bike_id) as unique_bikes_used,
+  count(distinct origin_station_id) as unique_origin_stations,
+  count(distinct destination_station_id) as unique_destination_stations,
+  sum(case when ride_duration_minutes > 45 then 1 else 0 end) as rides_over_45_min
+from `dataeng-448500`.`dataeng_448500_ecobici_ds`.`rides_with_stations`
+where origin_datetime is not null
+group by 1
+order by 1;
+
+
+[0m15:16:08.118177 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:16:08.939338 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataeng-448500&j=bq:us-central1:dd4d30e3-4a14-45d1-8f1a-52ac45393d68&page=queryresults
+[0m15:16:09.405947 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '859b29af-406a-411e-b1e4-e8fd6585c98e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa6453a20a0>]}
+[0m15:16:09.407361 [info ] [Thread-1  ]: 4 of 5 OK created sql view model dataeng_448500_ecobici_ds.fct_rides_daily ..... [[32mCREATE VIEW (0 processed)[0m in 1.30s]
+[0m15:16:09.407934 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.fct_rides_daily
+[0m15:16:09.408345 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.top_origin_stations
+[0m15:16:09.408984 [info ] [Thread-1  ]: 5 of 5 START sql view model dataeng_448500_ecobici_ds.top_origin_stations ...... [RUN]
+[0m15:16:09.409501 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.ecobici_dbt.fct_rides_daily, now model.ecobici_dbt.top_origin_stations)
+[0m15:16:09.409850 [debug] [Thread-1  ]: Began compiling node model.ecobici_dbt.top_origin_stations
+[0m15:16:09.413062 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecobici_dbt.top_origin_stations"
+[0m15:16:09.414168 [debug] [Thread-1  ]: Began executing node model.ecobici_dbt.top_origin_stations
+[0m15:16:09.418543 [debug] [Thread-1  ]: Writing runtime sql for node "model.ecobici_dbt.top_origin_stations"
+[0m15:16:09.420018 [debug] [Thread-1  ]: On model.ecobici_dbt.top_origin_stations: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "ecobici_profile", "target_name": "dev", "node_id": "model.ecobici_dbt.top_origin_stations"} */
+
+
+  create or replace view `dataeng-448500`.`dataeng_448500_ecobici_ds`.`top_origin_stations`
+  OPTIONS()
+  as -- models/marts/top_origin_stations.sql
+-- Top 10 most frequent origin stations (with known names)
+
+select
+  origin_station_id,
+  origin_station_name,
+  count(*) as ride_count
+from `dataeng-448500`.`dataeng_448500_ecobici_ds`.`rides_with_stations`
+where origin_station_name is not null
+group by 1, 2
+order by ride_count desc
+limit 10;
+
+
+[0m15:16:09.420833 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:16:10.060077 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataeng-448500&j=bq:us-central1:db4919e7-beab-413f-9f51-ae589228caf4&page=queryresults
+[0m15:16:10.411454 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '859b29af-406a-411e-b1e4-e8fd6585c98e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa6453a20a0>]}
+[0m15:16:10.412533 [info ] [Thread-1  ]: 5 of 5 OK created sql view model dataeng_448500_ecobici_ds.top_origin_stations . [[32mCREATE VIEW (0 processed)[0m in 1.00s]
+[0m15:16:10.413253 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.top_origin_stations
+[0m15:16:10.415087 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:16:10.416688 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:16:10.417037 [debug] [MainThread]: Connection 'model.ecobici_dbt.top_origin_stations' was properly closed.
+[0m15:16:10.417380 [info ] [MainThread]: 
+[0m15:16:10.417714 [info ] [MainThread]: Finished running 1 table model, 4 view models in 0 hours 0 minutes and 13.14 seconds (13.14s).
+[0m15:16:10.418731 [debug] [MainThread]: Command end result
+[0m15:16:10.446082 [debug] [MainThread]: Wrote artifact WritableManifest to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/manifest.json
+[0m15:16:10.447938 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/semantic_manifest.json
+[0m15:16:10.452970 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/run_results.json
+[0m15:16:10.453313 [info ] [MainThread]: 
+[0m15:16:10.453681 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:16:10.453999 [info ] [MainThread]: 
+[0m15:16:10.454335 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+[0m15:16:10.454874 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 16.41557, "process_in_blocks": "277552", "process_kernel_time": 1.101251, "process_mem_max_rss": "261996", "process_out_blocks": "3232", "process_user_time": 4.364959}
+[0m15:16:10.455241 [debug] [MainThread]: Command `dbt run` succeeded at 15:16:10.455156 after 16.42 seconds
+[0m15:16:10.455679 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa64ac34400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa64c217280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa64adee6a0>]}
+[0m15:16:10.456052 [debug] [MainThread]: Flushing usage events
+[0m15:16:11.042761 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:16:54.278029 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98fe9c44c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98fe7e5280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98fdb2bb80>]}
+
+
+============================== 15:16:54.283765 | cd0e2224-842a-422d-a1f2-b616fe73056d ==============================
+[0m15:16:54.283765 [info ] [MainThread]: Running with dbt=1.9.3
+[0m15:16:54.284602 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/home/maxkaizo/cdmx_ecobici_usage/tests/dbt/logs', 'version_check': 'True', 'profiles_dir': '.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt docs generate --profiles-dir .dbt', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:16:56.248261 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cd0e2224-842a-422d-a1f2-b616fe73056d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98cfffb2e0>]}
+[0m15:16:56.306405 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cd0e2224-842a-422d-a1f2-b616fe73056d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98cffa0b80>]}
+[0m15:16:56.307227 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m15:16:56.462870 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m15:16:56.615476 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:16:56.615934 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:16:56.646660 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cd0e2224-842a-422d-a1f2-b616fe73056d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98f90a8130>]}
+[0m15:16:56.668117 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cd0e2224-842a-422d-a1f2-b616fe73056d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98f9050f40>]}
+[0m15:16:56.668638 [info ] [MainThread]: Found 5 models, 2 sources, 491 macros
+[0m15:16:56.668974 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cd0e2224-842a-422d-a1f2-b616fe73056d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98f9050f10>]}
+[0m15:16:56.670343 [info ] [MainThread]: 
+[0m15:16:56.670684 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:16:56.670972 [info ] [MainThread]: 
+[0m15:16:56.671464 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:16:56.675415 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataeng-448500_dataeng_448500_ecobici_ds'
+[0m15:16:56.675936 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:16:57.122789 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cd0e2224-842a-422d-a1f2-b616fe73056d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98fdb24670>]}
+[0m15:16:57.123300 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:16:57.128023 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.stg_rides_enriched
+[0m15:16:57.128429 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_dataeng-448500_dataeng_448500_ecobici_ds, now model.ecobici_dbt.stg_rides_enriched)
+[0m15:16:57.128787 [debug] [Thread-1  ]: Began compiling node model.ecobici_dbt.stg_rides_enriched
+[0m15:16:57.139148 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecobici_dbt.stg_rides_enriched"
+[0m15:16:57.140220 [debug] [Thread-1  ]: Began executing node model.ecobici_dbt.stg_rides_enriched
+[0m15:16:57.140797 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:16:57.143093 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.stg_rides_enriched
+[0m15:16:57.143469 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.stg_stations
+[0m15:16:57.143967 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.ecobici_dbt.stg_rides_enriched, now model.ecobici_dbt.stg_stations)
+[0m15:16:57.144267 [debug] [Thread-1  ]: Began compiling node model.ecobici_dbt.stg_stations
+[0m15:16:57.149936 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecobici_dbt.stg_stations"
+[0m15:16:57.151937 [debug] [Thread-1  ]: Began executing node model.ecobici_dbt.stg_stations
+[0m15:16:57.152433 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:16:57.154286 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.stg_stations
+[0m15:16:57.155358 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.rides_with_stations
+[0m15:16:57.155825 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.ecobici_dbt.stg_stations, now model.ecobici_dbt.rides_with_stations)
+[0m15:16:57.156677 [debug] [Thread-1  ]: Began compiling node model.ecobici_dbt.rides_with_stations
+[0m15:16:57.165831 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecobici_dbt.rides_with_stations"
+[0m15:16:57.166487 [debug] [Thread-1  ]: Began executing node model.ecobici_dbt.rides_with_stations
+[0m15:16:57.166828 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:16:57.168949 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.rides_with_stations
+[0m15:16:57.170197 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.fct_rides_daily
+[0m15:16:57.170821 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.ecobici_dbt.rides_with_stations, now model.ecobici_dbt.fct_rides_daily)
+[0m15:16:57.171181 [debug] [Thread-1  ]: Began compiling node model.ecobici_dbt.fct_rides_daily
+[0m15:16:57.177581 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecobici_dbt.fct_rides_daily"
+[0m15:16:57.178150 [debug] [Thread-1  ]: Began executing node model.ecobici_dbt.fct_rides_daily
+[0m15:16:57.178503 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:16:57.179913 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.fct_rides_daily
+[0m15:16:57.180269 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.top_origin_stations
+[0m15:16:57.180730 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.ecobici_dbt.fct_rides_daily, now model.ecobici_dbt.top_origin_stations)
+[0m15:16:57.181024 [debug] [Thread-1  ]: Began compiling node model.ecobici_dbt.top_origin_stations
+[0m15:16:57.188025 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecobici_dbt.top_origin_stations"
+[0m15:16:57.188848 [debug] [Thread-1  ]: Began executing node model.ecobici_dbt.top_origin_stations
+[0m15:16:57.189241 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:16:57.190758 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.top_origin_stations
+[0m15:16:57.191907 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:16:57.192355 [debug] [MainThread]: Connection 'model.ecobici_dbt.top_origin_stations' was properly closed.
+[0m15:16:57.193178 [debug] [MainThread]: Command end result
+[0m15:16:57.259394 [debug] [MainThread]: Wrote artifact WritableManifest to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/manifest.json
+[0m15:16:57.264156 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/semantic_manifest.json
+[0m15:16:57.269928 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/run_results.json
+[0m15:16:57.277729 [debug] [MainThread]: Acquiring new bigquery connection 'generate_catalog'
+[0m15:16:57.278179 [info ] [MainThread]: Building catalog
+[0m15:16:57.282804 [debug] [ThreadPool]: Acquiring new bigquery connection 'dataeng-448500.information_schema'
+[0m15:16:57.298333 [debug] [ThreadPool]: On dataeng-448500.information_schema: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "ecobici_profile", "target_name": "dev", "connection_name": "dataeng-448500.information_schema"} */
+
+    with
+                table_shards_stage as (
+    select
+        tables.project_id as table_catalog,
+        tables.dataset_id as table_schema,
+        coalesce(REGEXP_EXTRACT(tables.table_id, '^(.+)[0-9]{8}$'), tables.table_id) as table_name,
+        tables.table_id as shard_name,
+        REGEXP_EXTRACT(tables.table_id, '^.+([0-9]{8})$') as shard_index,
+        REGEXP_CONTAINS(tables.table_id, '^.+[0-9]{8}$') and tables.type = 1 as is_date_shard,
+        case
+            when materialized_views.table_name is not null then 'materialized view'
+            when tables.type = 1 then 'table'
+            when tables.type = 2 then 'view'
+            else 'external'
+        end as table_type,
+        tables.type = 1 as is_table,
+        JSON_VALUE(table_description.option_value) as table_comment,
+        tables.size_bytes,
+        tables.row_count
+    from `dataeng-448500`.`dataeng_448500_ecobici_ds`.__TABLES__ tables
+    left join `dataeng-448500`.`dataeng_448500_ecobici_ds`.INFORMATION_SCHEMA.MATERIALIZED_VIEWS materialized_views
+        on materialized_views.table_catalog = tables.project_id
+        and materialized_views.table_schema = tables.dataset_id
+        and materialized_views.table_name = tables.table_id
+    left join `dataeng-448500`.`dataeng_448500_ecobici_ds`.INFORMATION_SCHEMA.TABLE_OPTIONS table_description
+        on table_description.table_catalog = tables.project_id
+        and table_description.table_schema = tables.dataset_id
+        and table_description.table_name = tables.table_id
+        and table_description.option_name = 'description'
+),
+                table_shards as (
+                    select * from table_shards_stage
+                    where ((
+                                upper(table_schema) = upper('dataeng_448500_ecobici_ds')
+                            and upper(table_name) = upper('stg_stations')
+                            ) or (
+                                upper(table_schema) = upper('dataeng_448500_ecobici_ds')
+                            and upper(table_name) = upper('stg_rides')
+                            ) or (
+                                upper(table_schema) = upper('dataeng_448500_ecobici_ds')
+                            and upper(table_name) = upper('rides_with_stations')
+                            ) or (
+                                upper(table_schema) = upper('dataeng_448500_ecobici_ds')
+                            and upper(table_name) = upper('stg_rides_enriched')
+                            ) or (
+                                upper(table_schema) = upper('dataeng_448500_ecobici_ds')
+                            and upper(table_name) = upper('top_origin_stations')
+                            ) or (
+                                upper(table_schema) = upper('dataeng_448500_ecobici_ds')
+                            and upper(table_name) = upper('dim_stations')
+                            ) or (
+                                upper(table_schema) = upper('dataeng_448500_ecobici_ds')
+                            and upper(table_name) = upper('fct_rides_daily')
+                            ))
+                ),
+                tables as (
+    select distinct
+        table_catalog,
+        table_schema,
+        table_name,
+        is_date_shard,
+        table_type,
+        is_table,
+        table_comment
+    from table_shards
+),
+                table_stats as (
+    select
+        table_catalog,
+        table_schema,
+        table_name,
+        max(shard_name) as latest_shard_name,
+        min(shard_index) as shard_min,
+        max(shard_index) as shard_max,
+        count(shard_index) as shard_count,
+        sum(size_bytes) as size_bytes,
+        sum(row_count) as row_count
+    from table_shards
+    group by 1, 2, 3
+),
+
+                columns as (
+    select
+        columns.table_catalog,
+        columns.table_schema,
+        columns.table_name as shard_name,
+        coalesce(paths.field_path, '<unknown>') as column_name,
+        -- invent a row number to account for nested fields
+        -- BQ does not treat these nested properties as independent fields
+        row_number() over (
+            partition by
+                columns.table_catalog,
+                columns.table_schema,
+                columns.table_name
+            order by
+                columns.ordinal_position,
+                paths.field_path
+        ) as column_index,
+        coalesce(paths.data_type, '<unknown>') as column_type,
+        paths.description as column_comment,
+        case when columns.is_partitioning_column = 'YES' then 1 else 0 end as is_partitioning_column,
+        case when columns.is_partitioning_column = 'YES' then paths.field_path end as partition_column,
+        case when columns.clustering_ordinal_position is not null then 1 else 0 end as is_clustering_column,
+        case when columns.clustering_ordinal_position is not null then paths.field_path end as cluster_column,
+        columns.clustering_ordinal_position
+    from `dataeng-448500`.`dataeng_448500_ecobici_ds`.INFORMATION_SCHEMA.COLUMNS columns
+    join `dataeng-448500`.`dataeng_448500_ecobici_ds`.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS paths
+        on paths.table_catalog = columns.table_catalog
+        and paths.table_schema = columns.table_schema
+        and paths.table_name = columns.table_name
+        and paths.column_name = columns.column_name
+    where columns.ordinal_position is not null
+),
+                column_stats as (
+    select
+        table_catalog,
+        table_schema,
+        shard_name,
+        max(is_partitioning_column) = 1 as is_partitioned,
+        max(partition_column) as partition_column,
+        max(is_clustering_column) = 1 as is_clustered,
+        array_to_string(
+            array_agg(
+                cluster_column ignore nulls
+                order by clustering_ordinal_position
+            ), ', '
+        ) as clustering_columns
+    from columns
+    group by 1, 2, 3
+)
+
+            
+    select
+        tables.table_catalog as table_database,
+        tables.table_schema,
+        case
+            when tables.is_date_shard then concat(tables.table_name, '*')
+            else tables.table_name
+        end as table_name,
+        tables.table_type,
+        tables.table_comment,
+        -- coalesce column metadata fields to ensure they are non-null for catalog generation
+        -- external table columns are not present in COLUMN_FIELD_PATHS
+        coalesce(columns.column_name, '<unknown>') as column_name,
+        coalesce(columns.column_index, 1) as column_index,
+        coalesce(columns.column_type, '<unknown>') as column_type,
+        coalesce(columns.column_comment, '') as column_comment,
+
+        'Shard count' as `stats__date_shards__label`,
+        table_stats.shard_count as `stats__date_shards__value`,
+        'The number of date shards in this table' as `stats__date_shards__description`,
+        tables.is_date_shard as `stats__date_shards__include`,
+
+        'Shard (min)' as `stats__date_shard_min__label`,
+        table_stats.shard_min as `stats__date_shard_min__value`,
+        'The first date shard in this table' as `stats__date_shard_min__description`,
+        tables.is_date_shard as `stats__date_shard_min__include`,
+
+        'Shard (max)' as `stats__date_shard_max__label`,
+        table_stats.shard_max as `stats__date_shard_max__value`,
+        'The last date shard in this table' as `stats__date_shard_max__description`,
+        tables.is_date_shard as `stats__date_shard_max__include`,
+
+        '# Rows' as `stats__num_rows__label`,
+        table_stats.row_count as `stats__num_rows__value`,
+        'Approximate count of rows in this table' as `stats__num_rows__description`,
+        tables.is_table as `stats__num_rows__include`,
+
+        'Approximate Size' as `stats__num_bytes__label`,
+        table_stats.size_bytes as `stats__num_bytes__value`,
+        'Approximate size of table as reported by BigQuery' as `stats__num_bytes__description`,
+        tables.is_table as `stats__num_bytes__include`,
+
+        'Partitioned By' as `stats__partitioning_type__label`,
+        column_stats.partition_column as `stats__partitioning_type__value`,
+        'The partitioning column for this table' as `stats__partitioning_type__description`,
+        column_stats.is_partitioned as `stats__partitioning_type__include`,
+
+        'Clustered By' as `stats__clustering_fields__label`,
+        column_stats.clustering_columns as `stats__clustering_fields__value`,
+        'The clustering columns for this table' as `stats__clustering_fields__description`,
+        column_stats.is_clustered as `stats__clustering_fields__include`
+
+    from tables
+    join table_stats
+        on table_stats.table_catalog = tables.table_catalog
+        and table_stats.table_schema = tables.table_schema
+        and table_stats.table_name = tables.table_name
+    left join column_stats
+        on column_stats.table_catalog = tables.table_catalog
+        and column_stats.table_schema = tables.table_schema
+        and column_stats.shard_name = table_stats.latest_shard_name
+    left join columns
+        on columns.table_catalog = tables.table_catalog
+        and columns.table_schema = tables.table_schema
+        and columns.shard_name = table_stats.latest_shard_name
+
+  
+[0m15:16:57.299252 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:16:57.976469 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataeng-448500&j=bq:us-central1:bbf419a7-06a9-47f0-a05b-e8d3fd0b0a44&page=queryresults
+[0m15:16:59.549464 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:16:59.561605 [debug] [MainThread]: Wrote artifact CatalogArtifact to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/catalog.json
+[0m15:16:59.581732 [debug] [MainThread]: Wrote artifact WritableManifest to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/manifest.json
+[0m15:16:59.583459 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/semantic_manifest.json
+[0m15:16:59.583809 [info ] [MainThread]: Catalog written to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/catalog.json
+[0m15:16:59.584541 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 5.3692327, "process_in_blocks": "243400", "process_kernel_time": 0.545262, "process_mem_max_rss": "253584", "process_out_blocks": "5536", "process_user_time": 3.767264}
+[0m15:16:59.585079 [debug] [MainThread]: Command `dbt docs generate` succeeded at 15:16:59.584937 after 5.37 seconds
+[0m15:16:59.585441 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m15:16:59.585741 [debug] [MainThread]: Connection 'dataeng-448500.information_schema' was properly closed.
+[0m15:16:59.586133 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98fe9c44c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98cfffb2e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98f9065910>]}
+[0m15:16:59.586499 [debug] [MainThread]: Flushing usage events
+[0m15:16:59.976043 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:19:28.261763 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a86f78400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a8872f790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a8617c730>]}
+
+
+============================== 15:19:28.268397 | 386cc946-9a6a-4b83-bab5-15ab5ed312e3 ==============================
+[0m15:19:28.268397 [info ] [MainThread]: Running with dbt=1.9.3
+[0m15:19:28.269073 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/home/maxkaizo/cdmx_ecobici_usage/tests/dbt/logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt docs serve --profiles-dir .dbt --port 8090', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:19:30.590068 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '386cc946-9a6a-4b83-bab5-15ab5ed312e3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a5858c520>]}
+[0m15:19:30.658136 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '386cc946-9a6a-4b83-bab5-15ab5ed312e3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a585f0a30>]}
+[0m15:43:09.712598 [error] [MainThread]: Encountered an error:
+
+[0m15:43:09.774060 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/site-packages/dbt/cli/requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/site-packages/dbt/cli/requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/site-packages/dbt/cli/requires.py", line 235, in wrapper
+    return func(*args, **kwargs)
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/site-packages/dbt/cli/requires.py", line 264, in wrapper
+    return func(*args, **kwargs)
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/site-packages/dbt/cli/requires.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/site-packages/dbt/cli/main.py", line 301, in docs_serve
+    results = task.run()
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/site-packages/dbt/task/docs/serve.py", line 29, in run
+    httpd.serve_forever()
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/socketserver.py", line 232, in serve_forever
+    ready = selector.select(poll_interval)
+  File "/home/maxkaizo/miniconda3/envs/dataeng/lib/python3.9/selectors.py", line 416, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt
+
+[0m15:43:09.784473 [debug] [MainThread]: Resource report: {"command_name": "serve", "command_success": false, "command_wall_clock_time": 1410.4989, "process_in_blocks": "276792", "process_kernel_time": 0.978949, "process_mem_max_rss": "245856", "process_out_blocks": "3368", "process_user_time": 4.196985}
+[0m15:43:09.792658 [debug] [MainThread]: Command `dbt docs serve` failed at 15:43:09.790676 after 1410.51 seconds
+[0m15:43:09.803317 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a86f78400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a5845b4f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a583f0af0>]}
+[0m15:43:09.810139 [debug] [MainThread]: Flushing usage events
+[0m15:43:10.780190 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:43:20.634711 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0441fe1460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0441e01190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0441190dc0>]}
+
+
+============================== 15:43:20.644673 | 2eb8692c-e80d-48be-a960-5573066dd7ac ==============================
+[0m15:43:20.644673 [info ] [MainThread]: Running with dbt=1.9.3
+[0m15:43:20.647585 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '.dbt', 'log_path': '/home/maxkaizo/cdmx_ecobici_usage/tests/dbt/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --profiles-dir .dbt', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:43:23.541861 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2eb8692c-e80d-48be-a960-5573066dd7ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f04135b1700>]}
+[0m15:43:23.638990 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2eb8692c-e80d-48be-a960-5573066dd7ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0441e1ed90>]}
+[0m15:43:23.639877 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m15:43:23.852895 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m15:43:24.080371 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 3 files changed.
+[0m15:43:24.081379 [debug] [MainThread]: Partial parsing: updated file: ecobici_dbt://models/core/schema.yml
+[0m15:43:24.081838 [debug] [MainThread]: Partial parsing: updated file: ecobici_dbt://models/marts/fct_rides_daily.sql
+[0m15:43:24.082170 [debug] [MainThread]: Partial parsing: updated file: ecobici_dbt://models/core/rides_with_stations.sql
+[0m15:43:24.585250 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2eb8692c-e80d-48be-a960-5573066dd7ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0439385eb0>]}
+[0m15:43:24.673569 [debug] [MainThread]: Wrote artifact WritableManifest to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/manifest.json
+[0m15:43:24.680456 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/semantic_manifest.json
+[0m15:43:24.709625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2eb8692c-e80d-48be-a960-5573066dd7ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0439360340>]}
+[0m15:43:24.710388 [info ] [MainThread]: Found 5 models, 2 sources, 491 macros
+[0m15:43:24.710837 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2eb8692c-e80d-48be-a960-5573066dd7ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f04393a9970>]}
+[0m15:43:24.713242 [info ] [MainThread]: 
+[0m15:43:24.713911 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:43:24.714311 [info ] [MainThread]: 
+[0m15:43:24.715016 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:43:24.719898 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataeng-448500'
+[0m15:43:24.720556 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:43:25.420184 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dataeng-448500, now list_dataeng-448500_dataeng_448500_ecobici_ds)
+[0m15:43:25.420793 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:43:26.268387 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2eb8692c-e80d-48be-a960-5573066dd7ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0441141fa0>]}
+[0m15:43:26.269143 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:43:26.304390 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.stg_rides_enriched
+[0m15:43:26.305171 [info ] [Thread-1  ]: 1 of 5 START sql view model dataeng_448500_ecobici_ds.stg_rides_enriched ....... [RUN]
+[0m15:43:26.305871 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_dataeng-448500_dataeng_448500_ecobici_ds, now model.ecobici_dbt.stg_rides_enriched)
+[0m15:43:26.306347 [debug] [Thread-1  ]: Began compiling node model.ecobici_dbt.stg_rides_enriched
+[0m15:43:26.319021 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecobici_dbt.stg_rides_enriched"
+[0m15:43:26.320322 [debug] [Thread-1  ]: Began executing node model.ecobici_dbt.stg_rides_enriched
+[0m15:43:26.352348 [debug] [Thread-1  ]: Writing runtime sql for node "model.ecobici_dbt.stg_rides_enriched"
+[0m15:43:26.353496 [debug] [Thread-1  ]: On model.ecobici_dbt.stg_rides_enriched: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "ecobici_profile", "target_name": "dev", "node_id": "model.ecobici_dbt.stg_rides_enriched"} */
+
+
+  create or replace view `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_rides_enriched`
+  OPTIONS()
+  as -- models/staging/stg_rides_enriched.sql
+-- Enriched version of raw ride data with typed fields, local datetime and ride duration
+
+select
+  -- Technical identifiers
+  ride_id,
+  source_file,
+  ingestion_ts,
+
+  -- Bike information
+  cast(bici as int64) as bike_id,
+
+  -- Origin station
+  trim(split(ltrim(ciclo_estacion_retiro, '0'), '-')[safe_offset(0)]) as origin_station_id,
+  fecha_retiro as origin_date,
+  hora_retiro as origin_time,
+  safe.parse_datetime('%d/%m/%Y %H:%M:%S', concat(fecha_retiro, ' ', hora_retiro)) as origin_datetime,
+
+  -- Destination station
+  trim(split(ltrim(ciclo_estacion_arribo, '0'), '-')[safe_offset(0)]) as destination_station_id,
+  fecha_arribo as destination_date,
+  hora_arribo as destination_time,
+  safe.parse_datetime('%d/%m/%Y %H:%M:%S', concat(fecha_arribo, ' ', hora_arribo)) as destination_datetime,
+
+  -- User info
+  cast(edad_usuario as int64) as user_age,
+  genero_usuario as user_gender,
+
+  -- Ride duration in minutes
+  datetime_diff(
+    safe.parse_datetime('%d/%m/%Y %H:%M:%S', concat(fecha_arribo, ' ', hora_arribo)),
+    safe.parse_datetime('%d/%m/%Y %H:%M:%S', concat(fecha_retiro, ' ', hora_retiro)),
+    minute
+  ) as ride_duration_minutes
+
+from `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_rides`
+where
+  fecha_retiro is not null
+  and hora_retiro is not null
+  and fecha_arribo is not null
+  and hora_arribo is not null;
+
+
+[0m15:43:26.354126 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:43:27.514472 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataeng-448500&j=bq:us-central1:3d2a6b9b-ba24-458e-af55-7f3aac669f41&page=queryresults
+[0m15:43:28.184625 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2eb8692c-e80d-48be-a960-5573066dd7ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f044219fe20>]}
+[0m15:43:28.186804 [info ] [Thread-1  ]: 1 of 5 OK created sql view model dataeng_448500_ecobici_ds.stg_rides_enriched .. [[32mCREATE VIEW (0 processed)[0m in 1.88s]
+[0m15:43:28.188008 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.stg_rides_enriched
+[0m15:43:28.188797 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.stg_stations
+[0m15:43:28.189725 [info ] [Thread-1  ]: 2 of 5 START sql view model dataeng_448500_ecobici_ds.stg_stations ............. [RUN]
+[0m15:43:28.190605 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.ecobici_dbt.stg_rides_enriched, now model.ecobici_dbt.stg_stations)
+[0m15:43:28.191292 [debug] [Thread-1  ]: Began compiling node model.ecobici_dbt.stg_stations
+[0m15:43:28.196315 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecobici_dbt.stg_stations"
+[0m15:43:28.198505 [debug] [Thread-1  ]: Began executing node model.ecobici_dbt.stg_stations
+[0m15:43:28.204213 [debug] [Thread-1  ]: Writing runtime sql for node "model.ecobici_dbt.stg_stations"
+[0m15:43:28.205485 [debug] [Thread-1  ]: On model.ecobici_dbt.stg_stations: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "ecobici_profile", "target_name": "dev", "node_id": "model.ecobici_dbt.stg_stations"} */
+
+
+  create or replace view `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_stations`
+  OPTIONS()
+  as -- models/staging/stg_stations.sql
+-- Staging model for the Ecobici station catalog
+
+select
+  cast(station_id as string) as station_id,
+  name,
+  short_name,
+  lat,
+  lon,
+  capacity,
+  is_charging,
+  has_kiosk,
+  ingestion_ts
+from `dataeng-448500`.`dataeng_448500_ecobici_ds`.`dim_stations`;
+
+
+[0m15:43:28.206107 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:43:29.526521 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataeng-448500&j=bq:us-central1:6fcf3a51-8519-4fc1-bf37-bdd3de635055&page=queryresults
+[0m15:43:30.033724 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2eb8692c-e80d-48be-a960-5573066dd7ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f04349c6fa0>]}
+[0m15:43:30.035024 [info ] [Thread-1  ]: 2 of 5 OK created sql view model dataeng_448500_ecobici_ds.stg_stations ........ [[32mCREATE VIEW (0 processed)[0m in 1.84s]
+[0m15:43:30.038721 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.stg_stations
+[0m15:43:30.041932 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.rides_with_stations
+[0m15:43:30.042716 [info ] [Thread-1  ]: 3 of 5 START sql table model dataeng_448500_ecobici_ds.rides_with_stations ..... [RUN]
+[0m15:43:30.043583 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.ecobici_dbt.stg_stations, now model.ecobici_dbt.rides_with_stations)
+[0m15:43:30.044365 [debug] [Thread-1  ]: Began compiling node model.ecobici_dbt.rides_with_stations
+[0m15:43:30.054245 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecobici_dbt.rides_with_stations"
+[0m15:43:30.056552 [debug] [Thread-1  ]: Began executing node model.ecobici_dbt.rides_with_stations
+[0m15:43:30.076072 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:43:30.962798 [debug] [Thread-1  ]: Writing runtime sql for node "model.ecobici_dbt.rides_with_stations"
+[0m15:43:30.964625 [debug] [Thread-1  ]: On model.ecobici_dbt.rides_with_stations: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "ecobici_profile", "target_name": "dev", "node_id": "model.ecobici_dbt.rides_with_stations"} */
+
+  
+    
+
+    create or replace table `dataeng-448500`.`dataeng_448500_ecobici_ds`.`rides_with_stations`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      -- models/core/rides_with_stations.sql
+-- Join enriched ride data with station catalog for origin and destination context
+
+select
+  r.ride_id,
+  r.source_file,
+  r.ingestion_ts,
+
+  r.bike_id,
+  r.user_age,
+  r.user_gender,
+  r.origin_datetime,
+  r.destination_datetime,
+  r.ride_duration_minutes,
+
+  -- Estación de origen
+  r.origin_station_id,
+  s_from.name as origin_station_name,
+  s_from.lat as origin_lat,
+  s_from.lon as origin_lon,
+
+  -- Estación de destino
+  r.destination_station_id,
+  s_to.name as destination_station_name,
+  s_to.lat as destination_lat,
+  s_to.lon as destination_lon
+
+from `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_rides_enriched` r
+left join `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_stations` s_from
+  on r.origin_station_id = s_from.station_id
+
+left join `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_stations` s_to
+  on r.destination_station_id = s_to.station_id
+
+-- Flag de calidad del viaje
+case
+  when origin_datetime is null or destination_datetime is null then 'missing_datetime'
+  when ride_duration_minutes is null or ride_duration_minutes <= 0 then 'invalid_duration'
+  when ride_duration_minutes > 240 then 'too_long'
+  else 'valid'
+end as ride_quality_flag
+    );
+  
+[0m15:43:31.234204 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataeng-448500&j=bq:us-central1:6449d560-42c3-4eca-9a7c-2a010cb5ce79&page=queryresults
+[0m15:43:31.235002 [error] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataeng-448500&j=bq:us-central1:6449d560-42c3-4eca-9a7c-2a010cb5ce79&page=queryresults
+[0m15:43:31.248738 [debug] [Thread-1  ]: Database Error in model rides_with_stations (models/core/rides_with_stations.sql)
+  Syntax error: Expected ")" but got keyword CASE at [48:1]
+  compiled code at target/run/ecobici_dbt/models/core/rides_with_stations.sql
+[0m15:43:31.249812 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2eb8692c-e80d-48be-a960-5573066dd7ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f04349d3160>]}
+[0m15:43:31.250746 [error] [Thread-1  ]: 3 of 5 ERROR creating sql table model dataeng_448500_ecobici_ds.rides_with_stations  [[31mERROR[0m in 1.21s]
+[0m15:43:31.251640 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.rides_with_stations
+[0m15:43:31.252400 [debug] [Thread-4  ]: Marking all children of 'model.ecobici_dbt.rides_with_stations' to be skipped because of status 'error'.  Reason: Database Error in model rides_with_stations (models/core/rides_with_stations.sql)
+  Syntax error: Expected ")" but got keyword CASE at [48:1]
+  compiled code at target/run/ecobici_dbt/models/core/rides_with_stations.sql.
+[0m15:43:31.253919 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.fct_rides_daily
+[0m15:43:31.254574 [info ] [Thread-1  ]: 4 of 5 SKIP relation dataeng_448500_ecobici_ds.fct_rides_daily ................. [[33mSKIP[0m]
+[0m15:43:31.255273 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.fct_rides_daily
+[0m15:43:31.255861 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.top_origin_stations
+[0m15:43:31.256510 [info ] [Thread-1  ]: 5 of 5 SKIP relation dataeng_448500_ecobici_ds.top_origin_stations ............. [[33mSKIP[0m]
+[0m15:43:31.257482 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.top_origin_stations
+[0m15:43:31.259957 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:43:31.262690 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:43:31.263342 [debug] [MainThread]: Connection 'model.ecobici_dbt.rides_with_stations' was properly closed.
+[0m15:43:31.264064 [info ] [MainThread]: 
+[0m15:43:31.264656 [info ] [MainThread]: Finished running 1 table model, 4 view models in 0 hours 0 minutes and 6.55 seconds (6.55s).
+[0m15:43:31.266130 [debug] [MainThread]: Command end result
+[0m15:43:31.305891 [debug] [MainThread]: Wrote artifact WritableManifest to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/manifest.json
+[0m15:43:31.309343 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/semantic_manifest.json
+[0m15:43:31.318156 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/run_results.json
+[0m15:43:31.318811 [info ] [MainThread]: 
+[0m15:43:31.319483 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m15:43:31.320131 [info ] [MainThread]: 
+[0m15:43:31.320933 [error] [MainThread]:   Database Error in model rides_with_stations (models/core/rides_with_stations.sql)
+  Syntax error: Expected ")" but got keyword CASE at [48:1]
+  compiled code at target/run/ecobici_dbt/models/core/rides_with_stations.sql
+[0m15:43:31.321515 [info ] [MainThread]: 
+[0m15:43:31.322658 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=2 TOTAL=5
+[0m15:43:31.323745 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 10.583675, "process_in_blocks": "110064", "process_kernel_time": 1.2052, "process_mem_max_rss": "252748", "process_out_blocks": "3176", "process_user_time": 6.015875}
+[0m15:43:31.324597 [debug] [MainThread]: Command `dbt run` failed at 15:43:31.324403 after 10.58 seconds
+[0m15:43:31.325471 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0441fe1460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0439399a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0441e4e0a0>]}
+[0m15:43:31.326153 [debug] [MainThread]: Flushing usage events
+[0m15:43:32.143260 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:44:20.065173 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1b835274c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1b82642340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1b826423a0>]}
+
+
+============================== 15:44:20.073090 | 59fbfd66-561f-4e72-a6ee-60ba7cb9c297 ==============================
+[0m15:44:20.073090 [info ] [MainThread]: Running with dbt=1.9.3
+[0m15:44:20.074109 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/home/maxkaizo/cdmx_ecobici_usage/tests/dbt/logs', 'version_check': 'True', 'profiles_dir': '.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --profiles-dir .dbt', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:44:23.464455 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '59fbfd66-561f-4e72-a6ee-60ba7cb9c297', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1b54b60c40>]}
+[0m15:44:23.581564 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '59fbfd66-561f-4e72-a6ee-60ba7cb9c297', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1b84c69c10>]}
+[0m15:44:23.582786 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m15:44:23.937586 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m15:44:24.256060 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m15:44:24.257118 [debug] [MainThread]: Partial parsing: updated file: ecobici_dbt://models/core/rides_with_stations.sql
+[0m15:44:25.046566 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '59fbfd66-561f-4e72-a6ee-60ba7cb9c297', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1b7a790130>]}
+[0m15:44:25.185117 [debug] [MainThread]: Wrote artifact WritableManifest to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/manifest.json
+[0m15:44:25.196834 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/semantic_manifest.json
+[0m15:44:25.233878 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '59fbfd66-561f-4e72-a6ee-60ba7cb9c297', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1b7a762790>]}
+[0m15:44:25.235255 [info ] [MainThread]: Found 5 models, 2 sources, 491 macros
+[0m15:44:25.236233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '59fbfd66-561f-4e72-a6ee-60ba7cb9c297', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1b7a790f10>]}
+[0m15:44:25.238504 [info ] [MainThread]: 
+[0m15:44:25.239274 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:44:25.240418 [info ] [MainThread]: 
+[0m15:44:25.241866 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:44:25.249505 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataeng-448500'
+[0m15:44:25.251246 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:44:26.045667 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dataeng-448500, now list_dataeng-448500_dataeng_448500_ecobici_ds)
+[0m15:44:26.046459 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:44:26.981189 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '59fbfd66-561f-4e72-a6ee-60ba7cb9c297', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1b54dacca0>]}
+[0m15:44:26.982117 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:44:27.019824 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.stg_rides_enriched
+[0m15:44:27.020684 [info ] [Thread-1  ]: 1 of 5 START sql view model dataeng_448500_ecobici_ds.stg_rides_enriched ....... [RUN]
+[0m15:44:27.021572 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_dataeng-448500_dataeng_448500_ecobici_ds, now model.ecobici_dbt.stg_rides_enriched)
+[0m15:44:27.022192 [debug] [Thread-1  ]: Began compiling node model.ecobici_dbt.stg_rides_enriched
+[0m15:44:27.036421 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecobici_dbt.stg_rides_enriched"
+[0m15:44:27.038442 [debug] [Thread-1  ]: Began executing node model.ecobici_dbt.stg_rides_enriched
+[0m15:44:27.089325 [debug] [Thread-1  ]: Writing runtime sql for node "model.ecobici_dbt.stg_rides_enriched"
+[0m15:44:27.091916 [debug] [Thread-1  ]: On model.ecobici_dbt.stg_rides_enriched: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "ecobici_profile", "target_name": "dev", "node_id": "model.ecobici_dbt.stg_rides_enriched"} */
+
+
+  create or replace view `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_rides_enriched`
+  OPTIONS()
+  as -- models/staging/stg_rides_enriched.sql
+-- Enriched version of raw ride data with typed fields, local datetime and ride duration
+
+select
+  -- Technical identifiers
+  ride_id,
+  source_file,
+  ingestion_ts,
+
+  -- Bike information
+  cast(bici as int64) as bike_id,
+
+  -- Origin station
+  trim(split(ltrim(ciclo_estacion_retiro, '0'), '-')[safe_offset(0)]) as origin_station_id,
+  fecha_retiro as origin_date,
+  hora_retiro as origin_time,
+  safe.parse_datetime('%d/%m/%Y %H:%M:%S', concat(fecha_retiro, ' ', hora_retiro)) as origin_datetime,
+
+  -- Destination station
+  trim(split(ltrim(ciclo_estacion_arribo, '0'), '-')[safe_offset(0)]) as destination_station_id,
+  fecha_arribo as destination_date,
+  hora_arribo as destination_time,
+  safe.parse_datetime('%d/%m/%Y %H:%M:%S', concat(fecha_arribo, ' ', hora_arribo)) as destination_datetime,
+
+  -- User info
+  cast(edad_usuario as int64) as user_age,
+  genero_usuario as user_gender,
+
+  -- Ride duration in minutes
+  datetime_diff(
+    safe.parse_datetime('%d/%m/%Y %H:%M:%S', concat(fecha_arribo, ' ', hora_arribo)),
+    safe.parse_datetime('%d/%m/%Y %H:%M:%S', concat(fecha_retiro, ' ', hora_retiro)),
+    minute
+  ) as ride_duration_minutes
+
+from `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_rides`
+where
+  fecha_retiro is not null
+  and hora_retiro is not null
+  and fecha_arribo is not null
+  and hora_arribo is not null;
+
+
+[0m15:44:27.092878 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:44:28.114042 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataeng-448500&j=bq:us-central1:426e3f97-2af4-45e7-9acd-1f9b14c232ac&page=queryresults
+[0m15:44:28.781263 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '59fbfd66-561f-4e72-a6ee-60ba7cb9c297', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1b75d3cc10>]}
+[0m15:44:28.783010 [info ] [Thread-1  ]: 1 of 5 OK created sql view model dataeng_448500_ecobici_ds.stg_rides_enriched .. [[32mCREATE VIEW (0 processed)[0m in 1.76s]
+[0m15:44:28.784160 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.stg_rides_enriched
+[0m15:44:28.784983 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.stg_stations
+[0m15:44:28.785985 [info ] [Thread-1  ]: 2 of 5 START sql view model dataeng_448500_ecobici_ds.stg_stations ............. [RUN]
+[0m15:44:28.786864 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.ecobici_dbt.stg_rides_enriched, now model.ecobici_dbt.stg_stations)
+[0m15:44:28.787418 [debug] [Thread-1  ]: Began compiling node model.ecobici_dbt.stg_stations
+[0m15:44:28.791877 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecobici_dbt.stg_stations"
+[0m15:44:28.792903 [debug] [Thread-1  ]: Began executing node model.ecobici_dbt.stg_stations
+[0m15:44:28.797660 [debug] [Thread-1  ]: Writing runtime sql for node "model.ecobici_dbt.stg_stations"
+[0m15:44:28.799234 [debug] [Thread-1  ]: On model.ecobici_dbt.stg_stations: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "ecobici_profile", "target_name": "dev", "node_id": "model.ecobici_dbt.stg_stations"} */
+
+
+  create or replace view `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_stations`
+  OPTIONS()
+  as -- models/staging/stg_stations.sql
+-- Staging model for the Ecobici station catalog
+
+select
+  cast(station_id as string) as station_id,
+  name,
+  short_name,
+  lat,
+  lon,
+  capacity,
+  is_charging,
+  has_kiosk,
+  ingestion_ts
+from `dataeng-448500`.`dataeng_448500_ecobici_ds`.`dim_stations`;
+
+
+[0m15:44:28.800149 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:44:29.965219 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataeng-448500&j=bq:us-central1:6a2c0421-fd9f-4e58-8f57-4eeed888a47a&page=queryresults
+[0m15:44:30.344284 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '59fbfd66-561f-4e72-a6ee-60ba7cb9c297', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1b836e5ac0>]}
+[0m15:44:30.345294 [info ] [Thread-1  ]: 2 of 5 OK created sql view model dataeng_448500_ecobici_ds.stg_stations ........ [[32mCREATE VIEW (0 processed)[0m in 1.56s]
+[0m15:44:30.346347 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.stg_stations
+[0m15:44:30.348017 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.rides_with_stations
+[0m15:44:30.348771 [info ] [Thread-1  ]: 3 of 5 START sql table model dataeng_448500_ecobici_ds.rides_with_stations ..... [RUN]
+[0m15:44:30.349713 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.ecobici_dbt.stg_stations, now model.ecobici_dbt.rides_with_stations)
+[0m15:44:30.350297 [debug] [Thread-1  ]: Began compiling node model.ecobici_dbt.rides_with_stations
+[0m15:44:30.356583 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecobici_dbt.rides_with_stations"
+[0m15:44:30.357527 [debug] [Thread-1  ]: Began executing node model.ecobici_dbt.rides_with_stations
+[0m15:44:30.372788 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:44:31.325511 [debug] [Thread-1  ]: Writing runtime sql for node "model.ecobici_dbt.rides_with_stations"
+[0m15:44:31.326612 [debug] [Thread-1  ]: On model.ecobici_dbt.rides_with_stations: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "ecobici_profile", "target_name": "dev", "node_id": "model.ecobici_dbt.rides_with_stations"} */
+
+  
+    
+
+    create or replace table `dataeng-448500`.`dataeng_448500_ecobici_ds`.`rides_with_stations`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      -- models/core/rides_with_stations.sql
+-- Join enriched ride data with station catalog for origin and destination context
+
+select
+  r.ride_id,
+  r.source_file,
+  r.ingestion_ts,
+
+  r.bike_id,
+  r.user_age,
+  r.user_gender,
+  r.origin_datetime,
+  r.destination_datetime,
+  r.ride_duration_minutes,
+
+  -- Estación de origen
+  r.origin_station_id,
+  s_from.name as origin_station_name,
+  s_from.lat as origin_lat,
+  s_from.lon as origin_lon,
+
+  -- Estación de destino
+  r.destination_station_id,
+  s_to.name as destination_station_name,
+  s_to.lat as destination_lat,
+  s_to.lon as destination_lon
+
+from `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_rides_enriched` r
+left join `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_stations` s_from
+  on r.origin_station_id = s_from.station_id
+
+left join `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_stations` s_to
+  on r.destination_station_id = s_to.station_id
+case
+  when origin_datetime is null or destination_datetime is null then 'missing_datetime'
+  when ride_duration_minutes is null or ride_duration_minutes <= 0 then 'invalid_duration'
+  when ride_duration_minutes > 240 then 'too_long'
+  else 'valid'
+end as ride_quality_flag
+    );
+  
+[0m15:44:31.510459 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataeng-448500&j=bq:us-central1:14691181-273c-4791-8eb4-d7d92288eafe&page=queryresults
+[0m15:44:31.511504 [error] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataeng-448500&j=bq:us-central1:14691181-273c-4791-8eb4-d7d92288eafe&page=queryresults
+[0m15:44:31.552451 [debug] [Thread-1  ]: Database Error in model rides_with_stations (models/core/rides_with_stations.sql)
+  Syntax error: Expected ")" but got keyword CASE at [46:1]
+  compiled code at target/run/ecobici_dbt/models/core/rides_with_stations.sql
+[0m15:44:31.553467 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '59fbfd66-561f-4e72-a6ee-60ba7cb9c297', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1b8280ebe0>]}
+[0m15:44:31.554384 [error] [Thread-1  ]: 3 of 5 ERROR creating sql table model dataeng_448500_ecobici_ds.rides_with_stations  [[31mERROR[0m in 1.20s]
+[0m15:44:31.555249 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.rides_with_stations
+[0m15:44:31.556022 [debug] [Thread-4  ]: Marking all children of 'model.ecobici_dbt.rides_with_stations' to be skipped because of status 'error'.  Reason: Database Error in model rides_with_stations (models/core/rides_with_stations.sql)
+  Syntax error: Expected ")" but got keyword CASE at [46:1]
+  compiled code at target/run/ecobici_dbt/models/core/rides_with_stations.sql.
+[0m15:44:31.557592 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.fct_rides_daily
+[0m15:44:31.558157 [info ] [Thread-1  ]: 4 of 5 SKIP relation dataeng_448500_ecobici_ds.fct_rides_daily ................. [[33mSKIP[0m]
+[0m15:44:31.558799 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.fct_rides_daily
+[0m15:44:31.559951 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.top_origin_stations
+[0m15:44:31.560957 [info ] [Thread-1  ]: 5 of 5 SKIP relation dataeng_448500_ecobici_ds.top_origin_stations ............. [[33mSKIP[0m]
+[0m15:44:31.561911 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.top_origin_stations
+[0m15:44:31.564299 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:44:31.566514 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:44:31.566985 [debug] [MainThread]: Connection 'model.ecobici_dbt.rides_with_stations' was properly closed.
+[0m15:44:31.567524 [info ] [MainThread]: 
+[0m15:44:31.568145 [info ] [MainThread]: Finished running 1 table model, 4 view models in 0 hours 0 minutes and 6.33 seconds (6.33s).
+[0m15:44:31.569617 [debug] [MainThread]: Command end result
+[0m15:44:31.613044 [debug] [MainThread]: Wrote artifact WritableManifest to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/manifest.json
+[0m15:44:31.616090 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/semantic_manifest.json
+[0m15:44:31.624742 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/run_results.json
+[0m15:44:31.625284 [info ] [MainThread]: 
+[0m15:44:31.625926 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m15:44:31.626478 [info ] [MainThread]: 
+[0m15:44:31.627158 [error] [MainThread]:   Database Error in model rides_with_stations (models/core/rides_with_stations.sql)
+  Syntax error: Expected ")" but got keyword CASE at [46:1]
+  compiled code at target/run/ecobici_dbt/models/core/rides_with_stations.sql
+[0m15:44:31.627711 [info ] [MainThread]: 
+[0m15:44:31.628623 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=2 TOTAL=5
+[0m15:44:31.629909 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 11.512236, "process_in_blocks": "277904", "process_kernel_time": 1.361055, "process_mem_max_rss": "258120", "process_out_blocks": "3176", "process_user_time": 6.454703}
+[0m15:44:31.630753 [debug] [MainThread]: Command `dbt run` failed at 15:44:31.630605 after 11.51 seconds
+[0m15:44:31.631565 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1b835274c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1b7a7145b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1b7a714550>]}
+[0m15:44:31.632194 [debug] [MainThread]: Flushing usage events
+[0m15:44:32.310611 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:45:18.891963 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3b41a5a490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3b4187b1c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3b40da3be0>]}
+
+
+============================== 15:45:18.897163 | dee467fa-a923-4451-b8fa-27a0ce6fe25a ==============================
+[0m15:45:18.897163 [info ] [MainThread]: Running with dbt=1.9.3
+[0m15:45:18.898175 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/home/maxkaizo/cdmx_ecobici_usage/tests/dbt/logs', 'fail_fast': 'False', 'profiles_dir': '.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --profiles-dir .dbt', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:45:20.138627 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'dee467fa-a923-4451-b8fa-27a0ce6fe25a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3b1306cfd0>]}
+[0m15:45:20.208245 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'dee467fa-a923-4451-b8fa-27a0ce6fe25a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3b431b3d30>]}
+[0m15:45:20.209262 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m15:45:20.379088 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m15:45:20.529898 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m15:45:20.530650 [debug] [MainThread]: Partial parsing: updated file: ecobici_dbt://models/core/rides_with_stations.sql
+[0m15:45:20.964885 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'dee467fa-a923-4451-b8fa-27a0ce6fe25a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3b38d86130>]}
+[0m15:45:21.057671 [debug] [MainThread]: Wrote artifact WritableManifest to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/manifest.json
+[0m15:45:21.064450 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/semantic_manifest.json
+[0m15:45:21.105429 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'dee467fa-a923-4451-b8fa-27a0ce6fe25a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3b3c0ccfa0>]}
+[0m15:45:21.106230 [info ] [MainThread]: Found 5 models, 2 sources, 491 macros
+[0m15:45:21.106790 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dee467fa-a923-4451-b8fa-27a0ce6fe25a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3b38d9dbb0>]}
+[0m15:45:21.108917 [info ] [MainThread]: 
+[0m15:45:21.109567 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:45:21.110227 [info ] [MainThread]: 
+[0m15:45:21.111019 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:45:21.120857 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataeng-448500'
+[0m15:45:21.121620 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:45:22.030666 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dataeng-448500, now list_dataeng-448500_dataeng_448500_ecobici_ds)
+[0m15:45:22.033558 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:45:22.834330 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dee467fa-a923-4451-b8fa-27a0ce6fe25a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3b42f75b80>]}
+[0m15:45:22.835797 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:45:22.844791 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.stg_rides_enriched
+[0m15:45:22.845961 [info ] [Thread-1  ]: 1 of 5 START sql view model dataeng_448500_ecobici_ds.stg_rides_enriched ....... [RUN]
+[0m15:45:22.846914 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_dataeng-448500_dataeng_448500_ecobici_ds, now model.ecobici_dbt.stg_rides_enriched)
+[0m15:45:22.847662 [debug] [Thread-1  ]: Began compiling node model.ecobici_dbt.stg_rides_enriched
+[0m15:45:22.866548 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecobici_dbt.stg_rides_enriched"
+[0m15:45:22.867729 [debug] [Thread-1  ]: Began executing node model.ecobici_dbt.stg_rides_enriched
+[0m15:45:22.912609 [debug] [Thread-1  ]: Writing runtime sql for node "model.ecobici_dbt.stg_rides_enriched"
+[0m15:45:22.914012 [debug] [Thread-1  ]: On model.ecobici_dbt.stg_rides_enriched: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "ecobici_profile", "target_name": "dev", "node_id": "model.ecobici_dbt.stg_rides_enriched"} */
+
+
+  create or replace view `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_rides_enriched`
+  OPTIONS()
+  as -- models/staging/stg_rides_enriched.sql
+-- Enriched version of raw ride data with typed fields, local datetime and ride duration
+
+select
+  -- Technical identifiers
+  ride_id,
+  source_file,
+  ingestion_ts,
+
+  -- Bike information
+  cast(bici as int64) as bike_id,
+
+  -- Origin station
+  trim(split(ltrim(ciclo_estacion_retiro, '0'), '-')[safe_offset(0)]) as origin_station_id,
+  fecha_retiro as origin_date,
+  hora_retiro as origin_time,
+  safe.parse_datetime('%d/%m/%Y %H:%M:%S', concat(fecha_retiro, ' ', hora_retiro)) as origin_datetime,
+
+  -- Destination station
+  trim(split(ltrim(ciclo_estacion_arribo, '0'), '-')[safe_offset(0)]) as destination_station_id,
+  fecha_arribo as destination_date,
+  hora_arribo as destination_time,
+  safe.parse_datetime('%d/%m/%Y %H:%M:%S', concat(fecha_arribo, ' ', hora_arribo)) as destination_datetime,
+
+  -- User info
+  cast(edad_usuario as int64) as user_age,
+  genero_usuario as user_gender,
+
+  -- Ride duration in minutes
+  datetime_diff(
+    safe.parse_datetime('%d/%m/%Y %H:%M:%S', concat(fecha_arribo, ' ', hora_arribo)),
+    safe.parse_datetime('%d/%m/%Y %H:%M:%S', concat(fecha_retiro, ' ', hora_retiro)),
+    minute
+  ) as ride_duration_minutes
+
+from `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_rides`
+where
+  fecha_retiro is not null
+  and hora_retiro is not null
+  and fecha_arribo is not null
+  and hora_arribo is not null;
+
+
+[0m15:45:22.915001 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:45:24.035194 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataeng-448500&j=bq:us-central1:176bd091-8a0f-4b03-860a-9081e6908f92&page=queryresults
+[0m15:45:24.803097 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dee467fa-a923-4451-b8fa-27a0ce6fe25a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3b343c8fd0>]}
+[0m15:45:24.804178 [info ] [Thread-1  ]: 1 of 5 OK created sql view model dataeng_448500_ecobici_ds.stg_rides_enriched .. [[32mCREATE VIEW (0 processed)[0m in 1.95s]
+[0m15:45:24.805487 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.stg_rides_enriched
+[0m15:45:24.806392 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.stg_stations
+[0m15:45:24.807777 [info ] [Thread-1  ]: 2 of 5 START sql view model dataeng_448500_ecobici_ds.stg_stations ............. [RUN]
+[0m15:45:24.808915 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.ecobici_dbt.stg_rides_enriched, now model.ecobici_dbt.stg_stations)
+[0m15:45:24.809770 [debug] [Thread-1  ]: Began compiling node model.ecobici_dbt.stg_stations
+[0m15:45:24.816021 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecobici_dbt.stg_stations"
+[0m15:45:24.817177 [debug] [Thread-1  ]: Began executing node model.ecobici_dbt.stg_stations
+[0m15:45:24.824027 [debug] [Thread-1  ]: Writing runtime sql for node "model.ecobici_dbt.stg_stations"
+[0m15:45:24.825711 [debug] [Thread-1  ]: On model.ecobici_dbt.stg_stations: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "ecobici_profile", "target_name": "dev", "node_id": "model.ecobici_dbt.stg_stations"} */
+
+
+  create or replace view `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_stations`
+  OPTIONS()
+  as -- models/staging/stg_stations.sql
+-- Staging model for the Ecobici station catalog
+
+select
+  cast(station_id as string) as station_id,
+  name,
+  short_name,
+  lat,
+  lon,
+  capacity,
+  is_charging,
+  has_kiosk,
+  ingestion_ts
+from `dataeng-448500`.`dataeng_448500_ecobici_ds`.`dim_stations`;
+
+
+[0m15:45:24.826546 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:45:25.677645 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataeng-448500&j=bq:us-central1:fd04d795-385a-4c86-ad0e-515ed67fc1b7&page=queryresults
+[0m15:45:26.037810 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dee467fa-a923-4451-b8fa-27a0ce6fe25a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3b418ce0d0>]}
+[0m15:45:26.039438 [info ] [Thread-1  ]: 2 of 5 OK created sql view model dataeng_448500_ecobici_ds.stg_stations ........ [[32mCREATE VIEW (0 processed)[0m in 1.23s]
+[0m15:45:26.040618 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.stg_stations
+[0m15:45:26.042382 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.rides_with_stations
+[0m15:45:26.043583 [info ] [Thread-1  ]: 3 of 5 START sql table model dataeng_448500_ecobici_ds.rides_with_stations ..... [RUN]
+[0m15:45:26.044766 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.ecobici_dbt.stg_stations, now model.ecobici_dbt.rides_with_stations)
+[0m15:45:26.045634 [debug] [Thread-1  ]: Began compiling node model.ecobici_dbt.rides_with_stations
+[0m15:45:26.053637 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecobici_dbt.rides_with_stations"
+[0m15:45:26.055007 [debug] [Thread-1  ]: Began executing node model.ecobici_dbt.rides_with_stations
+[0m15:45:26.078568 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:45:26.805242 [debug] [Thread-1  ]: Writing runtime sql for node "model.ecobici_dbt.rides_with_stations"
+[0m15:45:26.807034 [debug] [Thread-1  ]: On model.ecobici_dbt.rides_with_stations: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "ecobici_profile", "target_name": "dev", "node_id": "model.ecobici_dbt.rides_with_stations"} */
+
+  
+    
+
+    create or replace table `dataeng-448500`.`dataeng_448500_ecobici_ds`.`rides_with_stations`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      -- models/core/rides_with_stations.sql
+-- Join enriched ride data with station catalog for origin and destination context
+
+select
+  r.ride_id,
+  r.source_file,
+  r.ingestion_ts,
+
+  r.bike_id,
+  r.user_age,
+  r.user_gender,
+  r.origin_datetime,
+  r.destination_datetime,
+  r.ride_duration_minutes,
+
+  -- Estación de origen
+  r.origin_station_id,
+  s_from.name as origin_station_name,
+  s_from.lat as origin_lat,
+  s_from.lon as origin_lon,
+
+  -- Estación de destino
+  r.destination_station_id,
+  s_to.name as destination_station_name,
+  s_to.lat as destination_lat,
+  s_to.lon as destination_lon
+
+case
+  when origin_datetime is null or destination_datetime is null then 'missing_datetime'
+  when ride_duration_minutes is null or ride_duration_minutes <= 0 then 'invalid_duration'
+  when ride_duration_minutes > 240 then 'too_long'
+  else 'valid'
+end as ride_quality_flag
+
+from `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_rides_enriched` r
+left join `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_stations` s_from
+  on r.origin_station_id = s_from.station_id
+
+left join `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_stations` s_to
+  on r.destination_station_id = s_to.station_id
+    );
+  
+[0m15:45:27.079647 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataeng-448500&j=bq:us-central1:ff7d3d43-a005-4db9-a400-41bf4752c20a&page=queryresults
+[0m15:45:27.082014 [error] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataeng-448500&j=bq:us-central1:ff7d3d43-a005-4db9-a400-41bf4752c20a&page=queryresults
+[0m15:45:27.087146 [debug] [Thread-1  ]: Database Error in model rides_with_stations (models/core/rides_with_stations.sql)
+  Syntax error: Expected ")" but got keyword CASE at [40:1]
+  compiled code at target/run/ecobici_dbt/models/core/rides_with_stations.sql
+[0m15:45:27.087988 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dee467fa-a923-4451-b8fa-27a0ce6fe25a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3b343c8ee0>]}
+[0m15:45:27.088940 [error] [Thread-1  ]: 3 of 5 ERROR creating sql table model dataeng_448500_ecobici_ds.rides_with_stations  [[31mERROR[0m in 1.04s]
+[0m15:45:27.090794 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.rides_with_stations
+[0m15:45:27.091690 [debug] [Thread-4  ]: Marking all children of 'model.ecobici_dbt.rides_with_stations' to be skipped because of status 'error'.  Reason: Database Error in model rides_with_stations (models/core/rides_with_stations.sql)
+  Syntax error: Expected ")" but got keyword CASE at [40:1]
+  compiled code at target/run/ecobici_dbt/models/core/rides_with_stations.sql.
+[0m15:45:27.093339 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.fct_rides_daily
+[0m15:45:27.094023 [info ] [Thread-1  ]: 4 of 5 SKIP relation dataeng_448500_ecobici_ds.fct_rides_daily ................. [[33mSKIP[0m]
+[0m15:45:27.094748 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.fct_rides_daily
+[0m15:45:27.095358 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.top_origin_stations
+[0m15:45:27.096101 [info ] [Thread-1  ]: 5 of 5 SKIP relation dataeng_448500_ecobici_ds.top_origin_stations ............. [[33mSKIP[0m]
+[0m15:45:27.097093 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.top_origin_stations
+[0m15:45:27.100125 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:45:27.102441 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:45:27.103081 [debug] [MainThread]: Connection 'model.ecobici_dbt.rides_with_stations' was properly closed.
+[0m15:45:27.103752 [info ] [MainThread]: 
+[0m15:45:27.104375 [info ] [MainThread]: Finished running 1 table model, 4 view models in 0 hours 0 minutes and 5.99 seconds (5.99s).
+[0m15:45:27.105884 [debug] [MainThread]: Command end result
+[0m15:45:27.152718 [debug] [MainThread]: Wrote artifact WritableManifest to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/manifest.json
+[0m15:45:27.155144 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/semantic_manifest.json
+[0m15:45:27.165079 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/run_results.json
+[0m15:45:27.165766 [info ] [MainThread]: 
+[0m15:45:27.166381 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m15:45:27.167076 [info ] [MainThread]: 
+[0m15:45:27.167837 [error] [MainThread]:   Database Error in model rides_with_stations (models/core/rides_with_stations.sql)
+  Syntax error: Expected ")" but got keyword CASE at [40:1]
+  compiled code at target/run/ecobici_dbt/models/core/rides_with_stations.sql
+[0m15:45:27.168384 [info ] [MainThread]: 
+[0m15:45:27.169023 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=2 TOTAL=5
+[0m15:45:27.170259 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 8.203068, "process_in_blocks": "0", "process_kernel_time": 0.622338, "process_mem_max_rss": "258360", "process_out_blocks": "3176", "process_user_time": 5.72551}
+[0m15:45:27.171008 [debug] [MainThread]: Command `dbt run` failed at 15:45:27.170866 after 8.20 seconds
+[0m15:45:27.171676 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3b41a5a490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3b3c0ebe80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3b418d8370>]}
+[0m15:45:27.172224 [debug] [MainThread]: Flushing usage events
+[0m15:45:27.728478 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:46:22.041373 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f85aafd3430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f85aadf4fa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f85ac6d68e0>]}
+
+
+============================== 15:46:22.047157 | bde0cd92-62be-4f5f-a65d-b67465a1497d ==============================
+[0m15:46:22.047157 [info ] [MainThread]: Running with dbt=1.9.3
+[0m15:46:22.048040 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/maxkaizo/cdmx_ecobici_usage/tests/dbt/logs', 'profiles_dir': '.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --profiles-dir .dbt', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:46:23.394647 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'bde0cd92-62be-4f5f-a65d-b67465a1497d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f85ac5b62b0>]}
+[0m15:46:23.466298 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'bde0cd92-62be-4f5f-a65d-b67465a1497d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f85aad91af0>]}
+[0m15:46:23.467452 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m15:46:23.862129 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m15:46:23.996998 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m15:46:23.997846 [debug] [MainThread]: Partial parsing: updated file: ecobici_dbt://models/core/rides_with_stations.sql
+[0m15:46:24.464540 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'bde0cd92-62be-4f5f-a65d-b67465a1497d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f85a238c130>]}
+[0m15:46:24.566709 [debug] [MainThread]: Wrote artifact WritableManifest to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/manifest.json
+[0m15:46:24.573472 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/semantic_manifest.json
+[0m15:46:24.586565 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bde0cd92-62be-4f5f-a65d-b67465a1497d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f85aba803a0>]}
+[0m15:46:24.587304 [info ] [MainThread]: Found 5 models, 2 sources, 491 macros
+[0m15:46:24.587839 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bde0cd92-62be-4f5f-a65d-b67465a1497d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f85aba80340>]}
+[0m15:46:24.589943 [info ] [MainThread]: 
+[0m15:46:24.590601 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:46:24.591042 [info ] [MainThread]: 
+[0m15:46:24.591772 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:46:24.599400 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataeng-448500'
+[0m15:46:24.600146 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:46:25.319438 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dataeng-448500, now list_dataeng-448500_dataeng_448500_ecobici_ds)
+[0m15:46:25.320194 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:46:25.957876 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bde0cd92-62be-4f5f-a65d-b67465a1497d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f85ac4f4730>]}
+[0m15:46:25.958751 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:46:25.964644 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.stg_rides_enriched
+[0m15:46:25.965484 [info ] [Thread-1  ]: 1 of 5 START sql view model dataeng_448500_ecobici_ds.stg_rides_enriched ....... [RUN]
+[0m15:46:25.966312 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_dataeng-448500_dataeng_448500_ecobici_ds, now model.ecobici_dbt.stg_rides_enriched)
+[0m15:46:25.966973 [debug] [Thread-1  ]: Began compiling node model.ecobici_dbt.stg_rides_enriched
+[0m15:46:25.980203 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecobici_dbt.stg_rides_enriched"
+[0m15:46:25.981645 [debug] [Thread-1  ]: Began executing node model.ecobici_dbt.stg_rides_enriched
+[0m15:46:26.027383 [debug] [Thread-1  ]: Writing runtime sql for node "model.ecobici_dbt.stg_rides_enriched"
+[0m15:46:26.028630 [debug] [Thread-1  ]: On model.ecobici_dbt.stg_rides_enriched: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "ecobici_profile", "target_name": "dev", "node_id": "model.ecobici_dbt.stg_rides_enriched"} */
+
+
+  create or replace view `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_rides_enriched`
+  OPTIONS()
+  as -- models/staging/stg_rides_enriched.sql
+-- Enriched version of raw ride data with typed fields, local datetime and ride duration
+
+select
+  -- Technical identifiers
+  ride_id,
+  source_file,
+  ingestion_ts,
+
+  -- Bike information
+  cast(bici as int64) as bike_id,
+
+  -- Origin station
+  trim(split(ltrim(ciclo_estacion_retiro, '0'), '-')[safe_offset(0)]) as origin_station_id,
+  fecha_retiro as origin_date,
+  hora_retiro as origin_time,
+  safe.parse_datetime('%d/%m/%Y %H:%M:%S', concat(fecha_retiro, ' ', hora_retiro)) as origin_datetime,
+
+  -- Destination station
+  trim(split(ltrim(ciclo_estacion_arribo, '0'), '-')[safe_offset(0)]) as destination_station_id,
+  fecha_arribo as destination_date,
+  hora_arribo as destination_time,
+  safe.parse_datetime('%d/%m/%Y %H:%M:%S', concat(fecha_arribo, ' ', hora_arribo)) as destination_datetime,
+
+  -- User info
+  cast(edad_usuario as int64) as user_age,
+  genero_usuario as user_gender,
+
+  -- Ride duration in minutes
+  datetime_diff(
+    safe.parse_datetime('%d/%m/%Y %H:%M:%S', concat(fecha_arribo, ' ', hora_arribo)),
+    safe.parse_datetime('%d/%m/%Y %H:%M:%S', concat(fecha_retiro, ' ', hora_retiro)),
+    minute
+  ) as ride_duration_minutes
+
+from `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_rides`
+where
+  fecha_retiro is not null
+  and hora_retiro is not null
+  and fecha_arribo is not null
+  and hora_arribo is not null;
+
+
+[0m15:46:26.029357 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:46:27.003543 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataeng-448500&j=bq:us-central1:78f9a630-ef3c-4c2d-bffb-f5db6e66ac5a&page=queryresults
+[0m15:46:27.659579 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bde0cd92-62be-4f5f-a65d-b67465a1497d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f857d04bbb0>]}
+[0m15:46:27.660722 [info ] [Thread-1  ]: 1 of 5 OK created sql view model dataeng_448500_ecobici_ds.stg_rides_enriched .. [[32mCREATE VIEW (0 processed)[0m in 1.69s]
+[0m15:46:27.661730 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.stg_rides_enriched
+[0m15:46:27.662739 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.stg_stations
+[0m15:46:27.663957 [info ] [Thread-1  ]: 2 of 5 START sql view model dataeng_448500_ecobici_ds.stg_stations ............. [RUN]
+[0m15:46:27.664987 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.ecobici_dbt.stg_rides_enriched, now model.ecobici_dbt.stg_stations)
+[0m15:46:27.665828 [debug] [Thread-1  ]: Began compiling node model.ecobici_dbt.stg_stations
+[0m15:46:27.670808 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecobici_dbt.stg_stations"
+[0m15:46:27.671736 [debug] [Thread-1  ]: Began executing node model.ecobici_dbt.stg_stations
+[0m15:46:27.678595 [debug] [Thread-1  ]: Writing runtime sql for node "model.ecobici_dbt.stg_stations"
+[0m15:46:27.680047 [debug] [Thread-1  ]: On model.ecobici_dbt.stg_stations: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "ecobici_profile", "target_name": "dev", "node_id": "model.ecobici_dbt.stg_stations"} */
+
+
+  create or replace view `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_stations`
+  OPTIONS()
+  as -- models/staging/stg_stations.sql
+-- Staging model for the Ecobici station catalog
+
+select
+  cast(station_id as string) as station_id,
+  name,
+  short_name,
+  lat,
+  lon,
+  capacity,
+  is_charging,
+  has_kiosk,
+  ingestion_ts
+from `dataeng-448500`.`dataeng_448500_ecobici_ds`.`dim_stations`;
+
+
+[0m15:46:27.680760 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:46:28.569980 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataeng-448500&j=bq:us-central1:41fba1a6-1a18-42f5-90e6-af7800a4cf32&page=queryresults
+[0m15:46:28.985915 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bde0cd92-62be-4f5f-a65d-b67465a1497d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f85a2273730>]}
+[0m15:46:28.986927 [info ] [Thread-1  ]: 2 of 5 OK created sql view model dataeng_448500_ecobici_ds.stg_stations ........ [[32mCREATE VIEW (0 processed)[0m in 1.32s]
+[0m15:46:28.987928 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.stg_stations
+[0m15:46:28.989608 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.rides_with_stations
+[0m15:46:28.990402 [info ] [Thread-1  ]: 3 of 5 START sql table model dataeng_448500_ecobici_ds.rides_with_stations ..... [RUN]
+[0m15:46:28.991247 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.ecobici_dbt.stg_stations, now model.ecobici_dbt.rides_with_stations)
+[0m15:46:28.992125 [debug] [Thread-1  ]: Began compiling node model.ecobici_dbt.rides_with_stations
+[0m15:46:28.999813 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecobici_dbt.rides_with_stations"
+[0m15:46:29.000966 [debug] [Thread-1  ]: Began executing node model.ecobici_dbt.rides_with_stations
+[0m15:46:29.017734 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:46:29.791903 [debug] [Thread-1  ]: Writing runtime sql for node "model.ecobici_dbt.rides_with_stations"
+[0m15:46:29.793330 [debug] [Thread-1  ]: On model.ecobici_dbt.rides_with_stations: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "ecobici_profile", "target_name": "dev", "node_id": "model.ecobici_dbt.rides_with_stations"} */
+
+  
+    
+
+    create or replace table `dataeng-448500`.`dataeng_448500_ecobici_ds`.`rides_with_stations`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      -- models/core/rides_with_stations.sql
+-- Join enriched ride data with station catalog for origin and destination context
+
+select
+  r.ride_id,
+  r.source_file,
+  r.ingestion_ts,
+  r.bike_id,
+  r.user_age,
+  r.user_gender,
+  r.origin_datetime,
+  r.destination_datetime,
+  r.ride_duration_minutes,
+
+  r.origin_station_id,
+  s_from.name as origin_station_name,
+  s_from.lat as origin_lat,
+  s_from.lon as origin_lon,
+
+  r.destination_station_id,
+  s_to.name as destination_station_name,
+  s_to.lat as destination_lat,
+  s_to.lon as destination_lon,
+
+  -- 🚩 Agregamos la bandera correctamente dentro del SELECT
+  case
+    when r.origin_datetime is null or r.destination_datetime is null then 'missing_datetime'
+    when r.ride_duration_minutes is null or r.ride_duration_minutes <= 0 then 'invalid_duration'
+    when r.ride_duration_minutes > 240 then 'too_long'
+    else 'valid'
+  end as ride_quality_flag
+
+from `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_rides_enriched` r
+left join `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_stations` s_from
+  on r.origin_station_id = s_from.station_id
+left join `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_stations` s_to
+  on r.destination_station_id = s_to.station_id
+    );
+  
+[0m15:46:30.356602 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataeng-448500&j=bq:us-central1:a5639ea2-7d1f-4a27-89c8-76f9043dfec3&page=queryresults
+[0m15:46:36.226015 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bde0cd92-62be-4f5f-a65d-b67465a1497d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f857d04bbb0>]}
+[0m15:46:36.227047 [info ] [Thread-1  ]: 3 of 5 OK created sql table model dataeng_448500_ecobici_ds.rides_with_stations  [[32mCREATE TABLE (5.5m rows, 854.2 MiB processed)[0m in 7.23s]
+[0m15:46:36.227994 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.rides_with_stations
+[0m15:46:36.229741 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.fct_rides_daily
+[0m15:46:36.231089 [info ] [Thread-1  ]: 4 of 5 START sql view model dataeng_448500_ecobici_ds.fct_rides_daily .......... [RUN]
+[0m15:46:36.232076 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.ecobici_dbt.rides_with_stations, now model.ecobici_dbt.fct_rides_daily)
+[0m15:46:36.232673 [debug] [Thread-1  ]: Began compiling node model.ecobici_dbt.fct_rides_daily
+[0m15:46:36.237194 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecobici_dbt.fct_rides_daily"
+[0m15:46:36.239030 [debug] [Thread-1  ]: Began executing node model.ecobici_dbt.fct_rides_daily
+[0m15:46:36.243553 [debug] [Thread-1  ]: Writing runtime sql for node "model.ecobici_dbt.fct_rides_daily"
+[0m15:46:36.244504 [debug] [Thread-1  ]: On model.ecobici_dbt.fct_rides_daily: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "ecobici_profile", "target_name": "dev", "node_id": "model.ecobici_dbt.fct_rides_daily"} */
+
+
+  create or replace view `dataeng-448500`.`dataeng_448500_ecobici_ds`.`fct_rides_daily`
+  OPTIONS()
+  as -- models/marts/fct_rides_daily.sql
+-- Daily summary of Ecobici rides with basic metrics and long ride count
+
+select
+  date(origin_datetime) as ride_date,
+  count(*) as total_rides,
+  avg(ride_duration_minutes) as avg_duration_minutes,
+  count(distinct bike_id) as unique_bikes_used,
+  count(distinct origin_station_id) as unique_origin_stations,
+  count(distinct destination_station_id) as unique_destination_stations,
+  sum(case when ride_duration_minutes > 45 then 1 else 0 end) as rides_over_45_min
+from `dataeng-448500`.`dataeng_448500_ecobici_ds`.`rides_with_stations`
+where
+  origin_datetime is not null
+  and ride_quality_flag = 'valid'
+group by 1
+order by 1;
+
+
+[0m15:46:36.245125 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:46:37.231283 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataeng-448500&j=bq:us-central1:c14cf37f-3dc2-4c1d-b5c4-2699064958bf&page=queryresults
+[0m15:46:37.635922 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bde0cd92-62be-4f5f-a65d-b67465a1497d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f859d9d63a0>]}
+[0m15:46:37.637110 [info ] [Thread-1  ]: 4 of 5 OK created sql view model dataeng_448500_ecobici_ds.fct_rides_daily ..... [[32mCREATE VIEW (0 processed)[0m in 1.40s]
+[0m15:46:37.638008 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.fct_rides_daily
+[0m15:46:37.638698 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.top_origin_stations
+[0m15:46:37.640323 [info ] [Thread-1  ]: 5 of 5 START sql view model dataeng_448500_ecobici_ds.top_origin_stations ...... [RUN]
+[0m15:46:37.641375 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.ecobici_dbt.fct_rides_daily, now model.ecobici_dbt.top_origin_stations)
+[0m15:46:37.641959 [debug] [Thread-1  ]: Began compiling node model.ecobici_dbt.top_origin_stations
+[0m15:46:37.646449 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecobici_dbt.top_origin_stations"
+[0m15:46:37.647264 [debug] [Thread-1  ]: Began executing node model.ecobici_dbt.top_origin_stations
+[0m15:46:37.653521 [debug] [Thread-1  ]: Writing runtime sql for node "model.ecobici_dbt.top_origin_stations"
+[0m15:46:37.654518 [debug] [Thread-1  ]: On model.ecobici_dbt.top_origin_stations: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "ecobici_profile", "target_name": "dev", "node_id": "model.ecobici_dbt.top_origin_stations"} */
+
+
+  create or replace view `dataeng-448500`.`dataeng_448500_ecobici_ds`.`top_origin_stations`
+  OPTIONS()
+  as -- models/marts/top_origin_stations.sql
+-- Top 10 most frequent origin stations (with known names)
+
+select
+  origin_station_id,
+  origin_station_name,
+  count(*) as ride_count
+from `dataeng-448500`.`dataeng_448500_ecobici_ds`.`rides_with_stations`
+where origin_station_name is not null
+group by 1, 2
+order by ride_count desc
+limit 10;
+
+
+[0m15:46:37.655169 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:46:38.740552 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataeng-448500&j=bq:us-central1:433055b1-5052-4854-92e8-0e0360fa62f5&page=queryresults
+[0m15:46:39.151380 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bde0cd92-62be-4f5f-a65d-b67465a1497d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f859d9d63a0>]}
+[0m15:46:39.153036 [info ] [Thread-1  ]: 5 of 5 OK created sql view model dataeng_448500_ecobici_ds.top_origin_stations . [[32mCREATE VIEW (0 processed)[0m in 1.51s]
+[0m15:46:39.154325 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.top_origin_stations
+[0m15:46:39.156693 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:46:39.158955 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:46:39.159433 [debug] [MainThread]: Connection 'model.ecobici_dbt.top_origin_stations' was properly closed.
+[0m15:46:39.159982 [info ] [MainThread]: 
+[0m15:46:39.160641 [info ] [MainThread]: Finished running 1 table model, 4 view models in 0 hours 0 minutes and 14.57 seconds (14.57s).
+[0m15:46:39.163145 [debug] [MainThread]: Command end result
+[0m15:46:39.232640 [debug] [MainThread]: Wrote artifact WritableManifest to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/manifest.json
+[0m15:46:39.235226 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/semantic_manifest.json
+[0m15:46:39.243895 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/run_results.json
+[0m15:46:39.244404 [info ] [MainThread]: 
+[0m15:46:39.245018 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:46:39.245590 [info ] [MainThread]: 
+[0m15:46:39.246163 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+[0m15:46:39.247712 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 17.127365, "process_in_blocks": "0", "process_kernel_time": 0.533555, "process_mem_max_rss": "260344", "process_out_blocks": "3224", "process_user_time": 5.929514}
+[0m15:46:39.248591 [debug] [MainThread]: Command `dbt run` succeeded at 15:46:39.248418 after 17.13 seconds
+[0m15:46:39.249523 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f85aafd3430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f85ac5b62b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f85aaea1ca0>]}
+[0m15:46:39.250316 [debug] [MainThread]: Flushing usage events
+[0m15:46:40.056538 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:48:14.498992 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc47084d400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc46fa07640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc47066d1c0>]}
+
+
+============================== 15:48:14.504222 | b1f345c9-5a88-47dc-abce-4878ad2dd450 ==============================
+[0m15:48:14.504222 [info ] [MainThread]: Running with dbt=1.9.3
+[0m15:48:14.504973 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '.dbt', 'log_path': '/home/maxkaizo/cdmx_ecobici_usage/tests/dbt/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run --profiles-dir .dbt', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:48:15.883009 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b1f345c9-5a88-47dc-abce-4878ad2dd450', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc46fa11a30>]}
+[0m15:48:15.955444 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b1f345c9-5a88-47dc-abce-4878ad2dd450', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc46f9b7b80>]}
+[0m15:48:15.956261 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m15:48:16.128382 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m15:48:16.252477 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 1 files changed.
+[0m15:48:16.253207 [debug] [MainThread]: Partial parsing: added file: ecobici_dbt://models/marts/invalid_rides_summary.sql
+[0m15:48:16.253680 [debug] [MainThread]: Partial parsing: updated file: ecobici_dbt://models/marts/schema.yml
+[0m15:48:16.659679 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b1f345c9-5a88-47dc-abce-4878ad2dd450', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc469bb6130>]}
+[0m15:48:16.739766 [debug] [MainThread]: Wrote artifact WritableManifest to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/manifest.json
+[0m15:48:16.744679 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/semantic_manifest.json
+[0m15:48:16.757245 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b1f345c9-5a88-47dc-abce-4878ad2dd450', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc46aeeee50>]}
+[0m15:48:16.757846 [info ] [MainThread]: Found 6 models, 2 sources, 491 macros
+[0m15:48:16.758308 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b1f345c9-5a88-47dc-abce-4878ad2dd450', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc46aeeba60>]}
+[0m15:48:16.759803 [info ] [MainThread]: 
+[0m15:48:16.760408 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:48:16.760769 [info ] [MainThread]: 
+[0m15:48:16.761369 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:48:16.766264 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataeng-448500'
+[0m15:48:16.766813 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:48:17.549063 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dataeng-448500, now list_dataeng-448500_dataeng_448500_ecobici_ds)
+[0m15:48:17.549644 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:48:18.157017 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b1f345c9-5a88-47dc-abce-4878ad2dd450', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc46ad995e0>]}
+[0m15:48:18.157810 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:48:18.162816 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.stg_rides_enriched
+[0m15:48:18.163862 [info ] [Thread-1  ]: 1 of 5 START sql view model dataeng_448500_ecobici_ds.stg_rides_enriched ....... [RUN]
+[0m15:48:18.164834 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_dataeng-448500_dataeng_448500_ecobici_ds, now model.ecobici_dbt.stg_rides_enriched)
+[0m15:48:18.165489 [debug] [Thread-1  ]: Began compiling node model.ecobici_dbt.stg_rides_enriched
+[0m15:48:18.177270 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecobici_dbt.stg_rides_enriched"
+[0m15:48:18.178572 [debug] [Thread-1  ]: Began executing node model.ecobici_dbt.stg_rides_enriched
+[0m15:48:18.223536 [debug] [Thread-1  ]: Writing runtime sql for node "model.ecobici_dbt.stg_rides_enriched"
+[0m15:48:18.225356 [debug] [Thread-1  ]: On model.ecobici_dbt.stg_rides_enriched: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "ecobici_profile", "target_name": "dev", "node_id": "model.ecobici_dbt.stg_rides_enriched"} */
+
+
+  create or replace view `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_rides_enriched`
+  OPTIONS()
+  as -- models/staging/stg_rides_enriched.sql
+-- Enriched version of raw ride data with typed fields, local datetime and ride duration
+
+select
+  -- Technical identifiers
+  ride_id,
+  source_file,
+  ingestion_ts,
+
+  -- Bike information
+  cast(bici as int64) as bike_id,
+
+  -- Origin station
+  trim(split(ltrim(ciclo_estacion_retiro, '0'), '-')[safe_offset(0)]) as origin_station_id,
+  fecha_retiro as origin_date,
+  hora_retiro as origin_time,
+  safe.parse_datetime('%d/%m/%Y %H:%M:%S', concat(fecha_retiro, ' ', hora_retiro)) as origin_datetime,
+
+  -- Destination station
+  trim(split(ltrim(ciclo_estacion_arribo, '0'), '-')[safe_offset(0)]) as destination_station_id,
+  fecha_arribo as destination_date,
+  hora_arribo as destination_time,
+  safe.parse_datetime('%d/%m/%Y %H:%M:%S', concat(fecha_arribo, ' ', hora_arribo)) as destination_datetime,
+
+  -- User info
+  cast(edad_usuario as int64) as user_age,
+  genero_usuario as user_gender,
+
+  -- Ride duration in minutes
+  datetime_diff(
+    safe.parse_datetime('%d/%m/%Y %H:%M:%S', concat(fecha_arribo, ' ', hora_arribo)),
+    safe.parse_datetime('%d/%m/%Y %H:%M:%S', concat(fecha_retiro, ' ', hora_retiro)),
+    minute
+  ) as ride_duration_minutes
+
+from `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_rides`
+where
+  fecha_retiro is not null
+  and hora_retiro is not null
+  and fecha_arribo is not null
+  and hora_arribo is not null;
+
+
+[0m15:48:18.226217 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:48:19.327296 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataeng-448500&j=bq:us-central1:1570ff65-6e5a-4b07-b741-cfa9ef312102&page=queryresults
+[0m15:48:20.166457 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b1f345c9-5a88-47dc-abce-4878ad2dd450', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc441eda8b0>]}
+[0m15:48:20.169609 [info ] [Thread-1  ]: 1 of 5 OK created sql view model dataeng_448500_ecobici_ds.stg_rides_enriched .. [[32mCREATE VIEW (0 processed)[0m in 2.00s]
+[0m15:48:20.172000 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.stg_rides_enriched
+[0m15:48:20.172717 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.stg_stations
+[0m15:48:20.173746 [info ] [Thread-1  ]: 2 of 5 START sql view model dataeng_448500_ecobici_ds.stg_stations ............. [RUN]
+[0m15:48:20.174625 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.ecobici_dbt.stg_rides_enriched, now model.ecobici_dbt.stg_stations)
+[0m15:48:20.175271 [debug] [Thread-1  ]: Began compiling node model.ecobici_dbt.stg_stations
+[0m15:48:20.179677 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecobici_dbt.stg_stations"
+[0m15:48:20.180839 [debug] [Thread-1  ]: Began executing node model.ecobici_dbt.stg_stations
+[0m15:48:20.186125 [debug] [Thread-1  ]: Writing runtime sql for node "model.ecobici_dbt.stg_stations"
+[0m15:48:20.187340 [debug] [Thread-1  ]: On model.ecobici_dbt.stg_stations: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "ecobici_profile", "target_name": "dev", "node_id": "model.ecobici_dbt.stg_stations"} */
+
+
+  create or replace view `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_stations`
+  OPTIONS()
+  as -- models/staging/stg_stations.sql
+-- Staging model for the Ecobici station catalog
+
+select
+  cast(station_id as string) as station_id,
+  name,
+  short_name,
+  lat,
+  lon,
+  capacity,
+  is_charging,
+  has_kiosk,
+  ingestion_ts
+from `dataeng-448500`.`dataeng_448500_ecobici_ds`.`dim_stations`;
+
+
+[0m15:48:20.188254 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:48:21.157010 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataeng-448500&j=bq:us-central1:8c7902e5-aeb0-4beb-b963-570a7b3e0c4b&page=queryresults
+[0m15:48:21.561418 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b1f345c9-5a88-47dc-abce-4878ad2dd450', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc441eda8b0>]}
+[0m15:48:21.562385 [info ] [Thread-1  ]: 2 of 5 OK created sql view model dataeng_448500_ecobici_ds.stg_stations ........ [[32mCREATE VIEW (0 processed)[0m in 1.39s]
+[0m15:48:21.563411 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.stg_stations
+[0m15:48:21.564894 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.rides_with_stations
+[0m15:48:21.565575 [info ] [Thread-1  ]: 3 of 5 START sql table model dataeng_448500_ecobici_ds.rides_with_stations ..... [RUN]
+[0m15:48:21.566247 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.ecobici_dbt.stg_stations, now model.ecobici_dbt.rides_with_stations)
+[0m15:48:21.566799 [debug] [Thread-1  ]: Began compiling node model.ecobici_dbt.rides_with_stations
+[0m15:48:21.573808 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecobici_dbt.rides_with_stations"
+[0m15:48:21.574875 [debug] [Thread-1  ]: Began executing node model.ecobici_dbt.rides_with_stations
+[0m15:48:21.591120 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:48:22.300959 [debug] [Thread-1  ]: Writing runtime sql for node "model.ecobici_dbt.rides_with_stations"
+[0m15:48:22.302309 [debug] [Thread-1  ]: On model.ecobici_dbt.rides_with_stations: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "ecobici_profile", "target_name": "dev", "node_id": "model.ecobici_dbt.rides_with_stations"} */
+
+  
+    
+
+    create or replace table `dataeng-448500`.`dataeng_448500_ecobici_ds`.`rides_with_stations`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      -- models/core/rides_with_stations.sql
+-- Join enriched ride data with station catalog for origin and destination context
+
+select
+  r.ride_id,
+  r.source_file,
+  r.ingestion_ts,
+  r.bike_id,
+  r.user_age,
+  r.user_gender,
+  r.origin_datetime,
+  r.destination_datetime,
+  r.ride_duration_minutes,
+
+  r.origin_station_id,
+  s_from.name as origin_station_name,
+  s_from.lat as origin_lat,
+  s_from.lon as origin_lon,
+
+  r.destination_station_id,
+  s_to.name as destination_station_name,
+  s_to.lat as destination_lat,
+  s_to.lon as destination_lon,
+
+  -- 🚩 Agregamos la bandera correctamente dentro del SELECT
+  case
+    when r.origin_datetime is null or r.destination_datetime is null then 'missing_datetime'
+    when r.ride_duration_minutes is null or r.ride_duration_minutes <= 0 then 'invalid_duration'
+    when r.ride_duration_minutes > 240 then 'too_long'
+    else 'valid'
+  end as ride_quality_flag
+
+from `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_rides_enriched` r
+left join `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_stations` s_from
+  on r.origin_station_id = s_from.station_id
+left join `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_stations` s_to
+  on r.destination_station_id = s_to.station_id
+    );
+  
+[0m15:48:22.866420 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataeng-448500&j=bq:us-central1:cf29c73f-1eae-4d9b-91d2-8013bf26bc55&page=queryresults
+[0m15:48:28.974598 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b1f345c9-5a88-47dc-abce-4878ad2dd450', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc46ae211f0>]}
+[0m15:48:28.976878 [info ] [Thread-1  ]: 3 of 5 OK created sql table model dataeng_448500_ecobici_ds.rides_with_stations  [[32mCREATE TABLE (5.5m rows, 854.2 MiB processed)[0m in 7.41s]
+[0m15:48:28.978093 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.rides_with_stations
+[0m15:48:28.979774 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.fct_rides_daily
+[0m15:48:28.980463 [info ] [Thread-1  ]: 4 of 5 START sql view model dataeng_448500_ecobici_ds.fct_rides_daily .......... [RUN]
+[0m15:48:28.981375 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.ecobici_dbt.rides_with_stations, now model.ecobici_dbt.fct_rides_daily)
+[0m15:48:28.981968 [debug] [Thread-1  ]: Began compiling node model.ecobici_dbt.fct_rides_daily
+[0m15:48:28.987966 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecobici_dbt.fct_rides_daily"
+[0m15:48:28.989186 [debug] [Thread-1  ]: Began executing node model.ecobici_dbt.fct_rides_daily
+[0m15:48:28.994464 [debug] [Thread-1  ]: Writing runtime sql for node "model.ecobici_dbt.fct_rides_daily"
+[0m15:48:28.995530 [debug] [Thread-1  ]: On model.ecobici_dbt.fct_rides_daily: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "ecobici_profile", "target_name": "dev", "node_id": "model.ecobici_dbt.fct_rides_daily"} */
+
+
+  create or replace view `dataeng-448500`.`dataeng_448500_ecobici_ds`.`fct_rides_daily`
+  OPTIONS()
+  as -- models/marts/fct_rides_daily.sql
+-- Daily summary of Ecobici rides with basic metrics and long ride count
+
+select
+  date(origin_datetime) as ride_date,
+  count(*) as total_rides,
+  avg(ride_duration_minutes) as avg_duration_minutes,
+  count(distinct bike_id) as unique_bikes_used,
+  count(distinct origin_station_id) as unique_origin_stations,
+  count(distinct destination_station_id) as unique_destination_stations,
+  sum(case when ride_duration_minutes > 45 then 1 else 0 end) as rides_over_45_min
+from `dataeng-448500`.`dataeng_448500_ecobici_ds`.`rides_with_stations`
+where
+  origin_datetime is not null
+  and ride_quality_flag = 'valid'
+group by 1
+order by 1;
+
+
+[0m15:48:28.996295 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:48:29.810542 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataeng-448500&j=bq:us-central1:033864d3-c407-4564-aa2e-da0b0ac403a7&page=queryresults
+[0m15:48:30.218810 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b1f345c9-5a88-47dc-abce-4878ad2dd450', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc441da2310>]}
+[0m15:48:30.219882 [info ] [Thread-1  ]: 4 of 5 OK created sql view model dataeng_448500_ecobici_ds.fct_rides_daily ..... [[32mCREATE VIEW (0 processed)[0m in 1.24s]
+[0m15:48:30.221093 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.fct_rides_daily
+[0m15:48:30.222063 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.top_origin_stations
+[0m15:48:30.223074 [info ] [Thread-1  ]: 5 of 5 START sql view model dataeng_448500_ecobici_ds.top_origin_stations ...... [RUN]
+[0m15:48:30.223856 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.ecobici_dbt.fct_rides_daily, now model.ecobici_dbt.top_origin_stations)
+[0m15:48:30.224497 [debug] [Thread-1  ]: Began compiling node model.ecobici_dbt.top_origin_stations
+[0m15:48:30.228437 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecobici_dbt.top_origin_stations"
+[0m15:48:30.229850 [debug] [Thread-1  ]: Began executing node model.ecobici_dbt.top_origin_stations
+[0m15:48:30.236917 [debug] [Thread-1  ]: Writing runtime sql for node "model.ecobici_dbt.top_origin_stations"
+[0m15:48:30.238118 [debug] [Thread-1  ]: On model.ecobici_dbt.top_origin_stations: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "ecobici_profile", "target_name": "dev", "node_id": "model.ecobici_dbt.top_origin_stations"} */
+
+
+  create or replace view `dataeng-448500`.`dataeng_448500_ecobici_ds`.`top_origin_stations`
+  OPTIONS()
+  as -- models/marts/top_origin_stations.sql
+-- Top 10 most frequent origin stations (with known names)
+
+select
+  origin_station_id,
+  origin_station_name,
+  count(*) as ride_count
+from `dataeng-448500`.`dataeng_448500_ecobici_ds`.`rides_with_stations`
+where origin_station_name is not null
+group by 1, 2
+order by ride_count desc
+limit 10;
+
+
+[0m15:48:30.238777 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:48:31.144842 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataeng-448500&j=bq:us-central1:7411e20a-75af-44ee-b446-91fde01a1857&page=queryresults
+[0m15:48:31.563292 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b1f345c9-5a88-47dc-abce-4878ad2dd450', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc469b88940>]}
+[0m15:48:31.564645 [info ] [Thread-1  ]: 5 of 5 OK created sql view model dataeng_448500_ecobici_ds.top_origin_stations . [[32mCREATE VIEW (0 processed)[0m in 1.34s]
+[0m15:48:31.565647 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.top_origin_stations
+[0m15:48:31.568883 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:48:31.572344 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:48:31.573081 [debug] [MainThread]: Connection 'model.ecobici_dbt.top_origin_stations' was properly closed.
+[0m15:48:31.573650 [info ] [MainThread]: 
+[0m15:48:31.574238 [info ] [MainThread]: Finished running 1 table model, 4 view models in 0 hours 0 minutes and 14.81 seconds (14.81s).
+[0m15:48:31.576184 [debug] [MainThread]: Command end result
+[0m15:48:31.620806 [debug] [MainThread]: Wrote artifact WritableManifest to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/manifest.json
+[0m15:48:31.623565 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/semantic_manifest.json
+[0m15:48:31.632903 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/run_results.json
+[0m15:48:31.633555 [info ] [MainThread]: 
+[0m15:48:31.634212 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:48:31.634731 [info ] [MainThread]: 
+[0m15:48:31.635331 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+[0m15:48:31.636390 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 17.01479, "process_in_blocks": "0", "process_kernel_time": 0.596809, "process_mem_max_rss": "258260", "process_out_blocks": "3248", "process_user_time": 5.779418}
+[0m15:48:31.637151 [debug] [MainThread]: Command `dbt run` succeeded at 15:48:31.637010 after 17.02 seconds
+[0m15:48:31.637790 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc47084d400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc4712eabe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc46aeee6a0>]}
+[0m15:48:31.638381 [debug] [MainThread]: Flushing usage events
+[0m15:48:32.380284 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:49:26.419822 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f906457f400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9063739640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f90643a0fd0>]}
+
+
+============================== 15:49:26.425513 | f02954a2-abd3-4ff3-bc87-cd48526d99b6 ==============================
+[0m15:49:26.425513 [info ] [MainThread]: Running with dbt=1.9.3
+[0m15:49:26.426656 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '.dbt', 'log_path': '/home/maxkaizo/cdmx_ecobici_usage/tests/dbt/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --profiles-dir .dbt', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:49:27.691330 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f02954a2-abd3-4ff3-bc87-cd48526d99b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9065d6b3a0>]}
+[0m15:49:27.763424 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f02954a2-abd3-4ff3-bc87-cd48526d99b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9035c1b8e0>]}
+[0m15:49:27.764199 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m15:49:27.944835 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m15:49:28.093278 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m15:49:28.094011 [debug] [MainThread]: Partial parsing: updated file: ecobici_dbt://models/marts/invalid_rides_summary.sql
+[0m15:49:28.479622 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f02954a2-abd3-4ff3-bc87-cd48526d99b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f905b900130>]}
+[0m15:49:28.576339 [debug] [MainThread]: Wrote artifact WritableManifest to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/manifest.json
+[0m15:49:28.582760 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/semantic_manifest.json
+[0m15:49:28.593623 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f02954a2-abd3-4ff3-bc87-cd48526d99b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f905b925640>]}
+[0m15:49:28.594187 [info ] [MainThread]: Found 6 models, 2 sources, 491 macros
+[0m15:49:28.594593 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f02954a2-abd3-4ff3-bc87-cd48526d99b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f905b900f40>]}
+[0m15:49:28.596304 [info ] [MainThread]: 
+[0m15:49:28.596741 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:49:28.597206 [info ] [MainThread]: 
+[0m15:49:28.597940 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:49:28.602327 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataeng-448500'
+[0m15:49:28.602884 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:49:29.426748 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dataeng-448500, now list_dataeng-448500_dataeng_448500_ecobici_ds)
+[0m15:49:29.427675 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:49:30.028167 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f02954a2-abd3-4ff3-bc87-cd48526d99b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f90636df0a0>]}
+[0m15:49:30.029031 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:49:30.033936 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.stg_rides_enriched
+[0m15:49:30.034789 [info ] [Thread-1  ]: 1 of 6 START sql view model dataeng_448500_ecobici_ds.stg_rides_enriched ....... [RUN]
+[0m15:49:30.035544 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_dataeng-448500_dataeng_448500_ecobici_ds, now model.ecobici_dbt.stg_rides_enriched)
+[0m15:49:30.036304 [debug] [Thread-1  ]: Began compiling node model.ecobici_dbt.stg_rides_enriched
+[0m15:49:30.049202 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecobici_dbt.stg_rides_enriched"
+[0m15:49:30.051165 [debug] [Thread-1  ]: Began executing node model.ecobici_dbt.stg_rides_enriched
+[0m15:49:30.093183 [debug] [Thread-1  ]: Writing runtime sql for node "model.ecobici_dbt.stg_rides_enriched"
+[0m15:49:30.094553 [debug] [Thread-1  ]: On model.ecobici_dbt.stg_rides_enriched: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "ecobici_profile", "target_name": "dev", "node_id": "model.ecobici_dbt.stg_rides_enriched"} */
+
+
+  create or replace view `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_rides_enriched`
+  OPTIONS()
+  as -- models/staging/stg_rides_enriched.sql
+-- Enriched version of raw ride data with typed fields, local datetime and ride duration
+
+select
+  -- Technical identifiers
+  ride_id,
+  source_file,
+  ingestion_ts,
+
+  -- Bike information
+  cast(bici as int64) as bike_id,
+
+  -- Origin station
+  trim(split(ltrim(ciclo_estacion_retiro, '0'), '-')[safe_offset(0)]) as origin_station_id,
+  fecha_retiro as origin_date,
+  hora_retiro as origin_time,
+  safe.parse_datetime('%d/%m/%Y %H:%M:%S', concat(fecha_retiro, ' ', hora_retiro)) as origin_datetime,
+
+  -- Destination station
+  trim(split(ltrim(ciclo_estacion_arribo, '0'), '-')[safe_offset(0)]) as destination_station_id,
+  fecha_arribo as destination_date,
+  hora_arribo as destination_time,
+  safe.parse_datetime('%d/%m/%Y %H:%M:%S', concat(fecha_arribo, ' ', hora_arribo)) as destination_datetime,
+
+  -- User info
+  cast(edad_usuario as int64) as user_age,
+  genero_usuario as user_gender,
+
+  -- Ride duration in minutes
+  datetime_diff(
+    safe.parse_datetime('%d/%m/%Y %H:%M:%S', concat(fecha_arribo, ' ', hora_arribo)),
+    safe.parse_datetime('%d/%m/%Y %H:%M:%S', concat(fecha_retiro, ' ', hora_retiro)),
+    minute
+  ) as ride_duration_minutes
+
+from `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_rides`
+where
+  fecha_retiro is not null
+  and hora_retiro is not null
+  and fecha_arribo is not null
+  and hora_arribo is not null;
+
+
+[0m15:49:30.095313 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:49:30.930139 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataeng-448500&j=bq:us-central1:9906deff-c6ed-43a4-9af2-04e82c394aab&page=queryresults
+[0m15:49:31.541137 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f02954a2-abd3-4ff3-bc87-cd48526d99b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f906473df40>]}
+[0m15:49:31.543410 [info ] [Thread-1  ]: 1 of 6 OK created sql view model dataeng_448500_ecobici_ds.stg_rides_enriched .. [[32mCREATE VIEW (0 processed)[0m in 1.50s]
+[0m15:49:31.545670 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.stg_rides_enriched
+[0m15:49:31.546410 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.stg_stations
+[0m15:49:31.547516 [info ] [Thread-1  ]: 2 of 6 START sql view model dataeng_448500_ecobici_ds.stg_stations ............. [RUN]
+[0m15:49:31.548668 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.ecobici_dbt.stg_rides_enriched, now model.ecobici_dbt.stg_stations)
+[0m15:49:31.549341 [debug] [Thread-1  ]: Began compiling node model.ecobici_dbt.stg_stations
+[0m15:49:31.554440 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecobici_dbt.stg_stations"
+[0m15:49:31.555562 [debug] [Thread-1  ]: Began executing node model.ecobici_dbt.stg_stations
+[0m15:49:31.560743 [debug] [Thread-1  ]: Writing runtime sql for node "model.ecobici_dbt.stg_stations"
+[0m15:49:31.562072 [debug] [Thread-1  ]: On model.ecobici_dbt.stg_stations: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "ecobici_profile", "target_name": "dev", "node_id": "model.ecobici_dbt.stg_stations"} */
+
+
+  create or replace view `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_stations`
+  OPTIONS()
+  as -- models/staging/stg_stations.sql
+-- Staging model for the Ecobici station catalog
+
+select
+  cast(station_id as string) as station_id,
+  name,
+  short_name,
+  lat,
+  lon,
+  capacity,
+  is_charging,
+  has_kiosk,
+  ingestion_ts
+from `dataeng-448500`.`dataeng_448500_ecobici_ds`.`dim_stations`;
+
+
+[0m15:49:31.562948 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:49:32.256799 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataeng-448500&j=bq:us-central1:eee97929-fe04-43ad-b2c3-d4850bc2d381&page=queryresults
+[0m15:49:32.657569 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f02954a2-abd3-4ff3-bc87-cd48526d99b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f905e07ddf0>]}
+[0m15:49:32.659133 [info ] [Thread-1  ]: 2 of 6 OK created sql view model dataeng_448500_ecobici_ds.stg_stations ........ [[32mCREATE VIEW (0 processed)[0m in 1.11s]
+[0m15:49:32.660735 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.stg_stations
+[0m15:49:32.663564 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.rides_with_stations
+[0m15:49:32.664948 [info ] [Thread-1  ]: 3 of 6 START sql table model dataeng_448500_ecobici_ds.rides_with_stations ..... [RUN]
+[0m15:49:32.667090 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.ecobici_dbt.stg_stations, now model.ecobici_dbt.rides_with_stations)
+[0m15:49:32.668609 [debug] [Thread-1  ]: Began compiling node model.ecobici_dbt.rides_with_stations
+[0m15:49:32.682548 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecobici_dbt.rides_with_stations"
+[0m15:49:32.688081 [debug] [Thread-1  ]: Began executing node model.ecobici_dbt.rides_with_stations
+[0m15:49:32.721115 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:49:33.480387 [debug] [Thread-1  ]: Writing runtime sql for node "model.ecobici_dbt.rides_with_stations"
+[0m15:49:33.482614 [debug] [Thread-1  ]: On model.ecobici_dbt.rides_with_stations: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "ecobici_profile", "target_name": "dev", "node_id": "model.ecobici_dbt.rides_with_stations"} */
+
+  
+    
+
+    create or replace table `dataeng-448500`.`dataeng_448500_ecobici_ds`.`rides_with_stations`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      -- models/core/rides_with_stations.sql
+-- Join enriched ride data with station catalog for origin and destination context
+
+select
+  r.ride_id,
+  r.source_file,
+  r.ingestion_ts,
+  r.bike_id,
+  r.user_age,
+  r.user_gender,
+  r.origin_datetime,
+  r.destination_datetime,
+  r.ride_duration_minutes,
+
+  r.origin_station_id,
+  s_from.name as origin_station_name,
+  s_from.lat as origin_lat,
+  s_from.lon as origin_lon,
+
+  r.destination_station_id,
+  s_to.name as destination_station_name,
+  s_to.lat as destination_lat,
+  s_to.lon as destination_lon,
+
+  -- 🚩 Agregamos la bandera correctamente dentro del SELECT
+  case
+    when r.origin_datetime is null or r.destination_datetime is null then 'missing_datetime'
+    when r.ride_duration_minutes is null or r.ride_duration_minutes <= 0 then 'invalid_duration'
+    when r.ride_duration_minutes > 240 then 'too_long'
+    else 'valid'
+  end as ride_quality_flag
+
+from `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_rides_enriched` r
+left join `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_stations` s_from
+  on r.origin_station_id = s_from.station_id
+left join `dataeng-448500`.`dataeng_448500_ecobici_ds`.`stg_stations` s_to
+  on r.destination_station_id = s_to.station_id
+    );
+  
+[0m15:49:34.147433 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataeng-448500&j=bq:us-central1:21c90962-2554-4a7f-963a-a714d77c8ceb&page=queryresults
+[0m15:49:39.880331 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f02954a2-abd3-4ff3-bc87-cd48526d99b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f905ec39a30>]}
+[0m15:49:39.881820 [info ] [Thread-1  ]: 3 of 6 OK created sql table model dataeng_448500_ecobici_ds.rides_with_stations  [[32mCREATE TABLE (5.5m rows, 854.2 MiB processed)[0m in 7.21s]
+[0m15:49:39.882973 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.rides_with_stations
+[0m15:49:39.885381 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.fct_rides_daily
+[0m15:49:39.886336 [info ] [Thread-1  ]: 4 of 6 START sql view model dataeng_448500_ecobici_ds.fct_rides_daily .......... [RUN]
+[0m15:49:39.887476 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.ecobici_dbt.rides_with_stations, now model.ecobici_dbt.fct_rides_daily)
+[0m15:49:39.888301 [debug] [Thread-1  ]: Began compiling node model.ecobici_dbt.fct_rides_daily
+[0m15:49:39.893489 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecobici_dbt.fct_rides_daily"
+[0m15:49:39.894486 [debug] [Thread-1  ]: Began executing node model.ecobici_dbt.fct_rides_daily
+[0m15:49:39.899690 [debug] [Thread-1  ]: Writing runtime sql for node "model.ecobici_dbt.fct_rides_daily"
+[0m15:49:39.901094 [debug] [Thread-1  ]: On model.ecobici_dbt.fct_rides_daily: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "ecobici_profile", "target_name": "dev", "node_id": "model.ecobici_dbt.fct_rides_daily"} */
+
+
+  create or replace view `dataeng-448500`.`dataeng_448500_ecobici_ds`.`fct_rides_daily`
+  OPTIONS()
+  as -- models/marts/fct_rides_daily.sql
+-- Daily summary of Ecobici rides with basic metrics and long ride count
+
+select
+  date(origin_datetime) as ride_date,
+  count(*) as total_rides,
+  avg(ride_duration_minutes) as avg_duration_minutes,
+  count(distinct bike_id) as unique_bikes_used,
+  count(distinct origin_station_id) as unique_origin_stations,
+  count(distinct destination_station_id) as unique_destination_stations,
+  sum(case when ride_duration_minutes > 45 then 1 else 0 end) as rides_over_45_min
+from `dataeng-448500`.`dataeng_448500_ecobici_ds`.`rides_with_stations`
+where
+  origin_datetime is not null
+  and ride_quality_flag = 'valid'
+group by 1
+order by 1;
+
+
+[0m15:49:39.902193 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:49:40.684746 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataeng-448500&j=bq:us-central1:a21bf1c9-9cc0-4eb8-8cbc-49e2b1d0dc99&page=queryresults
+[0m15:49:41.089265 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f02954a2-abd3-4ff3-bc87-cd48526d99b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f905e07ddf0>]}
+[0m15:49:41.090255 [info ] [Thread-1  ]: 4 of 6 OK created sql view model dataeng_448500_ecobici_ds.fct_rides_daily ..... [[32mCREATE VIEW (0 processed)[0m in 1.20s]
+[0m15:49:41.091181 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.fct_rides_daily
+[0m15:49:41.091845 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.invalid_rides_summary
+[0m15:49:41.092638 [info ] [Thread-1  ]: 5 of 6 START sql view model dataeng_448500_ecobici_ds.invalid_rides_summary .... [RUN]
+[0m15:49:41.093354 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.ecobici_dbt.fct_rides_daily, now model.ecobici_dbt.invalid_rides_summary)
+[0m15:49:41.093935 [debug] [Thread-1  ]: Began compiling node model.ecobici_dbt.invalid_rides_summary
+[0m15:49:41.097877 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecobici_dbt.invalid_rides_summary"
+[0m15:49:41.099474 [debug] [Thread-1  ]: Began executing node model.ecobici_dbt.invalid_rides_summary
+[0m15:49:41.107126 [debug] [Thread-1  ]: Writing runtime sql for node "model.ecobici_dbt.invalid_rides_summary"
+[0m15:49:41.108371 [debug] [Thread-1  ]: On model.ecobici_dbt.invalid_rides_summary: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "ecobici_profile", "target_name": "dev", "node_id": "model.ecobici_dbt.invalid_rides_summary"} */
+
+
+  create or replace view `dataeng-448500`.`dataeng_448500_ecobici_ds`.`invalid_rides_summary`
+  OPTIONS()
+  as -- models/marts/invalid_rides_summary.sql
+-- Summary of invalid or questionable ride records
+
+select
+  ride_quality_flag,
+  count(*) as total_records,
+  round(100.0 * count(*) / sum(count(*)) over(), 2) as percentage
+from `dataeng-448500`.`dataeng_448500_ecobici_ds`.`rides_with_stations`
+group by ride_quality_flag
+order by total_records desc;
+
+
+[0m15:49:41.109036 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:49:41.993103 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataeng-448500&j=bq:us-central1:e7f65811-5ded-4341-8083-bbc22d6fd1d7&page=queryresults
+[0m15:49:42.399437 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f02954a2-abd3-4ff3-bc87-cd48526d99b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9056f42670>]}
+[0m15:49:42.400420 [info ] [Thread-1  ]: 5 of 6 OK created sql view model dataeng_448500_ecobici_ds.invalid_rides_summary  [[32mCREATE VIEW (0 processed)[0m in 1.31s]
+[0m15:49:42.401483 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.invalid_rides_summary
+[0m15:49:42.402309 [debug] [Thread-1  ]: Began running node model.ecobici_dbt.top_origin_stations
+[0m15:49:42.403065 [info ] [Thread-1  ]: 6 of 6 START sql view model dataeng_448500_ecobici_ds.top_origin_stations ...... [RUN]
+[0m15:49:42.404003 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.ecobici_dbt.invalid_rides_summary, now model.ecobici_dbt.top_origin_stations)
+[0m15:49:42.404536 [debug] [Thread-1  ]: Began compiling node model.ecobici_dbt.top_origin_stations
+[0m15:49:42.408947 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecobici_dbt.top_origin_stations"
+[0m15:49:42.411383 [debug] [Thread-1  ]: Began executing node model.ecobici_dbt.top_origin_stations
+[0m15:49:42.416802 [debug] [Thread-1  ]: Writing runtime sql for node "model.ecobici_dbt.top_origin_stations"
+[0m15:49:42.417898 [debug] [Thread-1  ]: On model.ecobici_dbt.top_origin_stations: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "ecobici_profile", "target_name": "dev", "node_id": "model.ecobici_dbt.top_origin_stations"} */
+
+
+  create or replace view `dataeng-448500`.`dataeng_448500_ecobici_ds`.`top_origin_stations`
+  OPTIONS()
+  as -- models/marts/top_origin_stations.sql
+-- Top 10 most frequent origin stations (with known names)
+
+select
+  origin_station_id,
+  origin_station_name,
+  count(*) as ride_count
+from `dataeng-448500`.`dataeng_448500_ecobici_ds`.`rides_with_stations`
+where origin_station_name is not null
+group by 1, 2
+order by ride_count desc
+limit 10;
+
+
+[0m15:49:42.418546 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:49:43.288339 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataeng-448500&j=bq:us-central1:6deb778f-95f0-41c3-b38f-4902ccad0bca&page=queryresults
+[0m15:49:43.643794 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f02954a2-abd3-4ff3-bc87-cd48526d99b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f905b8da0a0>]}
+[0m15:49:43.644877 [info ] [Thread-1  ]: 6 of 6 OK created sql view model dataeng_448500_ecobici_ds.top_origin_stations . [[32mCREATE VIEW (0 processed)[0m in 1.24s]
+[0m15:49:43.645904 [debug] [Thread-1  ]: Finished running node model.ecobici_dbt.top_origin_stations
+[0m15:49:43.648004 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:49:43.650443 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:49:43.650960 [debug] [MainThread]: Connection 'model.ecobici_dbt.top_origin_stations' was properly closed.
+[0m15:49:43.651739 [info ] [MainThread]: 
+[0m15:49:43.652395 [info ] [MainThread]: Finished running 1 table model, 5 view models in 0 hours 0 minutes and 15.05 seconds (15.05s).
+[0m15:49:43.654923 [debug] [MainThread]: Command end result
+[0m15:49:43.694718 [debug] [MainThread]: Wrote artifact WritableManifest to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/manifest.json
+[0m15:49:43.696873 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/semantic_manifest.json
+[0m15:49:43.706239 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/maxkaizo/cdmx_ecobici_usage/tests/dbt/target/run_results.json
+[0m15:49:43.706850 [info ] [MainThread]: 
+[0m15:49:43.707534 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:49:43.708160 [info ] [MainThread]: 
+[0m15:49:43.708763 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 TOTAL=6
+[0m15:49:43.709740 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 17.392214, "process_in_blocks": "0", "process_kernel_time": 0.555373, "process_mem_max_rss": "257896", "process_out_blocks": "3264", "process_user_time": 5.841708}
+[0m15:49:43.710378 [debug] [MainThread]: Command `dbt run` succeeded at 15:49:43.710238 after 17.39 seconds
+[0m15:49:43.710916 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f906457f400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9065d6b3a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f90647396a0>]}
+[0m15:49:43.711444 [debug] [MainThread]: Flushing usage events
+[0m15:49:44.410543 [debug] [MainThread]: An error was encountered while trying to flush usage events

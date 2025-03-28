@@ -1,14 +1,17 @@
-plan de trabajo
+pendientes
 
-Hecho:
+ajustar los archivos necesarios para usar el archivo de llaves bajo el directorio general y no el de terraform
+segun recuerdo, donde se deben de haccer los ajustes es en
 
-- Estructura de readme
-- Estructura de repositorio
-- Script para obtener catálogo de urls
-- Provisionamiento de kestra local
-- Flow de orquestración:
-    - Descarga de catálogo
-    - Descarga de archivo csv
+las variables de terraform
+el profile de dbt
+
+en el caso de dlt lo que hice fue cargarlas manualmente a través de kestra, pero tendría que ver como unificar esto
+para que se pueda replicar
 
 
-Por hacer:
+
+- puntos de mejora o roadmap
+    - particion de base de datos
+
+    

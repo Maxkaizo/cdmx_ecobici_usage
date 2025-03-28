@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/banner.jpg" width="100%" alt="Ecobici Data Pipeline" />
+  <img src="images/banner_got.png" width="100%" alt="Ecobici Data Pipeline" />
 </p>
 
 <p align="center">
@@ -7,6 +7,7 @@
   <img src="https://img.shields.io/badge/cloud-GCP-blue" />
   <img src="https://img.shields.io/badge/IaC-Terraform-623ce4" />
 </p>
+
 
 # 🚴 Ecobici Data Pipeline
 

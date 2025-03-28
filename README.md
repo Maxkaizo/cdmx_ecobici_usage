@@ -1,3 +1,6 @@
+# 🚴 Ecobici Data Pipeline
+
+This project showcases the development of a complete batch data pipeline using open data from Ecobici CDMX. The main goal is to demonstrate end-to-end capabilities in orchestration, ingestion, modeling, and data visualization in the cloud, rather than performing deep analytical insights on the dataset itself.
 <p align="center">
   <img src="images/banner_got.png" width="100%" alt="Ecobici Data Pipeline" />
 </p>
@@ -7,11 +10,6 @@
   <img src="https://img.shields.io/badge/cloud-GCP-blue" />
   <img src="https://img.shields.io/badge/IaC-Terraform-623ce4" />
 </p>
-
-
-# 🚴 Ecobici Data Pipeline
-
-This project showcases the development of a complete batch data pipeline using open data from Ecobici CDMX. The main goal is to demonstrate end-to-end capabilities in orchestration, ingestion, modeling, and data visualization in the cloud, rather than performing deep analytical insights on the dataset itself.
 
 ---
 # 🧭 About Ecobici

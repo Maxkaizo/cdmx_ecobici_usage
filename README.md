@@ -1,4 +1,4 @@
-# 🚴 Ecobici Data Pipeline
+# 🚴 Mexico City's Ecobici Data Pipeline
 
 This project showcases the development of a complete batch data pipeline using open data from Ecobici CDMX. The main goal is to demonstrate end-to-end capabilities in orchestration, ingestion, modeling, and data visualization in the cloud, rather than performing deep analytical insights on the dataset itself.
 <p align="center">
@@ -9,6 +9,15 @@ This project showcases the development of a complete batch data pipeline using o
   <img src="https://img.shields.io/badge/status-active-brightgreen" />
   <img src="https://img.shields.io/badge/cloud-GCP-blue" />
   <img src="https://img.shields.io/badge/IaC-Terraform-623ce4" />
+  <img src="https://img.shields.io/badge/orchestration-Kestra-7B3FE4" />
+  <img src="https://img.shields.io/badge/etl-dltHub-00B86B" />
+  <img src="https://img.shields.io/badge/transform-dbt-F04E98" />
+  <img src="https://img.shields.io/badge/data%20lake-GCS-34A853" />
+  <img src="https://img.shields.io/badge/warehouse-BigQuery-669DF6" />
+  <img src="https://img.shields.io/badge/visualization-Looker%20Studio-4285F4" />
+  <img src="https://img.shields.io/badge/language-Python-3776AB" />
+  <img src="https://img.shields.io/badge/containers-Docker-2496ED" />
+  <img src="https://img.shields.io/badge/source-Ecobici%20CDMX-0E9E58" />
 </p>
 
 
@@ -49,13 +58,15 @@ The pipeline leverages **Google Cloud Platform (GCP)** services:
 
 ## 🧩 Pipeline Components
 
-| Stage                 | Tool              | Description                                                                   |
-|----------------------|-------------------|-------------------------------------------------------------------------------|
-| Orchestration         | Kestra            | Locally running orchestrator triggering each batch pipeline step             |
-| Data Lake             | Google Cloud Storage | Stores raw monthly files from Ecobici                                        |
-| Ingestion to DWH      | BigQuery          | Loads GCS files into intermediate staging tables                             |
-| Transformations       | dbt               | Transforms staging tables into joined models, containerized and orchestrated |
-| Visualization         | Looker Studio     | Dashboard with at least 2 visual insights                                     |
+| Stage                 | Tool                    | Description                                                                 |
+|----------------------|-------------------------|-----------------------------------------------------------------------------|
+| Orchestration         | Kestra                  | Locally running orchestrator triggering each step in the batch pipeline    |
+| Data Extraction       | Python + Docker         | Scrapes and downloads historical CSV/JSON files from Ecobici website       |
+| Data Lake             | Google Cloud Storage    | Stores raw monthly files from Ecobici in GCS buckets                       |
+| Ingestion to DWH      | dlt + BigQuery          | Extracts data from GCS and loads it into BigQuery staging tables           |
+| Transformations       | dbt + Docker            | Transforms staging tables into cleaned and joined models                   |
+| Visualization         | Looker Studio           | Dashboard with at least 2 visual insights on bike usage                    |
+                                  |
 
 ---
 
@@ -149,5 +160,6 @@ Ecobici Open Data
 ---
 
 ## 👤 Author
-Your Name
-GitHub • LinkedIn
+José Luis Martínez Olvera
+GitHub • [GitHub](https://github.com/Maxkaizo)
+LinkedIn • [LinkedIn](www.linkedin.com/in/jlmartinezol)

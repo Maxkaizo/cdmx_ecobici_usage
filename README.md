@@ -66,28 +66,30 @@ The pipeline leverages **Google Cloud Platform (GCP)** services:
 | Ingestion to DWH      | dlt + BigQuery          | Extracts data from GCS and loads it into BigQuery staging tables           |
 | Transformations       | dbt + Docker            | Transforms staging tables into cleaned and joined models                   |
 | Visualization         | Looker Studio           | Dashboard with at least 2 visual insights on bike usage                    |
-                                  |
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 ``` bash
 ecobici-data-pipeline/
-├── terraform/           # Infrastructure as Code for GCP resources
-├── kestra/              # Kestra workflow definitions
-├── dbt/                 # dbt models and project files
-├── dashboard/           # Dashboard screenshots or link
-├── img/                 # Diagrams, banners, visuals
-├── README.md
-└── ...
+├── dbt/                              # dbt project (models, profiles, etc.)
+├── images/                           # Diagrams and visual assets
+├── kestra/                           # Kestra orchestration config and flows
+├── src/                              # Source scripts for data extraction
+├── terraform/                        # Terraform configuration files
+├── LICENSE                           # License file
+└── README.md                         # Project documentation
 ```
+
 ---
 
 
 ## 📊 Dashboard
 
 🔗 View in Looker Studio
+
+- https://lookerstudio.google.com/s/gFyZHSl4BD8
 
 ---
 
@@ -119,36 +121,6 @@ docker build -t ecobici-pipeline .
 docker run --rm -v $(pwd):/app ecobici-pipeline
 ```
 This image includes Terraform, dbt and Kestra CLI, allowing full pipeline execution from a single container.
-
----
-
-# 🧱 Unexpected Challenges
-During development, a few non-trivial issues surfaced that required extra attention:
-
-⚙️ Terraform + GCP permissions: Setting up service accounts and giving the right permissions to interact with BigQuery and GCS took some trial and error.
-
-🧪 Testing Kestra workflows locally: Debugging Kestra without a cloud-based deployment required extra care in logging and validation.
-
-📁 Handling historical data variations: Older Ecobici files had slight structural differences that required normalization steps before ingestion.
-
-🧼 Cleaning inconsistencies in CSVs, including missing values and timestamp anomalies, especially in early datasets.
-
----
-
-# 🛣️ Roadmap & Potential Improvements
-While the current version of the pipeline meets the project requirements and showcases key data engineering capabilities, several improvements could be explored in future iterations:
-
-🔁 Add streaming ingestion using tools like Pub/Sub or Kafka.
-
-📦 Containerize the entire solution and deploy to Kubernetes or Cloud Run.
-
-🔐 Implement service account roles and fine-grained IAM policies via Terraform.
-
-📅 Automate scheduling (e.g., monthly trigger via Cloud Scheduler or Kestra's native scheduling).
-
-📈 Enhance dashboard with richer visualizations and user segmentation.
-
-🧪 Add data quality checks using tools like Great Expectations or dbt tests.
 
 ---
 

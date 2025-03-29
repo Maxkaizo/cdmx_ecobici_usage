@@ -28,7 +28,7 @@ To promote transparency and enable data-driven urban planning, Ecobici publishes
 
 ## 🌐 Architecture Overview
 
-![Pipeline Diagram](images/pipeline_diagram.png)
+![Pipeline Diagram](images/diagram.png)
 
 ---
 

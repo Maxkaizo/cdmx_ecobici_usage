@@ -1,5 +1,0 @@
-target/
-logs/
-__pycache__/
-.dbt/
-*.pyc

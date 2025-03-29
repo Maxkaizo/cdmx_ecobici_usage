@@ -1,0 +1,38 @@
+version: 2
+
+models:
+  - name: fct_rides_daily
+    description: "Aggregated daily summary of Ecobici rides for dashboarding."
+    columns:
+      - name: ride_date
+        description: "Date of the ride"
+      - name: total_rides
+        description: "Number of rides that started on this date"
+      - name: avg_duration_minutes
+        description: "Average duration of rides on this date"
+      - name: unique_bikes_used
+        description: "Distinct bikes used on this date"
+      - name: unique_origin_stations
+        description: "Number of distinct origin stations used on this date"
+      - name: unique_destination_stations
+        description: "Number of distinct destination stations used on this date"
+      - name: rides_over_45_min
+        description: "Number of rides that lasted more than 45 minutes"
+  - name: top_origin_stations
+    description: "Top 10 most used origin stations with known names."
+    columns:
+      - name: origin_station_id
+        description: "Identifier of the origin station"
+      - name: origin_station_name
+        description: "Name of the origin station"
+      - name: ride_count
+        description: "Total number of rides started from this station"
+  - name: invalid_rides_summary
+    description: "Summary of ride_quality_flag categories to monitor data quality."
+    columns:
+      - name: ride_quality_flag
+        description: "Classification label of the ride based on quality checks"
+      - name: total_records
+        description: "Number of rides in this category"
+      - name: percentage
+        description: "Share of total rides represented by this category"

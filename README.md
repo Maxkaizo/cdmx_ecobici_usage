@@ -60,7 +60,7 @@ The pipeline leverages **Google Cloud Platform (GCP)** services:
 
 | Stage                 | Tool                    | Description                                                                 |
 |----------------------|-------------------------|-----------------------------------------------------------------------------|
-| Orchestration         | Kestra                  | Locally running orchestrator triggering each step in the batch pipeline    |
+| Orchestration         | Kestra                  | Orchestrator triggering each step in the batch pipeline    |
 | Data Extraction       | Python + Docker         | Scrapes and downloads historical CSV/JSON files from Ecobici website       |
 | Data Lake             | Google Cloud Storage    | Stores raw monthly files from Ecobici in GCS buckets                       |
 | Ingestion to DWH      | dlt + BigQuery          | Extracts data from GCS and loads it into BigQuery staging tables           |

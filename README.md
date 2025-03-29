@@ -125,13 +125,16 @@ This image includes Terraform, dbt and Kestra CLI, allowing full pipeline execut
 ---
 
 ## 📚 References
+
 DataTalksClub – Data Engineering Zoomcamp
 
+https://github.com/DataTalksClub/data-engineering-zoomcamp
+
 Ecobici Open Data
+
+https://ecobici.cdmx.gob.mx/datos-abiertos/
 
 ---
 
 ## 👤 Author
-José Luis Martínez Olvera
-GitHub • [GitHub](https://github.com/Maxkaizo)
-LinkedIn • [LinkedIn](www.linkedin.com/in/jlmartinezol)
+José Luis Martínez Olvera • [GitHub](https://github.com/Maxkaizo) • [LinkedIn](www.linkedin.com/in/jlmartinezol)

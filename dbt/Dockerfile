@@ -1,16 +1,15 @@
-# Usa una imagen base de Python
+# base image
 FROM python:3.10-slim
 
-# Evita buffering
+# avoid buffering
 ENV PYTHONUNBUFFERED=1
 
-# Instala dependencias necesarias
+# install dependencies
 RUN pip install --no-cache-dir dbt-bigquery pandas gcsfs
 
-# Crea carpeta de trabajo
+# create working dir
 WORKDIR /app
 
-# Copia todo el proyecto al contenedor
+# copy files
 COPY . .
 
-# Por ahora, no definimos CMD porque lo ejecutarás tú manualmente

@@ -5017,3 +5017,469 @@ limit 10;
 [0m15:49:43.710916 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f906457f400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9065d6b3a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f90647396a0>]}
 [0m15:49:43.711444 [debug] [MainThread]: Flushing usage events
 [0m15:49:44.410543 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:19:13.438568 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f4f93a4f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f4f75b280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f4eabfd60>]}
+
+
+============================== 12:19:13.472930 | c5ec2963-3c57-4b6b-ad6d-4275b7d71b4c ==============================
+[0m12:19:13.472930 [info ] [MainThread]: Running with dbt=1.9.3
+[0m12:19:13.474085 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.dbt/', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/maxkaizo/cdmx_ecobici_usage/dbt/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt docs generate --profiles-dir .dbt/', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m12:19:17.411414 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c5ec2963-3c57-4b6b-ad6d-4275b7d71b4c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f50f1e850>]}
+[0m12:19:17.519056 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c5ec2963-3c57-4b6b-ad6d-4275b7d71b4c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f4eb06100>]}
+[0m12:19:17.520075 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m12:19:17.844952 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m12:19:18.153561 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:19:18.154947 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:19:18.218327 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c5ec2963-3c57-4b6b-ad6d-4275b7d71b4c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f49eae130>]}
+[0m12:19:18.293677 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c5ec2963-3c57-4b6b-ad6d-4275b7d71b4c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f49e5baf0>]}
+[0m12:19:18.294691 [info ] [MainThread]: Found 6 models, 2 sources, 491 macros
+[0m12:19:18.295296 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c5ec2963-3c57-4b6b-ad6d-4275b7d71b4c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f49e5ba90>]}
+[0m12:19:18.297824 [info ] [MainThread]: 
+[0m12:19:18.298451 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m12:19:18.299053 [info ] [MainThread]: 
+[0m12:19:18.299867 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m12:19:18.307833 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataeng-448500_dataeng_448500_ecobici_ds'
+[0m12:19:18.309711 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:19:18.310403 [debug] [ThreadPool]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: '[Errno 2] No such file or directory: '/tmp/gcp_creds.json''
+[0m12:19:18.311433 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:19:18.312046 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: '[Errno 2] No such file or directory: '/tmp/gcp_creds.json''
+[0m12:19:18.314625 [error] [MainThread]: Encountered an error:
+Database Error
+  [Errno 2] No such file or directory: '/tmp/gcp_creds.json'
+[0m12:19:18.315695 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": false, "command_wall_clock_time": 4.9829063, "process_in_blocks": "299192", "process_kernel_time": 1.621203, "process_mem_max_rss": "251644", "process_out_blocks": "64", "process_user_time": 5.780869}
+[0m12:19:18.316432 [debug] [MainThread]: Command `dbt docs generate` failed at 12:19:18.316249 after 4.98 seconds
+[0m12:19:18.317001 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f4f93a4f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f49e765e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f49e76070>]}
+[0m12:19:18.318384 [debug] [MainThread]: Flushing usage events
+[0m12:19:18.934690 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:21:28.270541 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f33e7532b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f33e6addb40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f33e6adcdf0>]}
+
+
+============================== 18:21:28.283360 | 0be62156-5749-4da4-9963-eb614d63f130 ==============================
+[0m18:21:28.283360 [info ] [MainThread]: Running with dbt=1.9.3
+[0m18:21:28.284574 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/root/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': '/app/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt docs generate', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m18:21:30.325762 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0be62156-5749-4da4-9963-eb614d63f130', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f33e73a04c0>]}
+[0m18:21:30.443462 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0be62156-5749-4da4-9963-eb614d63f130', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f33bc727b80>]}
+[0m18:21:30.444637 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m18:21:30.702087 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m18:21:31.072570 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m18:21:31.073212 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m18:21:31.166738 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0be62156-5749-4da4-9963-eb614d63f130', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f33bc0e4ee0>]}
+[0m18:21:31.238509 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0be62156-5749-4da4-9963-eb614d63f130', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f33b7f156c0>]}
+[0m18:21:31.239444 [info ] [MainThread]: Found 6 models, 2 sources, 491 macros
+[0m18:21:31.240078 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0be62156-5749-4da4-9963-eb614d63f130', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f33b7f15930>]}
+[0m18:21:31.243724 [info ] [MainThread]: 
+[0m18:21:31.244738 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m18:21:31.245515 [info ] [MainThread]: 
+[0m18:21:31.246776 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m18:21:31.262416 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataeng-448500_dataeng_448500_ecobici_ds'
+[0m18:21:31.263479 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:21:31.264354 [debug] [ThreadPool]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: '[Errno 2] No such file or directory: '/tmp/gcp_creds.json''
+[0m18:21:31.265542 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:21:31.266241 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: '[Errno 2] No such file or directory: '/tmp/gcp_creds.json''
+[0m18:21:31.270417 [error] [MainThread]: Encountered an error:
+Database Error
+  [Errno 2] No such file or directory: '/tmp/gcp_creds.json'
+[0m18:21:31.272643 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": false, "command_wall_clock_time": 3.124212, "process_in_blocks": "312", "process_kernel_time": 1.195158, "process_mem_max_rss": "216876", "process_out_blocks": "1384", "process_user_time": 6.584865}
+[0m18:21:31.273775 [debug] [MainThread]: Command `dbt docs generate` failed at 18:21:31.273566 after 3.13 seconds
+[0m18:21:31.274593 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f33e7532b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f33b7f489d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f33b7f4a6e0>]}
+[0m18:21:31.275331 [debug] [MainThread]: Flushing usage events
+[0m18:21:31.980731 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:21:38.216882 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe0f81fe950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe0f73bab60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe0f73b9240>]}
+
+
+============================== 18:21:38.222918 | 9845e5ae-1267-4bf0-82a1-b50af11b8ef8 ==============================
+[0m18:21:38.222918 [info ] [MainThread]: Running with dbt=1.9.3
+[0m18:21:38.223929 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/app/logs', 'profiles_dir': '/root/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt docs serve --port 8090', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:21:39.951044 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9845e5ae-1267-4bf0-82a1-b50af11b8ef8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe0c93ec190>]}
+[0m18:21:40.070276 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9845e5ae-1267-4bf0-82a1-b50af11b8ef8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe0f748ba00>]}
+[0m18:22:52.248328 [error] [MainThread]: Encountered an error:
+
+[0m18:22:52.283075 [error] [MainThread]: Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/dbt/cli/requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/dbt/cli/requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/dbt/cli/requires.py", line 235, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/dbt/cli/requires.py", line 264, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/dbt/cli/requires.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/dbt/cli/main.py", line 301, in docs_serve
+    results = task.run()
+  File "/usr/local/lib/python3.10/site-packages/dbt/task/docs/serve.py", line 29, in run
+    httpd.serve_forever()
+  File "/usr/local/lib/python3.10/socketserver.py", line 232, in serve_forever
+    ready = selector.select(poll_interval)
+  File "/usr/local/lib/python3.10/selectors.py", line 416, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt
+
+[0m18:22:52.287234 [debug] [MainThread]: Resource report: {"command_name": "serve", "command_success": false, "command_wall_clock_time": 68.5704, "process_in_blocks": "4344", "process_kernel_time": 0.527874, "process_mem_max_rss": "212136", "process_out_blocks": "3472", "process_user_time": 5.421707}
+[0m18:22:52.288363 [debug] [MainThread]: Command `dbt docs serve` failed at 18:22:52.288178 after 68.57 seconds
+[0m18:22:52.289545 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe0f81fe950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe0c918efe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe0c918f010>]}
+[0m18:22:52.290577 [debug] [MainThread]: Flushing usage events
+[0m18:22:53.029819 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:25:49.071536 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a4c92ead0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a4bed3f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a4bed0d00>]}
+
+
+============================== 18:25:49.081969 | ef173a32-6cea-4ab2-9f9d-2613576c5c48 ==============================
+[0m18:25:49.081969 [info ] [MainThread]: Running with dbt=1.9.3
+[0m18:25:49.083237 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/app/logs', 'debug': 'False', 'profiles_dir': '/root/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt docs generate', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:25:51.408423 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ef173a32-6cea-4ab2-9f9d-2613576c5c48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a1d85dcc0>]}
+[0m18:25:51.533619 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ef173a32-6cea-4ab2-9f9d-2613576c5c48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a1d9607c0>]}
+[0m18:25:51.534672 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m18:25:51.773452 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m18:25:52.073126 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m18:25:52.073819 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m18:25:52.162375 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ef173a32-6cea-4ab2-9f9d-2613576c5c48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a1d49cac0>]}
+[0m18:25:52.198572 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ef173a32-6cea-4ab2-9f9d-2613576c5c48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a1d32de70>]}
+[0m18:25:52.199731 [info ] [MainThread]: Found 6 models, 2 sources, 491 macros
+[0m18:25:52.201074 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ef173a32-6cea-4ab2-9f9d-2613576c5c48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a1d32dc00>]}
+[0m18:25:52.205802 [info ] [MainThread]: 
+[0m18:25:52.207207 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m18:25:52.208375 [info ] [MainThread]: 
+[0m18:25:52.209672 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m18:25:52.221302 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataeng-448500_dataeng_448500_ecobici_ds'
+[0m18:25:52.222315 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:25:53.049635 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ef173a32-6cea-4ab2-9f9d-2613576c5c48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a1d97dde0>]}
+[0m18:25:53.050706 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:25:53.064733 [debug] [Thread-1 (]: Began running node model.ecobici_dbt.stg_rides_enriched
+[0m18:25:53.065725 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dataeng-448500_dataeng_448500_ecobici_ds, now model.ecobici_dbt.stg_rides_enriched)
+[0m18:25:53.066455 [debug] [Thread-1 (]: Began compiling node model.ecobici_dbt.stg_rides_enriched
+[0m18:25:53.088473 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecobici_dbt.stg_rides_enriched"
+[0m18:25:53.118686 [debug] [Thread-1 (]: Began executing node model.ecobici_dbt.stg_rides_enriched
+[0m18:25:53.119603 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:25:53.123457 [debug] [Thread-1 (]: Finished running node model.ecobici_dbt.stg_rides_enriched
+[0m18:25:53.124287 [debug] [Thread-1 (]: Began running node model.ecobici_dbt.stg_stations
+[0m18:25:53.125281 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ecobici_dbt.stg_rides_enriched, now model.ecobici_dbt.stg_stations)
+[0m18:25:53.126053 [debug] [Thread-1 (]: Began compiling node model.ecobici_dbt.stg_stations
+[0m18:25:53.133356 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecobici_dbt.stg_stations"
+[0m18:25:53.135282 [debug] [Thread-1 (]: Began executing node model.ecobici_dbt.stg_stations
+[0m18:25:53.136211 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:25:53.139508 [debug] [Thread-1 (]: Finished running node model.ecobici_dbt.stg_stations
+[0m18:25:53.141882 [debug] [Thread-1 (]: Began running node model.ecobici_dbt.rides_with_stations
+[0m18:25:53.142730 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ecobici_dbt.stg_stations, now model.ecobici_dbt.rides_with_stations)
+[0m18:25:53.143354 [debug] [Thread-1 (]: Began compiling node model.ecobici_dbt.rides_with_stations
+[0m18:25:53.151081 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecobici_dbt.rides_with_stations"
+[0m18:25:53.152253 [debug] [Thread-1 (]: Began executing node model.ecobici_dbt.rides_with_stations
+[0m18:25:53.152913 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:25:53.156075 [debug] [Thread-1 (]: Finished running node model.ecobici_dbt.rides_with_stations
+[0m18:25:53.158013 [debug] [Thread-1 (]: Began running node model.ecobici_dbt.fct_rides_daily
+[0m18:25:53.158829 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ecobici_dbt.rides_with_stations, now model.ecobici_dbt.fct_rides_daily)
+[0m18:25:53.159525 [debug] [Thread-1 (]: Began compiling node model.ecobici_dbt.fct_rides_daily
+[0m18:25:53.166314 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecobici_dbt.fct_rides_daily"
+[0m18:25:53.167582 [debug] [Thread-1 (]: Began executing node model.ecobici_dbt.fct_rides_daily
+[0m18:25:53.168418 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:25:53.171986 [debug] [Thread-1 (]: Finished running node model.ecobici_dbt.fct_rides_daily
+[0m18:25:53.172740 [debug] [Thread-1 (]: Began running node model.ecobici_dbt.invalid_rides_summary
+[0m18:25:53.173762 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ecobici_dbt.fct_rides_daily, now model.ecobici_dbt.invalid_rides_summary)
+[0m18:25:53.174627 [debug] [Thread-1 (]: Began compiling node model.ecobici_dbt.invalid_rides_summary
+[0m18:25:53.181988 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecobici_dbt.invalid_rides_summary"
+[0m18:25:53.183077 [debug] [Thread-1 (]: Began executing node model.ecobici_dbt.invalid_rides_summary
+[0m18:25:53.183757 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:25:53.187020 [debug] [Thread-1 (]: Finished running node model.ecobici_dbt.invalid_rides_summary
+[0m18:25:53.187712 [debug] [Thread-1 (]: Began running node model.ecobici_dbt.top_origin_stations
+[0m18:25:53.188617 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ecobici_dbt.invalid_rides_summary, now model.ecobici_dbt.top_origin_stations)
+[0m18:25:53.189221 [debug] [Thread-1 (]: Began compiling node model.ecobici_dbt.top_origin_stations
+[0m18:25:53.196571 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecobici_dbt.top_origin_stations"
+[0m18:25:53.197678 [debug] [Thread-1 (]: Began executing node model.ecobici_dbt.top_origin_stations
+[0m18:25:53.198376 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:25:53.201972 [debug] [Thread-1 (]: Finished running node model.ecobici_dbt.top_origin_stations
+[0m18:25:53.204017 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:25:53.204531 [debug] [MainThread]: Connection 'model.ecobici_dbt.top_origin_stations' was properly closed.
+[0m18:25:53.207562 [debug] [MainThread]: Command end result
+[0m18:25:53.426301 [debug] [MainThread]: Wrote artifact WritableManifest to /app/target/manifest.json
+[0m18:25:53.432127 [debug] [MainThread]: Wrote artifact SemanticManifest to /app/target/semantic_manifest.json
+[0m18:25:53.449594 [debug] [MainThread]: Wrote artifact RunExecutionResult to /app/target/run_results.json
+[0m18:25:53.462944 [debug] [MainThread]: Acquiring new bigquery connection 'generate_catalog'
+[0m18:25:53.463839 [info ] [MainThread]: Building catalog
+[0m18:25:53.480908 [debug] [ThreadPool]: Acquiring new bigquery connection 'dataeng-448500.information_schema'
+[0m18:25:53.528352 [debug] [ThreadPool]: On dataeng-448500.information_schema: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "ecobici_profile", "target_name": "dev", "connection_name": "dataeng-448500.information_schema"} */
+
+    with
+                table_shards_stage as (
+    select
+        tables.project_id as table_catalog,
+        tables.dataset_id as table_schema,
+        coalesce(REGEXP_EXTRACT(tables.table_id, '^(.+)[0-9]{8}$'), tables.table_id) as table_name,
+        tables.table_id as shard_name,
+        REGEXP_EXTRACT(tables.table_id, '^.+([0-9]{8})$') as shard_index,
+        REGEXP_CONTAINS(tables.table_id, '^.+[0-9]{8}$') and tables.type = 1 as is_date_shard,
+        case
+            when materialized_views.table_name is not null then 'materialized view'
+            when tables.type = 1 then 'table'
+            when tables.type = 2 then 'view'
+            else 'external'
+        end as table_type,
+        tables.type = 1 as is_table,
+        JSON_VALUE(table_description.option_value) as table_comment,
+        tables.size_bytes,
+        tables.row_count
+    from `dataeng-448500`.`dataeng_448500_ecobici_ds`.__TABLES__ tables
+    left join `dataeng-448500`.`dataeng_448500_ecobici_ds`.INFORMATION_SCHEMA.MATERIALIZED_VIEWS materialized_views
+        on materialized_views.table_catalog = tables.project_id
+        and materialized_views.table_schema = tables.dataset_id
+        and materialized_views.table_name = tables.table_id
+    left join `dataeng-448500`.`dataeng_448500_ecobici_ds`.INFORMATION_SCHEMA.TABLE_OPTIONS table_description
+        on table_description.table_catalog = tables.project_id
+        and table_description.table_schema = tables.dataset_id
+        and table_description.table_name = tables.table_id
+        and table_description.option_name = 'description'
+),
+                table_shards as (
+                    select * from table_shards_stage
+                    where ((
+                                upper(table_schema) = upper('dataeng_448500_ecobici_ds')
+                            and upper(table_name) = upper('dim_stations')
+                            ) or (
+                                upper(table_schema) = upper('dataeng_448500_ecobici_ds')
+                            and upper(table_name) = upper('rides_with_stations')
+                            ) or (
+                                upper(table_schema) = upper('dataeng_448500_ecobici_ds')
+                            and upper(table_name) = upper('invalid_rides_summary')
+                            ) or (
+                                upper(table_schema) = upper('dataeng_448500_ecobici_ds')
+                            and upper(table_name) = upper('fct_rides_daily')
+                            ) or (
+                                upper(table_schema) = upper('dataeng_448500_ecobici_ds')
+                            and upper(table_name) = upper('stg_rides')
+                            ) or (
+                                upper(table_schema) = upper('dataeng_448500_ecobici_ds')
+                            and upper(table_name) = upper('stg_stations')
+                            ) or (
+                                upper(table_schema) = upper('dataeng_448500_ecobici_ds')
+                            and upper(table_name) = upper('stg_rides_enriched')
+                            ) or (
+                                upper(table_schema) = upper('dataeng_448500_ecobici_ds')
+                            and upper(table_name) = upper('top_origin_stations')
+                            ))
+                ),
+                tables as (
+    select distinct
+        table_catalog,
+        table_schema,
+        table_name,
+        is_date_shard,
+        table_type,
+        is_table,
+        table_comment
+    from table_shards
+),
+                table_stats as (
+    select
+        table_catalog,
+        table_schema,
+        table_name,
+        max(shard_name) as latest_shard_name,
+        min(shard_index) as shard_min,
+        max(shard_index) as shard_max,
+        count(shard_index) as shard_count,
+        sum(size_bytes) as size_bytes,
+        sum(row_count) as row_count
+    from table_shards
+    group by 1, 2, 3
+),
+
+                columns as (
+    select
+        columns.table_catalog,
+        columns.table_schema,
+        columns.table_name as shard_name,
+        coalesce(paths.field_path, '<unknown>') as column_name,
+        -- invent a row number to account for nested fields
+        -- BQ does not treat these nested properties as independent fields
+        row_number() over (
+            partition by
+                columns.table_catalog,
+                columns.table_schema,
+                columns.table_name
+            order by
+                columns.ordinal_position,
+                paths.field_path
+        ) as column_index,
+        coalesce(paths.data_type, '<unknown>') as column_type,
+        paths.description as column_comment,
+        case when columns.is_partitioning_column = 'YES' then 1 else 0 end as is_partitioning_column,
+        case when columns.is_partitioning_column = 'YES' then paths.field_path end as partition_column,
+        case when columns.clustering_ordinal_position is not null then 1 else 0 end as is_clustering_column,
+        case when columns.clustering_ordinal_position is not null then paths.field_path end as cluster_column,
+        columns.clustering_ordinal_position
+    from `dataeng-448500`.`dataeng_448500_ecobici_ds`.INFORMATION_SCHEMA.COLUMNS columns
+    join `dataeng-448500`.`dataeng_448500_ecobici_ds`.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS paths
+        on paths.table_catalog = columns.table_catalog
+        and paths.table_schema = columns.table_schema
+        and paths.table_name = columns.table_name
+        and paths.column_name = columns.column_name
+    where columns.ordinal_position is not null
+),
+                column_stats as (
+    select
+        table_catalog,
+        table_schema,
+        shard_name,
+        max(is_partitioning_column) = 1 as is_partitioned,
+        max(partition_column) as partition_column,
+        max(is_clustering_column) = 1 as is_clustered,
+        array_to_string(
+            array_agg(
+                cluster_column ignore nulls
+                order by clustering_ordinal_position
+            ), ', '
+        ) as clustering_columns
+    from columns
+    group by 1, 2, 3
+)
+
+            
+    select
+        tables.table_catalog as table_database,
+        tables.table_schema,
+        case
+            when tables.is_date_shard then concat(tables.table_name, '*')
+            else tables.table_name
+        end as table_name,
+        tables.table_type,
+        tables.table_comment,
+        -- coalesce column metadata fields to ensure they are non-null for catalog generation
+        -- external table columns are not present in COLUMN_FIELD_PATHS
+        coalesce(columns.column_name, '<unknown>') as column_name,
+        coalesce(columns.column_index, 1) as column_index,
+        coalesce(columns.column_type, '<unknown>') as column_type,
+        coalesce(columns.column_comment, '') as column_comment,
+
+        'Shard count' as `stats__date_shards__label`,
+        table_stats.shard_count as `stats__date_shards__value`,
+        'The number of date shards in this table' as `stats__date_shards__description`,
+        tables.is_date_shard as `stats__date_shards__include`,
+
+        'Shard (min)' as `stats__date_shard_min__label`,
+        table_stats.shard_min as `stats__date_shard_min__value`,
+        'The first date shard in this table' as `stats__date_shard_min__description`,
+        tables.is_date_shard as `stats__date_shard_min__include`,
+
+        'Shard (max)' as `stats__date_shard_max__label`,
+        table_stats.shard_max as `stats__date_shard_max__value`,
+        'The last date shard in this table' as `stats__date_shard_max__description`,
+        tables.is_date_shard as `stats__date_shard_max__include`,
+
+        '# Rows' as `stats__num_rows__label`,
+        table_stats.row_count as `stats__num_rows__value`,
+        'Approximate count of rows in this table' as `stats__num_rows__description`,
+        tables.is_table as `stats__num_rows__include`,
+
+        'Approximate Size' as `stats__num_bytes__label`,
+        table_stats.size_bytes as `stats__num_bytes__value`,
+        'Approximate size of table as reported by BigQuery' as `stats__num_bytes__description`,
+        tables.is_table as `stats__num_bytes__include`,
+
+        'Partitioned By' as `stats__partitioning_type__label`,
+        column_stats.partition_column as `stats__partitioning_type__value`,
+        'The partitioning column for this table' as `stats__partitioning_type__description`,
+        column_stats.is_partitioned as `stats__partitioning_type__include`,
+
+        'Clustered By' as `stats__clustering_fields__label`,
+        column_stats.clustering_columns as `stats__clustering_fields__value`,
+        'The clustering columns for this table' as `stats__clustering_fields__description`,
+        column_stats.is_clustered as `stats__clustering_fields__include`
+
+    from tables
+    join table_stats
+        on table_stats.table_catalog = tables.table_catalog
+        and table_stats.table_schema = tables.table_schema
+        and table_stats.table_name = tables.table_name
+    left join column_stats
+        on column_stats.table_catalog = tables.table_catalog
+        and column_stats.table_schema = tables.table_schema
+        and column_stats.shard_name = table_stats.latest_shard_name
+    left join columns
+        on columns.table_catalog = tables.table_catalog
+        and columns.table_schema = tables.table_schema
+        and columns.shard_name = table_stats.latest_shard_name
+
+  
+[0m18:25:53.529907 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:25:54.461139 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataeng-448500&j=bq:us-central1:92de2afd-d914-402b-8b0e-bceebb4c9320&page=queryresults
+[0m18:25:59.256138 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:25:59.293079 [debug] [MainThread]: Wrote artifact CatalogArtifact to /app/target/catalog.json
+[0m18:25:59.363749 [debug] [MainThread]: Wrote artifact WritableManifest to /app/target/manifest.json
+[0m18:25:59.367331 [debug] [MainThread]: Wrote artifact SemanticManifest to /app/target/semantic_manifest.json
+[0m18:25:59.368691 [info ] [MainThread]: Catalog written to /app/target/catalog.json
+[0m18:25:59.371629 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 7.331099, "process_in_blocks": "8", "process_kernel_time": 1.82453, "process_mem_max_rss": "223964", "process_out_blocks": "6904", "process_user_time": 7.766583}
+[0m18:25:59.372843 [debug] [MainThread]: Command `dbt docs generate` succeeded at 18:25:59.372642 after 7.33 seconds
+[0m18:25:59.373647 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m18:25:59.374648 [debug] [MainThread]: Connection 'dataeng-448500.information_schema' was properly closed.
+[0m18:25:59.375270 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a4c92ead0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a1d9607c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a1d32ec50>]}
+[0m18:25:59.375919 [debug] [MainThread]: Flushing usage events
+[0m18:26:00.003276 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:26:03.347175 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f97491ca890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f97480e9360>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f97480eb820>]}
+
+
+============================== 18:26:03.353513 | ed60057f-3c93-4994-b25c-dcccc4ad672d ==============================
+[0m18:26:03.353513 [info ] [MainThread]: Running with dbt=1.9.3
+[0m18:26:03.354355 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/app/logs', 'profiles_dir': '/root/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt docs serve --port 8090', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m18:26:05.036054 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ed60057f-3c93-4994-b25c-dcccc4ad672d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f974a7dabc0>]}
+[0m18:26:05.150036 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ed60057f-3c93-4994-b25c-dcccc4ad672d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f97487ab2e0>]}
+[0m18:27:26.260823 [error] [MainThread]: Encountered an error:
+
+[0m18:27:26.265023 [error] [MainThread]: Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/dbt/cli/requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/dbt/cli/requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/dbt/cli/requires.py", line 235, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/dbt/cli/requires.py", line 264, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/dbt/cli/requires.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/dbt/cli/main.py", line 301, in docs_serve
+    results = task.run()
+  File "/usr/local/lib/python3.10/site-packages/dbt/task/docs/serve.py", line 29, in run
+    httpd.serve_forever()
+  File "/usr/local/lib/python3.10/socketserver.py", line 232, in serve_forever
+    ready = selector.select(poll_interval)
+  File "/usr/local/lib/python3.10/selectors.py", line 416, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt
+
+[0m18:27:26.268345 [debug] [MainThread]: Resource report: {"command_name": "serve", "command_success": false, "command_wall_clock_time": 77.40353, "process_in_blocks": "0", "process_kernel_time": 0.47948, "process_mem_max_rss": "212028", "process_out_blocks": "3472", "process_user_time": 5.426846}
+[0m18:27:26.269307 [debug] [MainThread]: Command `dbt docs serve` failed at 18:27:26.269061 after 77.40 seconds
+[0m18:27:26.270060 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f97491ca890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f971a077010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f971a077040>]}
+[0m18:27:26.271048 [debug] [MainThread]: Flushing usage events
+[0m18:27:27.171631 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:27:32.839946 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8fb6426800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8fb55d4b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8fb53860e0>]}
+
+
+============================== 18:27:32.845912 | 5e7a3e8e-0443-4061-9db5-cab7a70fc098 ==============================
+[0m18:27:32.845912 [info ] [MainThread]: Running with dbt=1.9.3
+[0m18:27:32.847194 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/root/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/app/logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt docs serve --port 8090 --host 0.0.0.0', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:27:37.361890 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5e7a3e8e-0443-4061-9db5-cab7a70fc098', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8fb550ad40>]}
+[0m18:27:37.478258 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5e7a3e8e-0443-4061-9db5-cab7a70fc098', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8fb53694b0>]}
+[0m18:30:07.351893 [error] [MainThread]: Encountered an error:
+
+[0m18:30:07.356648 [error] [MainThread]: Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/dbt/cli/requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/dbt/cli/requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/dbt/cli/requires.py", line 235, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/dbt/cli/requires.py", line 264, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/dbt/cli/requires.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/dbt/cli/main.py", line 301, in docs_serve
+    results = task.run()
+  File "/usr/local/lib/python3.10/site-packages/dbt/task/docs/serve.py", line 29, in run
+    httpd.serve_forever()
+  File "/usr/local/lib/python3.10/socketserver.py", line 232, in serve_forever
+    ready = selector.select(poll_interval)
+  File "/usr/local/lib/python3.10/selectors.py", line 416, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt
+
+[0m18:30:07.361561 [debug] [MainThread]: Resource report: {"command_name": "serve", "command_success": false, "command_wall_clock_time": 140.22404, "process_in_blocks": "328", "process_kernel_time": 0.455071, "process_mem_max_rss": "210568", "process_out_blocks": "3360", "process_user_time": 5.38316}
+[0m18:30:07.362792 [debug] [MainThread]: Command `dbt docs serve` failed at 18:30:07.362514 after 140.23 seconds
+[0m18:30:07.364236 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8fb6426800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f87287820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f87285de0>]}
+[0m18:30:07.365248 [debug] [MainThread]: Flushing usage events
+[0m18:30:07.841412 [debug] [MainThread]: An error was encountered while trying to flush usage events

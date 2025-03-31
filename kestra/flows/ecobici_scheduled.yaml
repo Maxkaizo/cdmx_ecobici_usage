@@ -14,102 +14,109 @@ variables:
   filename: "ecobici_{{vars.year_month}}.csv"
 
 tasks:
-- id: get_catalog
-  type: io.kestra.plugin.scripts.python.Commands
-  namespaceFiles:
-    enabled: true
-  containerImage: python:3.10-slim
-  beforeCommands:
-    - pip install requests beautifulsoup4 pandas lxml
-  commands:
-    - python get_files_catalog.py
-    - python get_station_catalog.py
-  outputFiles:
-    - catalog.csv
-    - stations.csv
+  - id: sync_namespace_files
+    type: io.kestra.plugin.scripts.shell.Commands
+    taskRunner:
+      type: io.kestra.plugin.core.runner.Process
+    commands:
+      - /app/kestra namespace files update dataeng.zoomcamp /app/scripts . --server=http://localhost:8080 --user=admin@kestra.io:admin
 
-- id: extract_file_url
-  type: io.kestra.plugin.scripts.shell.Commands
-  taskRunner:
-    type: io.kestra.plugin.core.runner.Process
-  commands:
-    - |
-      url=$(awk -F',' '$1 == "{{render(vars.year)}}" && $2 == "{{render(vars.month)}}" {print $3}' {{outputs.get_catalog.outputFiles["catalog.csv"]}})
-    - echo "::{\"outputs\":{\"url\":\"${url}\"}}::"
+  - id: get_catalog
+    type: io.kestra.plugin.scripts.python.Commands
+    containerImage: python:3.10-slim
+    namespaceFiles:
+      enabled: true
+    beforeCommands:
+      - pip install requests beautifulsoup4 pandas lxml
+    commands:
+      - python get_files_catalog.py
+      - python get_station_catalog.py
+    outputFiles:
+      - catalog.csv
+      - stations.csv
 
-- id: http_download
-  type: io.kestra.plugin.core.http.Download
-  uri: "{{outputs.extract_file_url.vars.url}}"
+  - id: extract_file_url
+    type: io.kestra.plugin.scripts.shell.Commands
+    taskRunner:
+      type: io.kestra.plugin.core.runner.Process
+    commands:
+      - |
+        url=$(awk -F',' '$1 == "{{render(vars.year)}}" && $2 == "{{render(vars.month)}}" {print $3}' {{outputs.get_catalog.outputFiles["catalog.csv"]}})
+      - echo "::{\"outputs\":{\"url\":\"${url}\"}}::"
 
-- id: upload_stations_to_gcs
-  type: io.kestra.plugin.gcp.gcs.Upload
-  from: "{{ outputs.get_catalog.outputFiles['stations.csv'] }}"
-  to: "gs://dataeng-448500-ecobici-bucket/stations/stations.csv"
+  - id: http_download
+    type: io.kestra.plugin.core.http.Download
+    uri: "{{outputs.extract_file_url.vars.url}}"
 
-- id: upload_to_gcs
-  type: io.kestra.plugin.gcp.gcs.Upload
-  from: "{{ outputs.http_download.uri }}"
-  to: "gs://dataeng-448500-ecobici-bucket/raw/{{render(vars.filename)}}"
+  - id: upload_stations_to_gcs
+    type: io.kestra.plugin.gcp.gcs.Upload
+    from: "{{ outputs.get_catalog.outputFiles['stations.csv'] }}"
+    to: "gs://{{ secret('GCP_BUCKET_NAME') }}/stations/stations.csv"
 
-- id: load_to_bigquery
-  type: io.kestra.plugin.scripts.python.Commands
-  namespaceFiles:
-    enabled: true
-  containerImage: python:3.10
-  beforeCommands:
-    - pip install dlt[bigquery] pandas gcsfs google-cloud-bigquery-storage
-    - |
-      cat <<EOF > /tmp/gcp_creds.json
-      {{ kv("GOOGLE_APPLICATION_CREDENTIALS") }}
-      EOF
-    - mkdir -p .dlt
-    - |
-      cat <<EOF > .dlt/secrets.toml
-      [destination.bigquery]
-      location = "us-central1"
-      EOF
-  env:
-    GOOGLE_APPLICATION_CREDENTIALS: /tmp/gcp_creds.json
-    FILENAME: "{{render(vars.filename)}}"
-  commands:
-    - python extract_load_dlt.py
+  - id: upload_to_gcs
+    type: io.kestra.plugin.gcp.gcs.Upload
+    from: "{{ outputs.http_download.uri }}"
+    to: "gs://{{ secret('GCP_BUCKET_NAME') }}/raw/{{render(vars.filename)}}"
 
-- id: run_dbt
-  type: io.kestra.plugin.scripts.python.Commands
-  containerImage: maxkaizo/dbt-ecobici:latest
-  namespaceFiles:
-    enabled: true
-  beforeCommands:
-    - |
-      cat <<EOF > /tmp/gcp_creds.json
-      {{ kv("GOOGLE_APPLICATION_CREDENTIALS") }}
-      EOF
-    - mkdir -p /root/.dbt
-    - |
-      cat <<EOF > /root/.dbt/profiles.yml
-      ecobici_profile:
-        target: dev
-        outputs:
-          dev:
-            type: bigquery
-            method: service-account
-            project: dataeng-448500
-            dataset: dataeng_448500_ecobici_ds
-            location: us-central1
-            threads: 1
-            keyfile: /tmp/gcp_creds.json
-      EOF
-  commands:
-    - dbt run --project-dir /app --profiles-dir /root/.dbt
+  - id: load_to_bigquery
+    type: io.kestra.plugin.scripts.python.Commands
+    namespaceFiles:
+      enabled: true
+    containerImage: python:3.10
+    beforeCommands:
+      - pip install dlt[bigquery] pandas gcsfs google-cloud-bigquery-storage
+      - |
+        cat <<EOF > /tmp/gcp_creds.json
+        {{ secret("GCP_CREDS") }}
+        EOF
+      - mkdir -p .dlt
+      - |
+        cat <<EOF > .dlt/secrets.toml
+        [destination.bigquery]
+        location = "{{ secret('GCP_LOCATION') }}"
+        EOF
+    env:
+      GOOGLE_APPLICATION_CREDENTIALS: /tmp/gcp_creds.json
+      FILENAME: "{{render(vars.filename)}}"
+    commands:
+      - python extract_load_dlt.py
 
-- id: purge_files
-  type: io.kestra.plugin.core.storage.PurgeCurrentExecutionFiles
-  description: To avoid cluttering your storage, we will remove the downloaded files
+  - id: run_dbt
+    type: io.kestra.plugin.scripts.python.Commands
+    containerImage: maxkaizo/dbt-ecobici:latest
+    beforeCommands:
+      - |
+        cat <<EOF > /tmp/gcp_creds.json
+        {{ secret("GCP_CREDS") }}
+        EOF
+      - mkdir -p /root/.dbt
+      - |
+        cat <<EOF > /root/.dbt/profiles.yml
+        ecobici_profile:
+          target: dev
+          outputs:
+            dev:
+              type: bigquery
+              method: service-account
+              project: {{ secret('GCP_PROJECT_ID') }}
+              dataset: dataeng_448500_ecobici_ds
+              location: {{ secret('GCP_LOCATION') }}
+              threads: 1
+              keyfile: /tmp/gcp_creds.json
+        EOF
+    commands:
+      - dbt run --project-dir /app --profiles-dir /root/.dbt
+    env:
+      GOOGLE_APPLICATION_CREDENTIALS: /tmp/gcp_creds.json
+
+  - id: purge_files
+    type: io.kestra.plugin.core.storage.PurgeCurrentExecutionFiles
+    description: To avoid cluttering your storage, we will remove the downloaded files
 
 pluginDefaults:
   - type: io.kestra.plugin.gcp
     values:
-      serviceAccount: "{{kv('GCP_CREDS')}}"
-      projectId: "{{kv('GCP_PROJECT_ID')}}"
-      location: "{{kv('GCP_LOCATION')}}"
-      bucket: "{{kv('GCP_BUCKET_NAME')}}"
+      serviceAccount: "{{ secret('GCP_CREDS') }}"
+      projectId: "{{ secret('GCP_PROJECT_ID') }}"
+      location: "{{ secret('GCP_LOCATION') }}"
+      bucket: "{{ secret('GCP_BUCKET_NAME') }}"

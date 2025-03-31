@@ -91,36 +91,107 @@ ecobici-data-pipeline/
 
 - https://lookerstudio.google.com/s/gFyZHSl4BD8
 
+## Walkthrough
+
+Here you can find a complete [Walkthrough](https://github.com/Maxkaizo/cdmx_ecobici_usage/blob/main/walkthrough/walkthrough.md) of how the pipeline works
+
 ---
 
-## 🛠️ How to Run
+## 🔁 Reproducibility
 
-```bash
-# 1. Initialize and apply Terraform
-cd terraform/
-terraform init
-terraform apply
+### ✅ Prerequisites
+To reproduce this project, make sure you have the following in place:
 
-# 2. Run the pipeline with Kestra CLI
-cd kestra/
-kestra start
+A Google Cloud Platform (GCP) project with the following APIs enabled:
 
-# 3. Explore the data in BigQuery
-# 4. Open the dashboard in Looker Studio
+- Cloud Storage API
+- BigQuery API
+- IAM API
+
+A service account with the following roles:
+
+- roles/editor
+- roles/storage.admin
+- roles/bigquery.admin
+
+A key file (.json) must be generated for this service account, as it will be used by Terraform, dbt, and other tools to authenticate.
+
+Tools installed on your local machine:
+
+- Terraform
+- Docker
+
+Once these are set, you'll be ready to provision infrastructure and run the data pipeline as described in the following sections.
+
+You can set the variables file according your naming conventions and use case, for example:
+
+``` json
+variable "project" {
+  description = "Project"
+  default     = "dataeng-448500"
+}
+
+variable "region" {
+  description = "Region"
+  default     = "us-central1"
+}
 ```
 
-## 🐳 Optional: Run in Docker
+### Quickstart
 
-To facilitate reproducibility, you can optionally run the pipeline inside a pre-configured container:
+To run this project locally:
+
+1. Clone the repository:
 
 ``` bash
-Copiar
-Editar
-cd docker/
-docker build -t ecobici-pipeline .
-docker run --rm -v $(pwd):/app ecobici-pipeline
+git clone https://github.com/Maxkaizo/cdmx_ecobici_usage.git
+cd cdmx_ecobici_usage
 ```
-This image includes Terraform, dbt and Kestra CLI, allowing full pipeline execution from a single container.
+
+2. Prepare environment variables:
+
+Move into the Kestra folder and create a .env file containing your GCP configuration Base64-encoded:
+
+``` bash
+cd kestra/
+```
+
+.env example:
+
+``` env
+# Kestra environment variables
+SECRET_GCP_PROJECT_ID=encoded_example=
+SECRET_GCP_LOCATION=encoded_example=
+SECRET_GCP_BUCKET_NAME=encoded_example=
+SECRET_GCP_CREDS=encoded_example=
+```
+You can encode values using echo -n 'your-value' | base64.
+
+The `SECRET_GCP_CREDS` must contain the full content of your service account key (not just the path).
+
+3. Start the environment with Docker Compose:
+
+``` bash
+docker-compose up
+```
+This will launch Kestra locally along with required services.
+
+4. Access the UI and run the flow:
+
+Open http://localhost:8080 in your browser.
+
+5. Run the pipeline:
+
+From the Kestra UI, trigger the ecobici_01 flow. It will:
+
+- Scrape and download Ecobici trip data
+- Upload files to GCS
+- Load data into BigQuery
+- Run dbt transformations
+
+6. (Optional) Create a dashboard in looker studio
+
+- Connect the dashboard to the dataset and select data
 
 ---
 

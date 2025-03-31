@@ -125,7 +125,7 @@ Once these are set, you'll be ready to provision infrastructure and run the data
 
 You can set the variables file according your naming conventions and use case, for example:
 
-``` json
+``` bash
 variable "project" {
   description = "Project"
   default     = "dataeng-448500"

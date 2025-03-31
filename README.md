@@ -87,6 +87,8 @@ ecobici-data-pipeline/
 
 ## 📊 Dashboard
 
+![alt text](images/dash.png)
+
 🔗 View in Looker Studio
 
 - https://lookerstudio.google.com/s/gFyZHSl4BD8
